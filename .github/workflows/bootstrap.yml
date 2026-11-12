@@ -2,7 +2,7 @@ name: Install dashboard source
 on:
   push:
     paths:
-      - '.bootstrap/**'
+      - '.bootstrap/ready'
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,8 +15,8 @@ jobs:
           persist-credentials: true
       - name: Extract and commit application
         run: |
-          test -f .bootstrap/source.b64
-          base64 -d .bootstrap/source.b64 | tar -xz
+          test -f .bootstrap/ready
+          cat .bootstrap/part-*.txt | base64 -d | tar -xz
           rm -rf .bootstrap
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
