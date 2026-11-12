@@ -57,23 +57,35 @@ def brief(value, limit=240):
     return s[:limit] + ("…" if len(s) > limit else "")
 
 
+def relevant_excerpt(value, brand, limit=320):
+    """Keep the discussion around the relevant service, not a generic preamble."""
+    cleaned = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", value or ""))).strip()
+    if len(cleaned) <= limit:
+        return cleaned
+    term = {"Glance": r"\bglance\b", "Unity Aura": r"\bunity aura\b",
+            "Industry": r"\block[\s-]?screen\b"}.get(brand)
+    hit = re.search(term, cleaned, re.I) if term else None
+    start = min(max(0, hit.start() - 85), len(cleaned) - limit) if hit else 0
+    segment = cleaned[start:start + limit]
+    return ("…" if start else "") + segment + ("…" if start + limit < len(cleaned) else "")
+
+
 def brand_for(text):
     s = str(text or "").casefold()
     if re.search(r"\bunity aura\b|\baura from unity\b", s):
         return "Unity Aura"
     if re.search(r"\bglance\b", s):
         # "at a glance" is an everyday English expression, not this product.
-        idiom = bool(re.search(r"\b(at a|at first|at one|at a quick|one|first|a quick|single) glance\b", s))
+        idiom = bool(re.search(r"\b(at a|at first|at one|at a quick|in a|one|first|a quick|single|just one) glance\b|\bglance (?:at|over|away|through)\b", s))
         product = bool(re.search(
             r"\bglance\s+(?:app|for mi|ads?|advertis\w*|lock[\s-]?screen|wallpaper|service|feed|news)\b"
             r"|\b(?:motorola|xiaomi|samsung|realme|inmobi)\s+glance\b"
-            r"|\b(?:disable|enable|uninstall|remove|removed|re[- ]?enable|delete|block|debloat)\s+(?:the\s+)?glance\b"
+            r"|\b(?:disabl\w*|enabl\w*|uninstall\w*|remov\w*|re[- ]?enabl\w*|delet\w*|block\w*|debloat\w*)\s+(?:the\s+)?glance\b"
             r"|\bglance\b.{0,45}\b(?:disable|uninstall|remove|removed|deleted|adware|bullshit|spam|intrusive|lock[\s-]?screen)\b",
             s))
         if product:
             return "Glance"
-        if not idiom and re.search(r"\bglance\b.{0,100}\b(?:motorola|xiaomi|samsung|realme)\b"
-                                   r"|\b(?:motorola|xiaomi|samsung|realme)\b.{0,100}\bglance\b", s):
+        if not idiom and re.search(r"\b(?:android|motorola|xiaomi|samsung|realme|inmobi|myhub|lock[\s-]?screen|phone|device)\b", s):
             return "Glance"
     if re.search(r"\block[\s-]?screen\s+(?:ads?|advertis\w*)\b", s):
         return "Industry"
@@ -108,7 +120,7 @@ def record(id, source, text, title, url, date, observed, kind="reaction", histor
         "reason": "ニュースは感情分析の集計対象外", "classifier": "not_applicable"}
     return {"id": id, "source": source, "brand": brand, "kind": kind,
             "published_at": iso(date), "first_seen": iso(observed),
-            "title": brief(title or text, 170), "excerpt": brief(text, 250),
+            "title": brief(title or text, 170), "excerpt": relevant_excerpt(text, brand),
             "url": url, **analysis, **extra}
 
 
