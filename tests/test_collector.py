@@ -67,7 +67,7 @@ class CollectorTests(unittest.TestCase):
                  patch("collector.collect_news", return_value=([], 1, [])):
                 collector.main()
                 collector.main()
-            result = json.loads(file.read_text())
+            result = json.loads(file.read_text(encoding='utf-8'))
             self.assertEqual(len(result["items"]), 1)
             self.assertEqual(result["daily"][0]["new_reactions"], 1)
             self.assertEqual(len(result["runs"]), 2)
