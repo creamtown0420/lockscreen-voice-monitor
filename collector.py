@@ -22,7 +22,7 @@ BLUESKY = "https://api.bsky.app/xrpc/app.bsky.feed.searchPosts"
 HN = "https://hn.algolia.com/api/v1/search_by_date"
 NEWS = "https://news.google.com/rss/search"
 USER_AGENT = "LockScreenSignals/1.0 (+https://github.com/creamtown0420/lockscreen-voice-monitor; personal-research)"
-SUBS = ("motorola", "xiaomi", "realme", "samsung", "AndroidQuestions", "androidapps")
+SUBS = ("motorola", "xiaomi", "realme", "AndroidQuestions")
 REDDIT_WORDS = ("Glance", "lock screen ads", "Unity Aura")
 SEARCHES = ('"Glance" "lock screen"', '"Glance" "Motorola"', '"Glance" "ads"',
             '"Unity Aura"', '"lock screen ads"')
@@ -77,7 +77,7 @@ def get(url, attempts=2):
             with urlopen(req, timeout=18) as r:
                 return r.read(2_000_000)
         except HTTPError as e:
-            if n + 1 == attempts or e.code not in (429, 500, 502, 503, 504):
+            if n + 1 == attempts or e.code not in (500, 502, 503, 504):
                 raise
             time.sleep(3 * (n + 1))
         except (URLError, TimeoutError):
@@ -104,9 +104,9 @@ def collect_reddit(observed):
     if os.getenv("LOCKSCREEN_REDDIT_ENABLED", "1").lower() in ("0", "false", "no"):
         return [], 0, []
     found, ok, errors = [], 0, []
-    after = (observed - timedelta(days=28)).strftime("%Y-%m-%d")
+    after = (observed - timedelta(days=14)).strftime("%Y-%m-%d")
     # Relatively small workload for a volunteer-operated service.
-    tasks = [("posts", sub, word, "query") for sub in SUBS for word in ("Glance",)]
+    tasks = [("posts", sub, "Glance", "query") for sub in SUBS if sub != "AndroidQuestions"]
     tasks += [("comments", sub, "Glance", "body") for sub in SUBS]
     tasks += [("comments", "androidapps", "Unity Aura", "body")]
     for typ, sub, word, key in tasks:
@@ -121,7 +121,7 @@ def collect_reddit(observed):
                 # Keyword queries may exceed archive search timeouts. Fall back
                 # to the latest entries in this community and filter locally.
                 params.pop(key)
-                params["limit"] = 80
+                params["limit"] = 40
                 payload = json.loads(get(ARCHIVE + path + urlencode(params)))
                 errors.append(f"{typ} r/{sub}: keyword timeout; recent-only fallback")
             if not isinstance(payload, dict) or not isinstance(payload.get("data"), list):
@@ -151,9 +151,14 @@ def collect_reddit(observed):
                               community="r/" + community, via="Arctic Shift")
                 if item:
                     found.append(item)
-        except (ValueError, HTTPError, URLError, TimeoutError, TypeError) as e:
+        except HTTPError as e:
+            errors.append(f"Reddit {typ} r/{sub}: HTTP {e.code}")
+            if e.code == 429:
+                errors.append("Reddit rate limited; skipped remaining requests")
+                break
+        except (ValueError, URLError, TimeoutError, TypeError) as e:
             errors.append(f"Reddit {typ} r/{sub}: {str(e)[:90]}")
-        time.sleep(0.6)
+        time.sleep(2.25)
     return found, ok, errors
 
 
@@ -261,7 +266,7 @@ def main():
         "daily": sorted(history.values(), key=lambda x: x["date"])[-730:],
         "runs": (store.get("runs", []) + [{
             "at": iso(observed), "sources_ok": good,
-            "sources_total": len(SUBS) * 2 + 1 + len(SEARCHES) * 2 + 3,
+            "sources_total": (len(SUBS)-1) + len(SUBS) + 1 + len(SEARCHES) * 2 + 3,
             "new": len(fresh), "errors": errors[:40],
         }])[-90:]
     }
