@@ -1,54 +1,68 @@
-# Lock Screen Signals
+# Lockscreen Insights
 
-無料でアクセス可能な公開情報源から、Glance / Unity Aura / Androidロック画面広告への反応を1日1回収集し、静的ダッシュボードに表示する個人向けプロトタイプです。
+Glance / Unity AuraなどのAndroidロック画面広告に対する公開ユーザーの声を収集する、無料の個人研究向けダッシュボードです。
 
-## データ取得元
+**サイト:** https://creamtown0420.github.io/lockscreen-voice-monitor/
 
-- **Reddit**：第三者アーカイブ [Arctic Shift](https://github.com/ArthurHeitmann/arctic_shift) の公開APIから、対象subredditの投稿とコメントを検索（遅延・欠落やタイムアウトあり）。
-- **Bluesky**：公開検索API。
-- **Hacker News**：Algolia検索API。
-- **Google News RSS**：ニュース見出し（ユーザーの意見とは別集計）。
-- **X**：対象外。課金API・Xログイン情報は使用しません。
+## ダッシュボード
 
-**AIによるポジネガ判定は未実装**です。投稿の発見件数は世論調査やユーザー全体の満足度を表しません。
+- ライトテーマ・シンプルなKPI → 時系列 → 話題別集計 → 元投稿の一覧
+- 投稿をポジティブ / ネガティブ / 中立 / 判定保留に分類
+- 不満の原因を「勝手に有効化」「停止・削除」「広告への不満」「性能・電池」「プライバシー」「コンテンツ」等に分類
+- サービス別、情報源別、期間別、感情別、キーワード検索
+- ニュース記事は**ユーザーの感情割合から除外**。元投稿は出典をクリックして確認できます。
 
-## GitHub Pagesで公開する
+感情の分類はPythonの無料ローカルライブラリ[VADER](https://github.com/cjhutto/vaderSentiment)＋専用ルールです。無料APIキーは不要です。英語が中心で、皮肉や外国語の判定には限界があります。中立・判定保留を無理にポジティブ／ネガティブへ含めません。
 
-1. このリポジトリの **Settings → Pages → Build and deployment → Source** を **GitHub Actions** に変更します。
-2. **Actions → Collect free sources and publish dashboard → Run workflow** から初回実行します。
-3. 成功すると `https://creamtown0420.github.io/lockscreen-voice-monitor/` に公開されます。
-4. 以降、毎日 **日本時間08:17頃** に自動実行します。GitHub Actionsは遅延・スキップすることがあります。
+## 情報源と更新
 
-公開設定を有効にするまでは、PagesのURLがまだ表示されない可能性があります。
+- Reddit: [Arctic Shift](https://github.com/ArthurHeitmann/arctic_shift) の公開アーカイブ（投稿＋コメント）
+- Bluesky: 認証不要の公開検索API
+- Hacker News: Algolia検索API
+- Google News: RSS（意見とは別カテゴリ）
+- Xは使用しません。
 
-## 手元で動かす
+GitHub Actionsで毎日**日本時間08:17頃**に収集します。スケジュールはGitHub側で遅れることがあります。
 
-Python 3.10以降・追加パッケージ不要です。
+## Redditの過去データ：2022年〜
 
-```bash
+\`backfill.py\` によって、2022年1月から現在までを**年月×サブレディット×投稿/コメント種別**に分割し、日々段階的に追加します。直近の更新は\`collector.py\`が別に行います。過去データは30日で削除せず保存を継続します。
+
+- バックフィル1回につき最大20検索窓。データ量やタイムアウト次第で完成まで数日〜数週間かかります。
+- 先に異なる年の検索窓を試し、年をまたぐ傾向も早めに確認できる構成です。
+- 取得元は第三者の無保証アーカイブであり、**欠落・タイムアウト・検索上限に達した範囲**があります。履歴全件の網羅性は保証しません。進捗表示は検索窓の完了数であって、収集済み投稿の割合ではありません。
+- サーバーへの過剰な負荷を避けるため、リクエスト間に待機時間を設け、429が来たら打ち切ります。
+- 公開された投稿に過度に依存した一般化を避け、指標は**取得したサンプルの内訳**として表示します。
+
+## GitHub Pages設定
+
+Settings → Pages → Build and deployment → Source = **GitHub Actions** に設定します。
+
+Actions → Collect free sources and publish dashboard → Run workflow で手動起動も可能です。
+
+## 開発・テスト
+
+Python 3.10以上、追加依存はVADERのみ（未導入時はドメインルールによる分類のみ）。
+
+\`\`\`bash
+python -m pip install vaderSentiment==3.3.2
 python -m unittest discover -s tests -v
 python collector.py
+python backfill.py
 mkdir -p app/data
 cp data/monitor.json app/data/monitor.json
 python -m http.server 8000 --directory app
-```
+\`\`\`
 
-Redditを一時無効化する場合は環境変数 `LOCKSCREEN_REDDIT_ENABLED=0` を設定してください。
+- \`collector.py\`：直近の投稿取得・重複排除・スコア付与
+- \`sentiment.py\`：ルールとVADERによるトピック・感情分類
+- \`backfill.py\`：Redditの段階的な過去投稿の追加
+- \`data/monitor.json\`：公開された収集データ
+- \`app/\`：静的ダッシュボード
+- \`.github/workflows/collect-and-publish.yml\`：収集・テスト・GitHub Pages公開
 
-## 収集と保存の注意事項
+## データの扱いと公開状態
 
-- 投稿IDに基づいて重複排除し、サイトでは短い抜粋と元投稿へのリンクを表示します。ユーザー名は保存しません。
-- アクティブなJSON内の投稿データは初回取得から30日を超えると削除します。ただしGitHubの**公開Git履歴に古い抜粋が残る**ため、この版には削除済み投稿への対応などの課題があります。個人の実験用プロトタイプとして扱い、本格利用前にはGitに投稿テキストを保存しない設計へ移行してください。
-- Arctic Shiftは独立した無保証のアーカイブで、利用規約・データの再公開・削除要請などへの対応が必要です。無料でアクセスできることは、すべての再利用を許可する意味ではありません。
-- 一部の情報源だけ失敗した場合はほかの収集を続行し、エラー情報を保存します。全情報源の取得に失敗したときは既存データを保持してジョブを失敗させます。
-- GitHub Actionsの定期実行は公開リポジトリで長期間アクティビティがないと自動停止する場合があります。
+**GitHub Pagesもこのリポジトリも公開状態です。** URLを秘密にしただけではアクセス制限になりません。GitHub Pagesによるパスワード不要の「秘密のURL」制限は実装されていません。
 
-## ファイル構成
-
-- `collector.py`：情報源の取得・関連性判定・重複除去・集計
-- `data/monitor.json`：蓄積データと実行状況
-- `app/`：HTML/CSS/JavaScriptによる静的ダッシュボード
-- `.github/workflows/collect-and-publish.yml`：日次収集とPages公開
-- `tests/`：オフライン単体テスト
-
-参考：[GitHub Pages公式ガイド](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) / [Reddit Responsible Builder Policy](https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy)
+公開データには投稿の短い抜粋と元投稿リンクを含み、作者名は保存しません。古い抜粋はGit履歴に残る可能性があります。削除要求対応やデータの再利用条件・利用規約の確認などが必要なため、研究・実験用途にとどめ、本格運用前には公開Git履歴へ投稿テキストを残さない方式に移してください。
