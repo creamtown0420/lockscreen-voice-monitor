@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T01:15:02Z",
+  "updated_at": "2026-11-12T01:29:14Z",
   "items": [
     {
       "id": "reddit:c:19se1bj2ihzr9",
@@ -460,6 +460,20 @@
         "Reddit posts r/motorola: HTTP 422",
         "posts r/xiaomi: keyword timeout; recent-only fallback",
         "posts r/realme: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-12T01:29:14Z",
+      "sources_ok": 20,
+      "sources_total": 21,
+      "new": 0,
+      "errors": [
+        "Reddit posts r/motorola: HTTP 422",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "posts r/realme: keyword timeout; recent-only fallback",
+        "comments r/xiaomi: keyword timeout; recent-only fallback",
+        "comments r/AndroidQuestions: keyword timeout; recent-only fallback",
+        "comments r/androidapps: keyword timeout; recent-only fallback"
       ]
     }
   ]
