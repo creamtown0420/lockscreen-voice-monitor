@@ -58,15 +58,24 @@ def brief(value, limit=240):
 
 
 def brand_for(text):
-    s = text.casefold()
-    if "unity aura" in s or "aura from unity" in s:
+    s = str(text or "").casefold()
+    if re.search(r"\bunity aura\b|\baura from unity\b", s):
         return "Unity Aura"
-    if "glance" in s and any(v in s for v in (
-        "lock screen", "lockscreen", "lock-screen", "wallpaper", "ads", "advert",
-        "motorola", "xiaomi", "samsung", "realme", "inmobi", "ロック画面",
-        "pantalla de bloqueo", "layar kunci")):
-        return "Glance"
-    if any(v in s for v in ("lock screen ads", "lockscreen ads", "lock screen advertising", "lock-screen ads")):
+    if re.search(r"\bglance\b", s):
+        # "at a glance" is an everyday English expression, not this product.
+        idiom = bool(re.search(r"\b(at a|at first|at one|at a quick|one|first|a quick|single) glance\b", s))
+        product = bool(re.search(
+            r"\bglance\s+(?:app|for mi|ads?|advertis\w*|lock[\s-]?screen|wallpaper|service|feed|news)\b"
+            r"|\b(?:motorola|xiaomi|samsung|realme|inmobi)\s+glance\b"
+            r"|\b(?:disable|enable|uninstall|remove|removed|re[- ]?enable|delete|block|debloat)\s+(?:the\s+)?glance\b"
+            r"|\bglance\b.{0,45}\b(?:disable|uninstall|remove|removed|deleted|adware|bullshit|spam|intrusive|lock[\s-]?screen)\b",
+            s))
+        if product:
+            return "Glance"
+        if not idiom and re.search(r"\bglance\b.{0,100}\b(?:motorola|xiaomi|samsung|realme)\b"
+                                   r"|\b(?:motorola|xiaomi|samsung|realme)\b.{0,100}\bglance\b", s):
+            return "Glance"
+    if re.search(r"\block[\s-]?screen\s+(?:ads?|advertis\w*)\b", s):
         return "Industry"
     return None
 
