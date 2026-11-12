@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T01:42:55Z",
+  "updated_at": "2026-11-12T01:44:08Z",
   "backfill": {},
   "items": [
     {
@@ -650,6 +650,18 @@
         "Reddit posts r/xiaomi: HTTP 422",
         "Reddit posts r/realme: HTTP 422",
         "Reddit comments r/xiaomi: HTTP 422"
+      ]
+    },
+    {
+      "at": "2026-11-12T01:44:08Z",
+      "sources_ok": 19,
+      "sources_total": 21,
+      "new": 0,
+      "errors": [
+        "Reddit posts r/motorola: HTTP 422",
+        "posts r/realme: keyword timeout; recent-only fallback",
+        "Reddit comments r/realme: HTTP 422",
+        "comments r/AndroidQuestions: keyword timeout; recent-only fallback"
       ]
     }
   ]
