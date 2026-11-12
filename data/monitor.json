@@ -1,7 +1,35 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T01:45:27Z",
-  "backfill": {},
+  "updated_at": "2026-11-12T01:52:17Z",
+  "backfill": {
+    "start": "2022-01",
+    "last_attempt": "2026-11-12T01:53:22Z",
+    "total_windows": 295,
+    "completed_windows": 2,
+    "completed": [
+      "2022-01/comments/motorola/body/Glance",
+      "2022-01/comments/xiaomi/body/Glance"
+    ],
+    "attempts": {
+      "2022-01/posts/motorola/title/Glance": 1,
+      "2022-01/posts/xiaomi/title/Glance": 1,
+      "2022-01/posts/androidapps/title/Unity Aura": 1,
+      "2023-01/posts/motorola/title/Glance": 1,
+      "2023-01/comments/motorola/body/Glance": 1,
+      "2023-01/posts/xiaomi/title/Glance": 1
+    },
+    "saturated": [],
+    "errors": [
+      "2022-01/posts/motorola/title/Glance: HTTP 422",
+      "2022-01/posts/xiaomi/title/Glance: HTTP 422",
+      "2022-01/posts/androidapps/title/Unity Aura: HTTP 422",
+      "2023-01/posts/motorola/title/Glance: HTTP 422",
+      "2023-01/comments/motorola/body/Glance: HTTP 422",
+      "2023-01/posts/xiaomi/title/Glance: HTTP 429",
+      "Rate limit: stopped archive requests"
+    ],
+    "note": "Historical Reddit archive, sampled queries; coverage is incomplete and may be delayed."
+  },
   "items": [
     {
       "id": "reddit:c:19se1bj2ihzr9",
@@ -586,6 +614,78 @@
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
       "classifier": "v2-vader-rules"
+    },
+    {
+      "id": "reddit:c:hsxeo1j",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2022-01-16T18:07:59Z",
+      "first_seen": "2026-11-12T01:53:22Z",
+      "title": "You just need to turn off 'MI glance' in lock screen settings. That will do the job. Tell me if that dosent fix your phone.",
+      "excerpt": "You just need to turn off 'MI glance' in lock screen settings. That will do the job. Tell me if that dosent fix your phone.",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/s5fgad/_/hsxeo1j/",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules",
+      "community": "r/Xiaomi",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:hrtr35r",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2022-01-08T21:14:59Z",
+      "first_seen": "2026-11-12T01:53:22Z",
+      "title": "which phone do you have? is it on lockscreen? if yes, then in Settings app go to Lockscreen then in 'Glance for Mi' and turn it off or might be some option of wallpaper c…",
+      "excerpt": "which phone do you have? is it on lockscreen? if yes, then in Settings app go to Lockscreen then in 'Glance for Mi' and turn it off or might be some option of wallpaper carousel, turn it off",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/rz75kw/_/hrtr35r/",
+      "sentiment": "positive",
+      "score": 0.47,
+      "topic": "コンテンツ",
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v2-vader-rules",
+      "community": "r/Xiaomi",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:hrtarsl",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2022-01-08T19:26:03Z",
+      "first_seen": "2026-11-12T01:53:22Z",
+      "title": "it is under Settings>Lock Screen>Glance or Wallpaper Carousel From There You Can Disable It",
+      "excerpt": "it is under Settings>Lock Screen>Glance or Wallpaper Carousel From There You Can Disable It",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/ryzoed/_/hrtarsl/",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules",
+      "community": "r/Xiaomi",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:hrrxgp3",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2022-01-08T13:39:07Z",
+      "first_seen": "2026-11-12T01:53:22Z",
+      "title": "Settings>Apps> search either wallpaper carousel or glance. If you can't see it in apps press on the three dots and choose see all apps. Once you find either uninstall or …",
+      "excerpt": "Settings>Apps> search either wallpaper carousel or glance. If you can't see it in apps press on the three dots and choose see all apps. Once you find either uninstall or force stop it.",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/ryzoed/_/hrrxgp3/",
+      "sentiment": "neutral",
+      "score": -0.296,
+      "topic": "勝手に有効化",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules",
+      "community": "r/Xiaomi",
+      "via": "Arctic Shift"
     }
   ],
   "daily": [
@@ -673,6 +773,19 @@
         "posts r/motorola: keyword timeout; recent-only fallback",
         "posts r/xiaomi: keyword timeout; recent-only fallback",
         "Reddit posts r/realme: HTTP 422"
+      ]
+    },
+    {
+      "at": "2026-11-12T01:52:17Z",
+      "sources_ok": 19,
+      "sources_total": 21,
+      "new": 0,
+      "errors": [
+        "Reddit posts r/motorola: HTTP 422",
+        "Reddit posts r/xiaomi: HTTP 422",
+        "posts r/realme: keyword timeout; recent-only fallback",
+        "comments r/realme: keyword timeout; recent-only fallback",
+        "comments r/AndroidQuestions: keyword timeout; recent-only fallback"
       ]
     }
   ]
