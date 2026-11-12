@@ -74,11 +74,34 @@ class SentimentAndHistoryTests(unittest.TestCase):
             return json.dumps({"data":[{"id":"abc123","subreddit":"motorola",
                 "title":"Glance lock screen ads","created_utc":1641023472}]}).encode()
         with patch("backfill.collector.get",side_effect=fetch):
-            items,saturated=backfill.get_reddit(task,observed)
+            items,has_more,cursor=backfill.get_reddit(task,observed)
         self.assertEqual(len(items),1)
         self.assertEqual(items[0]["published_at"][:4],"2022")
-        self.assertFalse(saturated)
+        self.assertFalse(has_more)
+        self.assertEqual(cursor["mode"],"unfiltered")
         self.assertEqual(len(seen),2)
+
+    def test_backfill_checkpoint_resumes_after_full_page(self):
+        observed=datetime(2026,11,12,tzinfo=timezone.utc)
+        task=("2022-01/posts/motorola/title/Glance",2022,1,"posts","motorola","title","Glance")
+        calls=[]
+        def fake_request(typ,params):
+            calls.append(params.get("after"))
+            if len(calls)==1:
+                return [{"id":format(100000+i,"x"),"subreddit":"motorola",
+                    "title":"Glance ads on Motorola","created_utc":1641023472+i}
+                    for i in range(50)]
+            return [{"id":"abc999","subreddit":"motorola",
+                "title":"Glance ads on Motorola","created_utc":1641023530}]
+        with patch("backfill.request",side_effect=fake_request):
+            first,more,cursor=backfill.get_reddit(task,observed)
+            second,more2,_=backfill.get_reddit(task,observed,cursor)
+        self.assertTrue(more)
+        self.assertEqual(cursor["after"],1641023522)
+        self.assertEqual(len(first),50)
+        self.assertFalse(more2)
+        self.assertEqual(len(second),1)
+        self.assertEqual(calls[1],1641023522)
 
     def test_first_backfill_batch_covers_multiple_years(self):
         now=datetime(2026,11,12,tzinfo=timezone.utc)
