@@ -2,73 +2,91 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Glance、Unity Auraなどのロック画面広告に対する公開ユーザー投稿の分析ダッシュボード">
-  <title>Lockscreen Insights</title>
+  <meta name="description" content="GlanceやUnity Auraのロック画面広告に対する反応を継続収集する分析ダッシュボード">
+  <title>Lockscreen Monitor — Dashboard</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app">
-    <header class="top">
-      <div class="brand"><span class="brand-mark">◫</span> lockscreen<span class="brand-light">/ insights</span></div>
-      <span class="update"><span class="status-dot"></span><span id="updated">データを読み込み中</span></span>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-icon">◫</div><div>Lockscreen <span>Monitor</span></div></div>
+    <div class="nav-label">WORKSPACE</div>
+    <nav class="navigation" aria-label="メインメニュー">
+      <a class="nav-link active" href="#overview"><span>▦</span> Overview</a>
+      <a class="nav-link" href="#mentions"><span>☷</span> 投稿一覧</a>
+      <a class="nav-link" href="#collection"><span>◷</span> 収集状況</a>
+    </nav>
+    <div class="sidebar-footer">
+      <span class="tiny-dot"></span> Daily automation
+      <div class="sidebar-sub">GitHub Actions / JST 08:17頃</div>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <span class="breadcrumb">Workspace <span class="slash">/</span> <strong>Overview</strong></span>
+      <div class="synced"><span class="tiny-dot" id="sync-dot"></span><span id="updated">データ読み込み中</span></div>
     </header>
-    <main>
-      <div class="heading">
-        <div><div class="overline">PUBLIC CONVERSATION MONITOR</div><h1>ロック画面広告への反応</h1>
-          <p>Glance・Unity Auraなどに関する公開投稿。意見の傾向と、その根拠を確認できます。</p></div>
+    <main class="main" id="overview">
+      <div class="page-title"><div><h1>Sentiment dashboard</h1><p>ロック画面広告に関する公開ユーザー投稿</p></div><span class="refresh-tag">自動更新・日次</span></div>
+      <div class="filterbar">
+        <label>対象期間<select id="period"><option value="all">全期間</option><option value="year">過去12か月</option><option value="90">過去90日</option><option value="30">過去30日</option></select></label>
+        <label>サービス<select id="brand"><option value="">すべて</option><option>Glance</option><option>Unity Aura</option><option>Industry</option></select></label>
+        <label>情報源<select id="source"><option value="">すべて</option><option>Reddit</option><option>Bluesky</option><option>Hacker News</option><option>Google News RSS</option></select></label>
       </div>
-      <div class="controls" aria-label="分析条件">
-        <label>期間 <select id="period"><option value="all">全期間</option><option value="year">過去1年</option><option value="90">過去90日</option><option value="30">過去30日</option></select></label>
-        <label>サービス <select id="brand"><option value="">すべて</option><option>Glance</option><option>Unity Aura</option><option>Industry</option></select></label>
-        <label>情報源 <select id="source"><option value="">すべて</option><option>Reddit</option><option>Bluesky</option><option>Hacker News</option><option>Google News RSS</option></select></label>
-      </div>
-      <div class="notice" id="coverage">収集状況を確認中</div>
-      <section class="kpis" aria-label="集計指標">
-        <div class="kpi"><span>ユーザーの声</span><strong id="total">—</strong><small>取得できた公開投稿数</small></div>
-        <div class="kpi"><span>ネガティブ</span><strong id="negative" class="negative-text">—</strong><small id="negative-detail">—</small></div>
-        <div class="kpi"><span>ポジティブ</span><strong id="positive" class="positive-text">—</strong><small id="positive-detail">—</small></div>
-        <div class="kpi"><span>中立・判定保留</span><strong id="other">—</strong><small>感情を断定しない投稿</small></div>
+      <section class="stats" aria-label="投稿の感情分類">
+        <div class="stat"><div class="stat-heading">収集した投稿 <span class="stat-icon">☷</span></div><div class="stat-number" id="total">—</div><div class="stat-caption">対象期間のユーザー投稿</div></div>
+        <div class="stat"><div class="stat-heading">ポジティブ <span class="indicator positive"></span></div><div class="stat-number positive-text" id="positive">—</div><div class="stat-caption" id="positive-detail">全投稿に対する割合</div></div>
+        <div class="stat"><div class="stat-heading">ネガティブ <span class="indicator negative"></span></div><div class="stat-number negative-text" id="negative">—</div><div class="stat-caption" id="negative-detail">全投稿に対する割合</div></div>
+        <div class="stat"><div class="stat-heading">中立・判定保留 <span class="indicator neutral"></span></div><div class="stat-number" id="other">—</div><div class="stat-caption">感情を断定しない投稿</div></div>
       </section>
-      <section class="summary" aria-label="重要な気づき">
-        <div class="summary-icon" aria-hidden="true">i</div>
-        <div><strong id="insight">何が話題になっている？</strong><p id="insight-detail">データ収集後に反応を要約します。</p></div>
+      <section class="charts" aria-label="分析チャート">
+        <article class="panel trends-panel">
+          <div class="panel-heading"><div><h2>Sentiment trend</h2><p>投稿日時別のポジティブ・ネガティブ件数</p></div><span class="chart-tag" id="chart-granularity">四半期別</span></div>
+          <div class="legend"><span><i class="swatch positive"></i>ポジティブ</span><span><i class="swatch negative"></i>ネガティブ</span></div>
+          <div class="trend-chart"><svg id="trend" viewBox="0 0 720 244" role="img" aria-label="ポジティブ・ネガティブ件数の時系列"></svg></div>
+          <p class="panel-footnote">取得できた投稿のみを集計。履歴未収集の期間は実際の投稿数を表しません。</p>
+        </article>
+        <article class="panel balance-panel">
+          <div class="panel-heading"><div><h2>Sentiment distribution</h2><p>取得したユーザー投稿の内訳</p></div></div>
+          <div class="balance-total"><strong id="balance-total">—</strong><span>posts analyzed</span></div>
+          <div class="distribution" id="distribution" role="img" aria-label="ポジティブ・ネガティブ・中立保留の構成比"></div>
+          <div class="breakdown">
+            <div><span><i class="swatch positive"></i>ポジティブ</span><strong id="dist-pos">—</strong></div>
+            <div><span><i class="swatch negative"></i>ネガティブ</span><strong id="dist-neg">—</strong></div>
+            <div><span><i class="swatch neutral"></i>中立・判定保留</span><strong id="dist-other">—</strong></div>
+          </div>
+          <div class="source-block">
+            <h3>情報源別の投稿数</h3>
+            <div id="sources" class="source-bars"></div>
+          </div>
+        </article>
       </section>
-      <div class="analytics">
-        <section class="panel">
-          <div class="panel-heading"><div><h2>ポジ・ネガの推移</h2><p>投稿日時による集計。収集されなかった期間は未観測の可能性があります。</p></div></div>
-          <div class="legend"><span><i class="legend-dot negative"></i>ネガティブ</span><span><i class="legend-dot positive"></i>ポジティブ</span><span><i class="legend-dot neutral"></i>中立・判定保留</span></div>
-          <div class="chart"><svg id="trend" viewBox="0 0 690 240" role="img" aria-label="期間別の感情分類投稿数"></svg></div>
-          <div class="no-data" id="trend-empty" hidden>対象期間の投稿がありません</div>
-        </section>
-        <section class="panel">
-          <div class="panel-heading"><div><h2>ネガティブな反応の原因</h2><p>不満を表す投稿に多い話題</p></div></div>
-          <div class="topics" id="topics"><p class="muted">データを読み込み中</p></div>
-          <p class="footnote">複数の不満が混在する投稿は、主要な話題を1つ表示しています。</p>
-        </section>
-      </div>
-      <section class="panel table-panel">
-        <div class="table-heading"><div><h2>実際のユーザーの声</h2><p>判定結果を元投稿と照合できます。新しい順に表示。</p></div><span id="results" class="result-total">— 件</span></div>
+      <section class="panel feed" id="mentions">
+        <div class="panel-heading table-head"><div><h2>Recent mentions</h2><p>分類された投稿の一覧</p></div><span id="results" class="result-count">— posts</span></div>
         <div class="table-tools">
-          <div class="segmented" role="group" aria-label="感情分類">
+          <div class="segments" role="group" aria-label="感情フィルター">
             <button class="active" type="button" data-tone="all">すべて</button>
-            <button type="button" data-tone="negative">ネガティブ</button>
             <button type="button" data-tone="positive">ポジティブ</button>
+            <button type="button" data-tone="negative">ネガティブ</button>
             <button type="button" data-tone="neutral">中立・保留</button>
           </div>
-          <input id="query" type="search" aria-label="投稿を検索" placeholder="投稿を検索">
-          <select id="kind" aria-label="投稿の種類"><option value="reaction">ユーザー投稿</option><option value="news">ニュース記事</option></select>
+          <input id="query" type="search" placeholder="投稿内容を検索" aria-label="投稿を検索">
+          <select id="kind" aria-label="表示種類"><option value="reaction">ユーザー投稿</option><option value="news">ニュース記事</option></select>
         </div>
-        <div class="table-scroll"><table><thead><tr><th>評価</th><th>投稿の内容・話題</th><th>情報源</th><th>投稿日</th><th aria-label="元投稿">リンク</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="table-empty">読み込み中</td></tr></tbody></table></div>
+        <div class="table-scroll"><table><thead><tr><th>感情</th><th>投稿</th><th>サービス / 情報源</th><th>投稿日</th><th>元投稿</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">読み込み中</td></tr></tbody></table></div>
         <div class="table-bottom"><span id="shown"></span><button id="more" type="button" hidden>さらに表示</button></div>
       </section>
-      <footer>判定方式：ローカルのVADER＋ドメインルール（自動推定）。英語以外・皮肉・文脈の判定は不正確になり得ます。<br>
-        収集元：Reddit（Arctic Shift）、Bluesky、Hacker News、Google News RSS。情報源には偏り・欠落があり、全ユーザーの評判を代表しません。<br>
-        <span id="footer-date"></span></footer>
+      <section class="collection-strip" id="collection">
+        <div><strong>収集ステータス</strong><p id="coverage">取得状況を確認中…</p></div>
+        <div class="progress-wrap"><div class="progress"><div id="backfill-progress"></div></div><span id="backfill-fraction">— / —</span></div>
+      </section>
+      <footer>分類：VADER＋独自ルールによる推定。サンプリング・言語・皮肉による誤判定があります。<span id="footer-date"></span></footer>
     </main>
   </div>
-  <script defer src="./app.js"></script>
+</div>
+<script src="./app.js" defer></script>
 </body>
 </html>
