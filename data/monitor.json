@@ -1,7 +1,20 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T01:11:05Z",
+  "updated_at": "2026-11-12T01:15:02Z",
   "items": [
+    {
+      "id": "reddit:c:19se1bj2ihzr9",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-09T19:14:12Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "1. Disable Glance in settings. Do it after everytime you restart. 2. Disable/uninstall every Motorola AI related applications. 3. I personally uninstalled Indus store or …",
+      "excerpt": "1. Disable Glance in settings. Do it after everytime you restart. 2. Disable/uninstall every Motorola AI related applications. 3. I personally uninstalled Indus store or something(if you are from India) - my personal preference. These 3 major changes…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xrxvqe/_/19se1bj2ihzr9/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
     {
       "id": "bsky:at://did:plc:elm4uz3xagykz66qcze2772d/app.bsky.feed.post/3mzvfqsfq3c24",
       "source": "Bluesky",
@@ -91,6 +104,19 @@
       "url": "https://bsky.app/profile/did:plc:2cgvoarixmr367a7a4rqpr5k/post/3mzjabcrzuc2c"
     },
     {
+      "id": "reddit:c:19s57prdupk01",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-04T20:33:27Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Is it from the Motorola Glance app?",
+      "excerpt": "Is it from the Motorola Glance app?",
+      "url": "https://www.reddit.com/r/motorola/comments/1xnz0ys/_/19s57prdupk01/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "bsky:at://did:plc:diwavkkkn65d7ptmfk7ugqld/app.bsky.feed.post/3mziqlxr64yon",
       "source": "Bluesky",
       "brand": "Industry",
@@ -113,6 +139,84 @@
       "url": "https://bsky.app/profile/did:plc:acihu3jkgtmx4ihiad4jdp5u/post/3mzfyqbafea2q"
     },
     {
+      "id": "reddit:c:19s1wmdvm5tdv",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-03T00:03:21Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Hello u/DakotaC0x! You're certainly not alone in this struggle. Many Motorola users face similar frustrations. Both Glance and carrier/preloaded content aggregators (like…",
+      "excerpt": "Hello u/DakotaC0x! You're certainly not alone in this struggle. Many Motorola users face similar frustrations. Both Glance and carrier/preloaded content aggregators (like MyHub/MySites) are infamous for behaving like semi-embedded adware. They utiliz…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xjla2a/_/19s1wmdvm5tdv/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19s1wfpgghw69",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-02T23:59:12Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Hello u/Conscious-Image3445! We're truly sorry to learn about the lock screen ads troubling your device. Here's a concise and straightforward guide to help you remove the…",
+      "excerpt": "Hello u/Conscious-Image3445! We're truly sorry to learn about the lock screen ads troubling your device. Here's a concise and straightforward guide to help you remove the Glance lock screen ads: **The App-Level Lockdown** \\-Navigate to Settings > App…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xjnyiq/_/19s1wfpgghw69/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19s1v2i84z5ds",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-02T23:28:33Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Hi u/Apart-Tower-8974! At first glance, this might seem counterintuitive—how can one possibly engage in an online game while in Airplane Mode? However, when you consider …",
+      "excerpt": "Hi u/Apart-Tower-8974! At first glance, this might seem counterintuitive—how can one possibly engage in an online game while in Airplane Mode? However, when you consider how Motorola’s Turbo Mode (or specialized gaming network boosters and accelerati…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xk1r06/_/19s1v2i84z5ds/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19s1iais3yxcy",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-02T18:42:05Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "If you don't remember installing a new app with Overlay permissions and you didn't add a Wallpaper Service, it's likely a carrier installed app. Especially if you recentl…",
+      "excerpt": "If you don't remember installing a new app with Overlay permissions and you didn't add a Wallpaper Service, it's likely a carrier installed app. Especially if you recently updated your device. It's probably Glance, but use Google to research what car…",
+      "url": "https://www.reddit.com/r/AndroidQuestions/comments/1xm1lm0/_/19s1iais3yxcy/",
+      "community": "r/AndroidQuestions",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19s09zvmkdp1g",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-02T02:08:58Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Glance. I removed it. If you search Reddit for remove glance Motorola you will find the way to do it. All on device. No computer needed.",
+      "excerpt": "Glance. I removed it. If you search Reddit for remove glance Motorola you will find the way to do it. All on device. No computer needed.",
+      "url": "https://www.reddit.com/r/motorola/comments/1xlkrxk/_/19s09zvmkdp1g/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19rynqzdo1nj9",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-01T04:23:03Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Download canta and shizuku off the Internet and you can uninstall glance and MyHub. Myhub was what was responsible for putting ads on my lockscreen personally but in my r…",
+      "excerpt": "Download canta and shizuku off the Internet and you can uninstall glance and MyHub. Myhub was what was responsible for putting ads on my lockscreen personally but in my research I saw many claiming it was a bunch of different ones.",
+      "url": "https://www.reddit.com/r/motorola/comments/1xf6rgj/_/19rynqzdo1nj9/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "bsky:at://did:plc:dzufdyy7kc44ps55xqbtyvia/app.bsky.feed.post/3mz6cx4cehz2f",
       "source": "Bluesky",
       "brand": "Glance",
@@ -133,6 +237,123 @@
       "title": "**disables glance on Android to avoid ads and stupid crap causing lock screen to be super slow** **Android - reenables a day later** 😵‍💫",
       "excerpt": "**disables glance on Android to avoid ads and stupid crap causing lock screen to be super slow** **Android - reenables a day later** 😵‍💫",
       "url": "https://bsky.app/profile/did:plc:bnmespvrpp5xgxkkhxzwjhbt/post/3mz4s6qqp322l"
+    },
+    {
+      "id": "reddit:c:19rwej6cvpg91",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-30T22:02:10Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Hi u/Ssj3goku504! We truly empathize with your frustration. You chose a Motorola device for its clean and seamless software experience, so it's understandably irritating …",
+      "excerpt": "Hi u/Ssj3goku504! We truly empathize with your frustration. You chose a Motorola device for its clean and seamless software experience, so it's understandably irritating to have unwanted lock screen content like Glance appearing on your display. Sinc…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xiuqsf/_/19rwej6cvpg91/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19rw6qibf8sh1",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-30T19:07:22Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Well I know it re-enables itself but the pop-up ads would appear while it was disabled. It doesn't matter if I reboot, I get the pop-up then check the app and it's disabl…",
+      "excerpt": "Well I know it re-enables itself but the pop-up ads would appear while it was disabled. It doesn't matter if I reboot, I get the pop-up then check the app and it's disabled. I think at least some of the pop-ups are just fully baked into Motorola Edit…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xjnyiq/_/19rw6qibf8sh1/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19rw5njucu4g3",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-30T18:43:06Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "You can use the Shizuku + Canta apps to completely uninstall them and any other system app. There are guides if it want to look them up. Also, look up how to enable Devel…",
+      "excerpt": "You can use the Shizuku + Canta apps to completely uninstall them and any other system app. There are guides if it want to look them up. Also, look up how to enable Developer Options on Motorola. After doing that, connect Shizuku to Wireless Debuggin…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xjla2a/_/19rw5njucu4g3/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19rw0lfh3ssf9",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-30T16:49:41Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Hello u/isaiahHat! We're truly sorry to learn about the issues you're experiencing with your lock screen. We're here to assist you. The pop-up asking \"What is your sign?\"…",
+      "excerpt": "Hello u/isaiahHat! We're truly sorry to learn about the issues you're experiencing with your lock screen. We're here to assist you. The pop-up asking \"What is your sign?\" along with the updated lock screen is linked to an application called MyHub (pr…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xjdvpi/_/19rw0lfh3ssf9/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19ruro0gchp8g",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-30T00:02:23Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Lol it's only for the cheaper models. Motorola does not have glance in any of its flagship devices like the Signature and Ultra. The \"Glance\" whatever it is NOT installed…",
+      "excerpt": "Lol it's only for the cheaper models. Motorola does not have glance in any of its flagship devices like the Signature and Ultra. The \"Glance\" whatever it is NOT installed in any flagship Moto devices. Maybe he bought a USD200 Moto phone.",
+      "url": "https://www.reddit.com/r/motorola/comments/1xij12p/_/19ruro0gchp8g/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19ruq9orfxlhf",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-29T23:31:02Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Shoot I could send you screenshots every time I delete it. And here it is again. I disable Glance and disable updates next thing I know it's back on my lock screen",
+      "excerpt": "Shoot I could send you screenshots every time I delete it. And here it is again. I disable Glance and disable updates next thing I know it's back on my lock screen",
+      "url": "https://www.reddit.com/r/motorola/comments/1xij12p/_/19ruq9orfxlhf/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19ruityg86i69",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-29T20:44:18Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Well, it's a matter of experience, not just opinion. You seem to have one experience and I another, and that's okay. This phone, for me, someone that's had many phones an…",
+      "excerpt": "Well, it's a matter of experience, not just opinion. You seem to have one experience and I another, and that's okay. This phone, for me, someone that's had many phones and is typically savvy with this stuff and knows to go through settings too and th…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xims6w/_/19ruityg86i69/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19ru8ubsgjszl",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-29T17:00:20Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "I've had the edge 2025 for around 1 year now and I've been loving it. Did a lot of debloating when I first got it because I knew Motorola has a reputation for adding bloa…",
+      "excerpt": "I've had the edge 2025 for around 1 year now and I've been loving it. Did a lot of debloating when I first got it because I knew Motorola has a reputation for adding bloatware/adware into their phones. Some things that helped me... \\- Uninstall prein…",
+      "url": "https://www.reddit.com/r/motorola/comments/1xims6w/_/19ru8ubsgjszl/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19ru76br296ys",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-29T16:22:58Z",
+      "first_seen": "2026-11-12T01:15:02Z",
+      "title": "Same but 25 Ultra, no glance app, annoy news, ads or bloat aside from Moto Apps which is fine. 512 GB strorge, they don't really get in the way or interfere with the use …",
+      "excerpt": "Same but 25 Ultra, no glance app, annoy news, ads or bloat aside from Moto Apps which is fine. 512 GB strorge, they don't really get in the way or interfere with the use of the phone.",
+      "url": "https://www.reddit.com/r/motorola/comments/1xims6w/_/19ru76br296ys/",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
     },
     {
       "id": "news:2d7250abf21d54fbe4880b0f",
@@ -206,7 +427,7 @@
   "daily": [
     {
       "date": "2026-11-12",
-      "new_reactions": 14,
+      "new_reactions": 31,
       "new_news": 4
     }
   ],
@@ -228,6 +449,17 @@
         "Reddit comments r/AndroidQuestions: HTTP Error 429: Too Many Requests",
         "Reddit comments r/androidapps: HTTP Error 429: Too Many Requests",
         "Reddit comments r/androidapps: HTTP Error 429: Too Many Requests"
+      ]
+    },
+    {
+      "at": "2026-11-12T01:15:02Z",
+      "sources_ok": 20,
+      "sources_total": 21,
+      "new": 17,
+      "errors": [
+        "Reddit posts r/motorola: HTTP 422",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "posts r/realme: keyword timeout; recent-only fallback"
       ]
     }
   ]
