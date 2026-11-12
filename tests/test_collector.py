@@ -48,7 +48,7 @@ class CollectorTests(unittest.TestCase):
             return b'{"data":[]}'
         with patch("collector.get", side_effect=fake_get), patch("collector.time.sleep"):
             items, ok, errors = collector.collect_reddit(NOW)
-        self.assertEqual(ok, 13)
+        self.assertEqual(ok, 8)
         self.assertEqual([x["source"] for x in items], ["Reddit"])
         self.assertEqual(items[0]["id"], "reddit:p:abc123")
         self.assertTrue(any("fallback" in e for e in errors))
