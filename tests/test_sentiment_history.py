@@ -21,6 +21,15 @@ class SentimentAndHistoryTests(unittest.TestCase):
         self.assertIsNone(collector.brand_for("At a glance I saw annoying Facebook ads on Motorola news."))
         self.assertIsNone(collector.brand_for("An Apple lock screen timer works at a glance without ads."))
         self.assertEqual(collector.brand_for("Remove Glance app lock screen ads from Motorola"),"Glance")
+    def test_glance_on_android_removal_is_relevant(self):
+        self.assertEqual(collector.brand_for("I disabled Glance on Android to avoid ads"), "Glance")
+        self.assertEqual(collector.brand_for("I uninstalled glance because it was annoying my phone"), "Glance")
+        self.assertIsNone(collector.brand_for("People read ads in a glance, even on Android devices"))
+    def test_relevant_excerpt_preserves_late_product_context(self):
+        text = "Normal description. " * 25 + "I disabled Glance on my Android lock screen."
+        excerpt = collector.relevant_excerpt(text, "Glance")
+        self.assertIn("Glance", excerpt)
+        self.assertTrue(excerpt.startswith("…"))
     def test_phone_praise_is_not_glance_praise(self):
         r=sentiment.classify("My Motorola phone is really good after I removed Glance.", brand="Glance")
         self.assertNotEqual(r["sentiment"],"positive")
