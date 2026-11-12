@@ -87,8 +87,10 @@ def classify(text, brand=None):
         target = r"\b(?:glance|unity aura)\b"
         praise = r"\b(?:love|like|useful|helpful|convenient|good|great|nice|awesome|amazing|beautiful|enjoy|better|fantastic|recommend|prefer)\b"
         target_praise = bool(re.search(target+r".{0,70}"+praise+"|"+praise+r".{0,70}"+target, s, re.I))
-        removed_then_improved = bool(re.search(
-            r"\b(?:remove|removed|uninstall|deleted|disable|debloat)\w*\b.{0,80}\b(?:better|good|great|fine|improved)\b", s, re.I))
+        removed_then_improved = bool(
+            re.search(r"\b(?:remove|removed|removing|uninstall|uninstalled|delete|deleted|disable|disabled|debloat|debloated)\b.{0,110}\bglance\b", s, re.I)
+            or re.search(r"\bglance\b.{0,85}\b(?:remove|removed|removing|uninstall|uninstalled|delete|deleted|disable|disabled|debloat|debloated)\b", s, re.I)
+        ) and bool(re.search(r"\b(?:better|good|great|fine|improved|perfectly|faster|love|like|works well)\b", s, re.I))
         if not target_praise or removed_then_improved:
             label, reason = "neutral", "肯定的な表現が対象サービスへの評価とは確認できません"
     return {"sentiment": label, "score": round(compound, 3), "topic": topic,
