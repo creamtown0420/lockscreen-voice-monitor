@@ -18,26 +18,34 @@ function summaries(){
   $('positive-detail').textContent=rated?'明確な評価のうち '+Math.round(counts.positive*100/rated)+'%':'好意的な表現がある投稿';
   const topicCounts={};
   items.filter(x=>tone(x)==='negative').forEach(x=>{const t=x.topic||'その他';topicCounts[t]=(topicCounts[t]||0)+1;});
-  const topics=Object.entries(topicCounts).sort((a,b)=>b[1]-a[1]);
+  const unclassified=topicCounts['その他']||0;
+  const topics=Object.entries(topicCounts).filter(([name])=>name!=='その他').sort((a,b)=>b[1]-a[1]);
   if(topics.length){
-    $('insight').textContent='もっとも多い不満：「'+topics[0][0]+'」';
-    $('insight-detail').textContent='ネガティブ投稿'+fmt(counts.negative)+'件のうち'+fmt(topics[0][1])+'件でこの問題が見られました。自動判定のため元投稿もご確認ください。';
+    $('insight').textContent='多く見られる具体的な不満：「'+topics[0][0]+'」';
+    $('insight-detail').textContent='ネガティブ投稿'+fmt(counts.negative)+'件のうち'+fmt(topics[0][1])+'件で確認された理由です。分類できない投稿'+fmt(unclassified)+'件は別に扱っています。';
+  }else if(counts.negative){
+    $('insight').textContent='否定的な反応はありますが、原因はまだ分類できていません';
+    $('insight-detail').textContent='ネガティブ投稿'+fmt(counts.negative)+'件について、理由の推定が難しいため元投稿の確認が必要です。';
   }else{
     $('insight').textContent='否定的な傾向はまだ十分に観測されていません';
     $('insight-detail').textContent='取得データや分析期間を確認してください。過去データは段階的に取り込んでいます。';
   }
-  drawTopics(topics);drawChart(items);
+  drawTopics(topics,unclassified);drawChart(items);
 }
-function drawTopics(entries){
+function drawTopics(entries,unclassified){
   const root=$('topics');root.replaceChildren();
-  if(!entries.length){root.append(elem('p','muted','分類できるネガティブ投稿がありません。'));return;}
-  const max=entries[0][1];
-  entries.slice(0,6).forEach(([label,value])=>{
-    const row=elem('div','topic-row'),meta=elem('div','topic-meta');
-    meta.append(elem('span','',label),elem('span','num',fmt(value)+' 件'));
-    const bg=elem('div','bar-bg'),bar=elem('div','bar-fill');bar.style.width=100*value/max+'%';bg.append(bar);row.append(meta,bg);root.append(row);
-  });
+  if(!entries.length)root.append(elem('p','muted','具体的に分類できる不満はまだありません。'));
+  else{
+    const max=entries[0][1];
+    entries.slice(0,6).forEach(([label,value])=>{
+      const row=elem('div','topic-row'),meta=elem('div','topic-meta');
+      meta.append(elem('span','',label),elem('span','num',fmt(value)+' 件'));
+      const bg=elem('div','bar-bg'),bar=elem('div','bar-fill');bar.style.width=100*value/max+'%';bg.append(bar);row.append(meta,bg);root.append(row);
+    });
+  }
+  if(unclassified)root.append(elem('p','footnote','原因を分類できなかったネガティブ投稿：'+fmt(unclassified)+'件'));
 }
+
 function groupKey(x,p){
   const d=new Date(x.published_at);if(isNaN(d))return null;
   const y=d.getUTCFullYear(),m=d.getUTCMonth();
