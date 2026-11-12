@@ -2,10 +2,12 @@ name: Collect free sources and publish dashboard
 
 on:
   schedule:
-    - cron: '17 23 * * *' # 08:17 Japan time
+    - cron: '17 23 * * *' # approx. 08:17 JST
   workflow_dispatch:
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/collect-and-publish.yml'
 
 permissions:
   contents: write
@@ -22,33 +24,37 @@ jobs:
     timeout-minutes: 35
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      # Workflow re-runs may check out an outdated commit. Always collect from current main.
-      - name: Sync current main
+      - name: Use latest main (also for manual reruns)
         run: |
           git fetch origin main
           git checkout -B main origin/main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test collector
+      - name: Install no-cost sentiment analyzer
+        run: python -m pip install vaderSentiment==3.3.2
+      - name: Test
         run: python -m unittest discover -s tests -v
-      - name: Collect free sources
+      - name: Collect latest reactions
         run: python collector.py
-      - name: Save observations
+      - name: Expand Reddit historical coverage incrementally
+        env:
+          HISTORY_TASKS_PER_RUN: '20'
+        run: python backfill.py
+      - name: Commit historical observations
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/monitor.json
           if ! git diff --cached --quiet; then
-            git commit -m 'data: refresh public-source observations'
+            git commit -m 'data: update reactions, sentiment and historical coverage'
             git push
           fi
-      - name: Prepare static site
+      - name: Prepare static Pages artifact
         run: |
           mkdir -p site/data
           cp app/index.html app/app.js app/style.css site/
