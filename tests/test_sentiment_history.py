@@ -17,6 +17,16 @@ class SentimentAndHistoryTests(unittest.TestCase):
     def test_positive(self):
         r=sentiment.classify("I love the useful Glance lock screen news.")
         self.assertEqual(r["sentiment"],"positive")
+    def test_at_a_glance_ordinary_english_not_product(self):
+        self.assertIsNone(collector.brand_for("At a glance I saw annoying Facebook ads on Motorola news."))
+        self.assertIsNone(collector.brand_for("An Apple lock screen timer works at a glance without ads."))
+        self.assertEqual(collector.brand_for("Remove Glance app lock screen ads from Motorola"),"Glance")
+    def test_phone_praise_is_not_glance_praise(self):
+        r=sentiment.classify("My Motorola phone is really good after I removed Glance.", brand="Glance")
+        self.assertNotEqual(r["sentiment"],"positive")
+    def test_explicit_glance_praise_is_positive(self):
+        r=sentiment.classify("I love Glance on the lock screen. It's very useful.", brand="Glance")
+        self.assertEqual(r["sentiment"],"positive")
     def test_unscored_description(self):
         r=sentiment.classify("Is this Glance on my Motorola lock screen?")
         self.assertIn(r["sentiment"],["neutral","unclear"])
