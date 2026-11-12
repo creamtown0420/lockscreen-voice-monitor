@@ -73,7 +73,7 @@ function drawChart(items){
       const title=document.createElementNS(ns,'title');title.textContent=r.key+' '+key+' '+r[key]+' 件';rect.append(title);
     }
     const skip=rows.length>18?3:rows.length>11?2:1;
-    if(i%skip===0||i===rows.length-1){
+    if((i%skip===0&&i<rows.length-skip)||i===rows.length-1){
       const label=p==='all'?r.key.replace('-',' '):p==='year'?Number(r.key.slice(5))+'月':r.key.slice(5).replace('-','/');
       add('text',{x:x+width/2,y:218,'text-anchor':'middle','font-size':10,fill:'#8290a1'},label);
     }
