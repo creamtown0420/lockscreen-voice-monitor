@@ -97,7 +97,8 @@ function table(){
     const tr=elem('tr'),a=elem('td'),b=elem('td'),c=elem('td'),d=elem('td'),e=elem('td'),t=isNews?'news':tone(x);
     a.append(elem('span','sentiment-pill '+(t==='news'?'neutral':t),names[t]));
     b.append(elem('div','post-topic',isNews?x.brand:(x.topic||'その他')+' · '+x.brand));
-    b.append(elem('div','post-title',(x.title||x.excerpt||'本文なし').slice(0,280)));
+    const summary=(x.id||'').startsWith('reddit:c:') ? (x.excerpt||x.title) : (x.title||x.excerpt);
+    b.append(elem('div','post-title',(summary||'本文なし').slice(0,340)));
     if(!isNews&&x.reason)b.append(elem('div','post-reason',x.reason));
     c.append(elem('span','source-name',x.source+(x.community?' · '+x.community:'')));
     d.append(elem('span','post-date',shownDate(x.published_at)));
