@@ -1,69 +1,53 @@
-# Lockscreen Insights
+# Lockscreen Monitor
 
-Glance / Unity AuraなどのAndroidロック画面広告に対する公開ユーザーの声を収集する、無料の個人研究向けダッシュボードです。
+**ダッシュボード：** https://creamtown0420.github.io/lockscreen-voice-monitor/
 
-**サイト:** https://creamtown0420.github.io/lockscreen-voice-monitor/
+Glance / Unity Auraなどのロック画面広告に関する公開投稿を、無料の情報源から自動収集する個人向けの分析ダッシュボードです。
 
-## ダッシュボード
+## 画面と集計
 
-- ライトテーマ・シンプルなKPI → 時系列 → 話題別集計 → 元投稿の一覧
-- 投稿をポジティブ / ネガティブ / 中立 / 判定保留に分類
-- 不満の原因を「勝手に有効化」「停止・削除」「広告への不満」「性能・電池」「プライバシー」「コンテンツ」等に分類
-- サービス別、情報源別、期間別、感情別、キーワード検索
-- ニュース記事は**ユーザーの感情割合から除外**。元投稿は出典をクリックして確認できます。
+- サイドバー、4つのKPI（総数・ポジ・ネガ・中立/保留）、時系列、感情構成比、取得元内訳、投稿検索テーブルというシンプルな構成
+- 期間・サービス・情報源・感情で絞り込み。閲覧中も30分ごと、タブ復帰時にデータを読み直します
+- ニュースは別表示で、ユーザー投稿の感情割合には含めません
+- 感情の割合は「取得できたユーザー投稿」を分母とします。世論調査や全ユーザーの満足度ではありません
 
-感情の分類はPythonの無料ローカルライブラリ[VADER](https://github.com/cjhutto/vaderSentiment)＋専用ルールです。無料APIキーは不要です。英語が中心で、皮肉や外国語の判定には限界があります。中立・判定保留を無理にポジティブ／ネガティブへ含めません。
+## VADERによる無料の感情分析
 
-## 情報源と更新
+sentiment.py は、SNS向けの無料辞書・ルールベースライブラリ VADER 3.3.2 と独自のルールで、肯定・否定・中立・判定保留を推定します。VADERは生成AIではありません。
 
-- Reddit: [Arctic Shift](https://github.com/ArthurHeitmann/arctic_shift) の公開アーカイブ（投稿＋コメント）
-- Bluesky: 認証不要の公開検索API
-- Hacker News: Algolia検索API
-- Google News: RSS（意見とは別カテゴリ）
-- Xは使用しません。
+- VADERの compound は −1〜+1。明確な独自キーワードがなければ、現在は −0.45以下を否定、+0.55以上を肯定に分類
+- hate、annoying、re-enableなど独自ルールで不満表現を追加
+- サポートの定型返信やスマホ本体への肯定評価を、Glanceへの肯定的意見と誤認しないよう補正
+- 英語以外、皮肉、長文の文脈判断などに限界があります。投稿の評価は必ず元投稿で確認できます
 
-GitHub Actionsで毎日**日本時間08:17頃**に収集します。スケジュールはGitHub側で遅れることがあります。
+## 毎日の自動収集
 
-## Redditの過去データ：2022年〜
+情報源は Reddit（Arctic Shift）、Bluesky、Hacker News、Google News RSS。Xは使用しません。
 
-\`backfill.py\` によって、2022年1月から現在までを**年月×サブレディット×投稿/コメント種別**に分割し、日々段階的に追加します。直近の更新は\`collector.py\`が別に行います。過去データは30日で削除せず保存を継続します。
+GitHub Actionsが毎日**日本時間08:17頃**に、新着取得 → VADER分類 → 過去データ追加 → 重複排除と保存 → Pages公開を実行します。時刻の遅れ・スキップはGitHub側の仕様です。Actionsから手動実行もできます。
 
-- バックフィル1回につき最大20検索窓。データ量やタイムアウト次第で完成まで数日〜数週間かかります。
-- 先に異なる年の検索窓を試し、年をまたぐ傾向も早めに確認できる構成です。
-- 取得元は第三者の無保証アーカイブであり、**欠落・タイムアウト・検索上限に達した範囲**があります。履歴全件の網羅性は保証しません。進捗表示は検索窓の完了数であって、収集済み投稿の割合ではありません。
-- キーワード検索がタイムアウトした場合、投稿については日付指定のページング（最大3ページ）で補完します。上限まで達した月はサンプリング扱いで、完全収集済みとはみなしません。
-- サーバーへの過剰な負荷を避けるため、リクエスト間に待機時間を設け、429が来たら打ち切ります。
-- 公開された投稿に過度に依存した一般化を避け、指標は**取得したサンプルの内訳**として表示します。
+## 2022年以降のReddit履歴
 
-## GitHub Pages設定
+backfill.pyは年月・subreddit・投稿/コメント別の検索範囲で過去データを追加し、1回につき最大20検索範囲を処理します。
 
-Settings → Pages → Build and deployment → Source = **GitHub Actions** に設定します。
+- 結果が上限件数に達した検索範囲は**収集完了とみなさず**、次回の取得開始時刻（checkpoint）を記録して翌日以降に続きを取得
+- 過去バージョンで誤って完了扱いにした上限到達範囲も再開対象に戻す
+- 期限で投稿を削除せず、IDで重複排除。検索失敗時は再試行対象として残し、HTTP 429ならその日の履歴検索を停止
+- アーカイブのクエリが遅い場合は、投稿の日時指定検索に切り替えてPython側で絞り込む
+- 検索完了を示す進捗は**Reddit全投稿の取得率ではありません**。アーカイブの欠落、検索タイムアウト、同じ秒に投稿されたデータの取りこぼしは残り得ます
 
-Actions → Collect free sources and publish dashboard → Run workflow で手動起動も可能です。
+## 開発・動作確認
 
-## 開発・テスト
+Python 3.10以降。追加パッケージは vaderSentiment 3.3.2 です。ローカルでは以下を実行します。
 
-Python 3.10以上、追加依存はVADERのみ（未導入時はドメインルールによる分類のみ）。
+    python -m pip install vaderSentiment==3.3.2
+    python -m unittest discover -s tests -v
+    python collector.py
+    python backfill.py
+    mkdir -p app/data
+    cp data/monitor.json app/data/monitor.json
+    python -m http.server 8000 --directory app
 
-\`\`\`bash
-python -m pip install vaderSentiment==3.3.2
-python -m unittest discover -s tests -v
-python collector.py
-python backfill.py
-mkdir -p app/data
-cp data/monitor.json app/data/monitor.json
-python -m http.server 8000 --directory app
-\`\`\`
+主要ファイル：collector.py（新着）、sentiment.py（分類）、backfill.py（履歴）、data/monitor.json（データと進捗）、app/（表示）、.github/workflows/collect-and-publish.yml（日次実行）。
 
-- \`collector.py\`：直近の投稿取得・重複排除・スコア付与
-- \`sentiment.py\`：ルールとVADERによるトピック・感情分類
-- \`backfill.py\`：Redditの段階的な過去投稿の追加
-- \`data/monitor.json\`：公開された収集データ
-- \`app/\`：静的ダッシュボード
-- \`.github/workflows/collect-and-publish.yml\`：収集・テスト・GitHub Pages公開
-
-## データの扱いと公開状態
-
-**GitHub Pagesもこのリポジトリも公開状態です。** URLを秘密にしただけではアクセス制限になりません。GitHub Pagesによるパスワード不要の「秘密のURL」制限は実装されていません。
-
-公開データには投稿の短い抜粋と元投稿リンクを含み、作者名は保存しません。古い抜粋はGit履歴に残る可能性があります。削除要求対応やデータの再利用条件・利用規約の確認などが必要なため、研究・実験用途にとどめ、本格運用前には公開Git履歴へ投稿テキストを残さない方式に移してください。
+**重要：GitHub Pagesおよびリポジトリは公開です。** 秘密のURLによるアクセス制限はまだ実装していません。データの抜粋はGit履歴に残るため、削除要求や再利用条件への対応が必要です。
