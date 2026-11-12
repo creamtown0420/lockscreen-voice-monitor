@@ -1,6 +1,9 @@
 import unittest
+import json
 from datetime import datetime, timezone, timedelta
 from unittest.mock import patch
+from urllib.error import HTTPError
+from urllib.parse import parse_qs, urlparse
 import backfill
 import collector
 import sentiment
@@ -28,6 +31,24 @@ class SentimentAndHistoryTests(unittest.TestCase):
                           "https://www.reddit.com",then,now,historical=True)
         self.assertIsNotNone(r)
         self.assertEqual(r["published_at"][:4],"2024")
+    def test_historical_keyword_timeout_uses_bounded_fallback(self):
+        observed=datetime(2026,11,12,tzinfo=timezone.utc)
+        task=("2022-01/posts/motorola/title/Glance",2022,1,"posts","motorola","title","Glance")
+        seen=[]
+        def fetch(url,attempts=1):
+            seen.append(url)
+            p=parse_qs(urlparse(url).query)
+            if "title" in p:
+                raise HTTPError(url,422,"timeout",{},None)
+            return json.dumps({"data":[{"id":"abc123","subreddit":"motorola",
+                "title":"Glance lock screen ads","created_utc":1641023472}]}).encode()
+        with patch("backfill.collector.get",side_effect=fetch):
+            items,saturated=backfill.get_reddit(task,observed)
+        self.assertEqual(len(items),1)
+        self.assertEqual(items[0]["published_at"][:4],"2022")
+        self.assertFalse(saturated)
+        self.assertEqual(len(seen),2)
+
     def test_first_backfill_batch_covers_multiple_years(self):
         now=datetime(2026,11,12,tzinfo=timezone.utc)
         jobs=backfill.tasks_for(now)
