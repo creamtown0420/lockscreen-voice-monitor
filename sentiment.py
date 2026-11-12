@@ -6,7 +6,7 @@ The labels are *estimates*, not ground-truth. News is not sentiment scored.
 import re
 from functools import lru_cache
 
-VERSION = "v2-vader-rules"
+VERSION = "v3-vader-rules"
 TOPICS = [
     ("勝手に有効化", [r"\bre[- ]?enable[ds]?\b", r"\bturned on (again|automatically)\b",
                     r"\bwithout (my )?(permission|consent)\b", r"\bforce[ds]?\b",
@@ -61,16 +61,21 @@ def classify(text):
     topic = next((name for name,patterns in _TOPIC if any(p.search(s) for p in patterns)), "その他")
     analyzer = vader()
     compound = analyzer.polarity_scores(s)["compound"] if analyzer else 0.0
-
-    if neg and pos:
+    # Directions, troubleshooting replies and support boilerplate are not
+    # evidence of the writer's own positive/negative experience.
+    support = bool(re.search(r"^(hi|hello)\s+u/|\bwe\s+(truly\s+)?(empathize|understand)\b|\bplease\s+(try|check|go to)\b", s, re.I))
+    instructions = bool(re.search(r"\b(which phone do you have|go to (the )?settings|in settings app|tap (on )?settings|turn it off in settings|you can disable it)\b", s, re.I))
+    if support or (instructions and not neg and not pos):
+        label, reason = "neutral", "操作案内やサポート返信であり、明確な本人の評価ではありません"
+    elif neg and pos:
         label, reason = "unclear", "肯定・否定の両方の表現を含みます"
     elif neg:
         label, reason = "negative", "不満・問題を表す表現が見られます"
     elif pos:
         label, reason = "positive", "好意的な表現が見られます"
-    elif analyzer and compound <= -0.38:
+    elif analyzer and compound <= -0.45:
         label, reason = "negative", "否定的な表現が見られます（VADER推定）"
-    elif analyzer and compound >= 0.38:
+    elif analyzer and compound >= 0.55:
         label, reason = "positive", "好意的な表現が見られます（VADER推定）"
     elif len(re.findall(r"[a-zA-Z]+", s)) < 4 and not re.search(r"[ぁ-んァ-ヶ一-龯]{4,}", s):
         label, reason = "unclear", "感情を判断する言葉が不足しています"
