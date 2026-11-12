@@ -1,6 +1,7 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T01:29:14Z",
+  "updated_at": "2026-11-12T01:42:55Z",
+  "backfill": {},
   "items": [
     {
       "id": "reddit:c:19se1bj2ihzr9",
@@ -13,7 +14,12 @@
       "excerpt": "1. Disable Glance in settings. Do it after everytime you restart. 2. Disable/uninstall every Motorola AI related applications. 3. I personally uninstalled Indus store or something(if you are from India) - my personal preference. These 3 major changes…",
       "url": "https://www.reddit.com/r/motorola/comments/1xrxvqe/_/19se1bj2ihzr9/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:elm4uz3xagykz66qcze2772d/app.bsky.feed.post/3mzvfqsfq3c24",
@@ -24,7 +30,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "there was a thing awhile back where fb would turn people’s ads into AI ads even if the original image wasn’t. so now I know to go to the ad library or whatever to check t…",
       "excerpt": "there was a thing awhile back where fb would turn people’s ads into AI ads even if the original image wasn’t. so now I know to go to the ad library or whatever to check the original and it is a CHOICE for authors to run AI ads and their profile looks…",
-      "url": "https://bsky.app/profile/did:plc:elm4uz3xagykz66qcze2772d/post/3mzvfqsfq3c24"
+      "url": "https://bsky.app/profile/did:plc:elm4uz3xagykz66qcze2772d/post/3mzvfqsfq3c24",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:a6mauud6fursrlmnf2acvt5g/app.bsky.feed.post/3mzvc43kpmc2a",
@@ -35,7 +46,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "i will not be buying another motorola phone after this glance bullshit",
       "excerpt": "i will not be buying another motorola phone after this glance bullshit",
-      "url": "https://bsky.app/profile/did:plc:a6mauud6fursrlmnf2acvt5g/post/3mzvc43kpmc2a"
+      "url": "https://bsky.app/profile/did:plc:a6mauud6fursrlmnf2acvt5g/post/3mzvc43kpmc2a",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:d7yyz6r7wlzlhom57wgc6lzn/app.bsky.feed.post/3mzsthqwwlb24",
@@ -46,7 +62,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Keep words on screen short. People read ads in a glance, not in a sitting.",
       "excerpt": "Keep words on screen short. People read ads in a glance, not in a sitting.",
-      "url": "https://bsky.app/profile/did:plc:d7yyz6r7wlzlhom57wgc6lzn/post/3mzsthqwwlb24"
+      "url": "https://bsky.app/profile/did:plc:d7yyz6r7wlzlhom57wgc6lzn/post/3mzsthqwwlb24",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:tvxmmkqq55yhvi4yna2vzydc/app.bsky.feed.post/3mzscmvmpmh25",
@@ -57,7 +78,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "→ Estos Estos is a Tabata and HIIT timer for iPhone. The classic Tabata is ready on first launch and the digits read at a glance. Cues keep playing with the phone locked.…",
       "excerpt": "→ Estos Estos is a Tabata and HIIT timer for iPhone. The classic Tabata is ready on first launch and the digits read at a glance. Cues keep playing with the phone locked. It is free, with no ads and no account. iCloud sync and Apple Health are planne…",
-      "url": "https://bsky.app/profile/did:plc:tvxmmkqq55yhvi4yna2vzydc/post/3mzscmvmpmh25"
+      "url": "https://bsky.app/profile/did:plc:tvxmmkqq55yhvi4yna2vzydc/post/3mzscmvmpmh25",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:cqlxi6t75ol2stxkjeovcmeo/app.bsky.feed.post/3mzqknypcc22m",
@@ -68,7 +94,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "I keep thinking that Hakeem Jefferies is \"Temu Obama\" - Tries to look statesman-like at first glance on your feed - Ads assure you \"this is what you need\" - manufactured …",
       "excerpt": "I keep thinking that Hakeem Jefferies is \"Temu Obama\" - Tries to look statesman-like at first glance on your feed - Ads assure you \"this is what you need\" - manufactured with compromised standards overseas (AIPAC money) - falls apart in its usefulnes…",
-      "url": "https://bsky.app/profile/did:plc:cqlxi6t75ol2stxkjeovcmeo/post/3mzqknypcc22m"
+      "url": "https://bsky.app/profile/did:plc:cqlxi6t75ol2stxkjeovcmeo/post/3mzqknypcc22m",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:e4ycofcetmux7qfn5bbxrrbs/app.bsky.feed.post/3mzov5batac22",
@@ -79,7 +110,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Commercial-free games plus the full arena experience is a strong pitch. When fans cannot watch, Hoopster keeps live scores and Lock Screen Live Activities a glance away o…",
       "excerpt": "Commercial-free games plus the full arena experience is a strong pitch. When fans cannot watch, Hoopster keeps live scores and Lock Screen Live Activities a glance away on iPhone.",
-      "url": "https://bsky.app/profile/did:plc:e4ycofcetmux7qfn5bbxrrbs/post/3mzov5batac22"
+      "url": "https://bsky.app/profile/did:plc:e4ycofcetmux7qfn5bbxrrbs/post/3mzov5batac22",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:vt3zrruq5umzflhdm7neso7v/app.bsky.feed.post/3mzjrgsz5ys2p",
@@ -90,7 +126,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Thank you! I was only looking at the links in the list above it. The row below that definitely just looked like pop up ads to me at first glance and I never gave it a sec…",
       "excerpt": "Thank you! I was only looking at the links in the list above it. The row below that definitely just looked like pop up ads to me at first glance and I never gave it a second look",
-      "url": "https://bsky.app/profile/did:plc:vt3zrruq5umzflhdm7neso7v/post/3mzjrgsz5ys2p"
+      "url": "https://bsky.app/profile/did:plc:vt3zrruq5umzflhdm7neso7v/post/3mzjrgsz5ys2p",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "広告への不満",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:2cgvoarixmr367a7a4rqpr5k/app.bsky.feed.post/3mzjabcrzuc2c",
@@ -101,7 +142,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "At a glance I was like “why am I getting Facebook ads for fleshlights?” It’s so much worse.",
       "excerpt": "At a glance I was like “why am I getting Facebook ads for fleshlights?” It’s so much worse.",
-      "url": "https://bsky.app/profile/did:plc:2cgvoarixmr367a7a4rqpr5k/post/3mzjabcrzuc2c"
+      "url": "https://bsky.app/profile/did:plc:2cgvoarixmr367a7a4rqpr5k/post/3mzjabcrzuc2c",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19s57prdupk01",
@@ -114,7 +160,12 @@
       "excerpt": "Is it from the Motorola Glance app?",
       "url": "https://www.reddit.com/r/motorola/comments/1xnz0ys/_/19s57prdupk01/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:diwavkkkn65d7ptmfk7ugqld/app.bsky.feed.post/3mziqlxr64yon",
@@ -125,7 +176,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "The 2024 Fire HD 8 keeps the 8-inch, 1,280 × 800 display from the 2022 model. It starts at $99.99, but a review found occasional app freezes—and removing lock-screen ads …",
       "excerpt": "The 2024 Fire HD 8 keeps the 8-inch, 1,280 × 800 display from the 2022 model. It starts at $99.99, but a review found occasional app freezes—and removing lock-screen ads costs… https://en.hacks.gr/amazon-fire-hd-8-ola-osa-prepei-na-gnorizete-gia-to-n…",
-      "url": "https://bsky.app/profile/did:plc:diwavkkkn65d7ptmfk7ugqld/post/3mziqlxr64yon"
+      "url": "https://bsky.app/profile/did:plc:diwavkkkn65d7ptmfk7ugqld/post/3mziqlxr64yon",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:acihu3jkgtmx4ihiad4jdp5u/app.bsky.feed.post/3mzfyqbafea2q",
@@ -136,7 +192,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Charty 2.1 is out! Your charts are now on the Lock Screen, just one glance away. This release also lets Apple Intelligence explain any chart. Check the blog post for ever…",
       "excerpt": "Charty 2.1 is out! Your charts are now on the Lock Screen, just one glance away. This release also lets Apple Intelligence explain any chart. Check the blog post for everything that's new! chartyios.app/blog/charty21se...",
-      "url": "https://bsky.app/profile/did:plc:acihu3jkgtmx4ihiad4jdp5u/post/3mzfyqbafea2q"
+      "url": "https://bsky.app/profile/did:plc:acihu3jkgtmx4ihiad4jdp5u/post/3mzfyqbafea2q",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19s1wmdvm5tdv",
@@ -149,7 +210,12 @@
       "excerpt": "Hello u/DakotaC0x! You're certainly not alone in this struggle. Many Motorola users face similar frustrations. Both Glance and carrier/preloaded content aggregators (like MyHub/MySites) are infamous for behaving like semi-embedded adware. They utiliz…",
       "url": "https://www.reddit.com/r/motorola/comments/1xjla2a/_/19s1wmdvm5tdv/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "negative",
+      "score": 0.0,
+      "topic": "広告への不満",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19s1wfpgghw69",
@@ -162,7 +228,12 @@
       "excerpt": "Hello u/Conscious-Image3445! We're truly sorry to learn about the lock screen ads troubling your device. Here's a concise and straightforward guide to help you remove the Glance lock screen ads: **The App-Level Lockdown** \\-Navigate to Settings > App…",
       "url": "https://www.reddit.com/r/motorola/comments/1xjnyiq/_/19s1wfpgghw69/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19s1v2i84z5ds",
@@ -175,7 +246,12 @@
       "excerpt": "Hi u/Apart-Tower-8974! At first glance, this might seem counterintuitive—how can one possibly engage in an online game while in Airplane Mode? However, when you consider how Motorola’s Turbo Mode (or specialized gaming network boosters and accelerati…",
       "url": "https://www.reddit.com/r/motorola/comments/1xk1r06/_/19s1v2i84z5ds/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19s1iais3yxcy",
@@ -188,7 +264,12 @@
       "excerpt": "If you don't remember installing a new app with Overlay permissions and you didn't add a Wallpaper Service, it's likely a carrier installed app. Especially if you recently updated your device. It's probably Glance, but use Google to research what car…",
       "url": "https://www.reddit.com/r/AndroidQuestions/comments/1xm1lm0/_/19s1iais3yxcy/",
       "community": "r/AndroidQuestions",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "コンテンツ",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19s09zvmkdp1g",
@@ -201,7 +282,12 @@
       "excerpt": "Glance. I removed it. If you search Reddit for remove glance Motorola you will find the way to do it. All on device. No computer needed.",
       "url": "https://www.reddit.com/r/motorola/comments/1xlkrxk/_/19s09zvmkdp1g/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19rynqzdo1nj9",
@@ -214,7 +300,12 @@
       "excerpt": "Download canta and shizuku off the Internet and you can uninstall glance and MyHub. Myhub was what was responsible for putting ads on my lockscreen personally but in my research I saw many claiming it was a bunch of different ones.",
       "url": "https://www.reddit.com/r/motorola/comments/1xf6rgj/_/19rynqzdo1nj9/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:dzufdyy7kc44ps55xqbtyvia/app.bsky.feed.post/3mz6cx4cehz2f",
@@ -225,7 +316,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "At a glance: Category: AI Video Generation - Turn scripts into UGC-style ads instantly - Scale performance creatives without production crews - Generate and test multiple…",
       "excerpt": "At a glance: Category: AI Video Generation - Turn scripts into UGC-style ads instantly - Scale performance creatives without production crews - Generate and test multiple ad variations fast",
-      "url": "https://bsky.app/profile/did:plc:dzufdyy7kc44ps55xqbtyvia/post/3mz6cx4cehz2f"
+      "url": "https://bsky.app/profile/did:plc:dzufdyy7kc44ps55xqbtyvia/post/3mz6cx4cehz2f",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "性能・電池",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:bnmespvrpp5xgxkkhxzwjhbt/app.bsky.feed.post/3mz4s6qqp322l",
@@ -236,7 +332,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "**disables glance on Android to avoid ads and stupid crap causing lock screen to be super slow** **Android - reenables a day later** 😵‍💫",
       "excerpt": "**disables glance on Android to avoid ads and stupid crap causing lock screen to be super slow** **Android - reenables a day later** 😵‍💫",
-      "url": "https://bsky.app/profile/did:plc:bnmespvrpp5xgxkkhxzwjhbt/post/3mz4s6qqp322l"
+      "url": "https://bsky.app/profile/did:plc:bnmespvrpp5xgxkkhxzwjhbt/post/3mz4s6qqp322l",
+      "sentiment": "negative",
+      "score": 0.0,
+      "topic": "勝手に有効化",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19rwej6cvpg91",
@@ -249,7 +350,12 @@
       "excerpt": "Hi u/Ssj3goku504! We truly empathize with your frustration. You chose a Motorola device for its clean and seamless software experience, so it's understandably irritating to have unwanted lock screen content like Glance appearing on your display. Sinc…",
       "url": "https://www.reddit.com/r/motorola/comments/1xiuqsf/_/19rwej6cvpg91/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "negative",
+      "score": 0.0,
+      "topic": "コンテンツ",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19rw6qibf8sh1",
@@ -262,7 +368,12 @@
       "excerpt": "Well I know it re-enables itself but the pop-up ads would appear while it was disabled. It doesn't matter if I reboot, I get the pop-up then check the app and it's disabled. I think at least some of the pop-ups are just fully baked into Motorola Edit…",
       "url": "https://www.reddit.com/r/motorola/comments/1xjnyiq/_/19rw6qibf8sh1/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "negative",
+      "score": 0.0,
+      "topic": "勝手に有効化",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19rw5njucu4g3",
@@ -275,7 +386,12 @@
       "excerpt": "You can use the Shizuku + Canta apps to completely uninstall them and any other system app. There are guides if it want to look them up. Also, look up how to enable Developer Options on Motorola. After doing that, connect Shizuku to Wireless Debuggin…",
       "url": "https://www.reddit.com/r/motorola/comments/1xjla2a/_/19rw5njucu4g3/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19rw0lfh3ssf9",
@@ -288,7 +404,12 @@
       "excerpt": "Hello u/isaiahHat! We're truly sorry to learn about the issues you're experiencing with your lock screen. We're here to assist you. The pop-up asking \"What is your sign?\" along with the updated lock screen is linked to an application called MyHub (pr…",
       "url": "https://www.reddit.com/r/motorola/comments/1xjdvpi/_/19rw0lfh3ssf9/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "広告への不満",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19ruro0gchp8g",
@@ -301,7 +422,12 @@
       "excerpt": "Lol it's only for the cheaper models. Motorola does not have glance in any of its flagship devices like the Signature and Ultra. The \"Glance\" whatever it is NOT installed in any flagship Moto devices. Maybe he bought a USD200 Moto phone.",
       "url": "https://www.reddit.com/r/motorola/comments/1xij12p/_/19ruro0gchp8g/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19ruq9orfxlhf",
@@ -314,7 +440,12 @@
       "excerpt": "Shoot I could send you screenshots every time I delete it. And here it is again. I disable Glance and disable updates next thing I know it's back on my lock screen",
       "url": "https://www.reddit.com/r/motorola/comments/1xij12p/_/19ruq9orfxlhf/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19ruityg86i69",
@@ -327,7 +458,12 @@
       "excerpt": "Well, it's a matter of experience, not just opinion. You seem to have one experience and I another, and that's okay. This phone, for me, someone that's had many phones and is typically savvy with this stuff and knows to go through settings too and th…",
       "url": "https://www.reddit.com/r/motorola/comments/1xims6w/_/19ruityg86i69/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19ru8ubsgjszl",
@@ -340,7 +476,12 @@
       "excerpt": "I've had the edge 2025 for around 1 year now and I've been loving it. Did a lot of debloating when I first got it because I knew Motorola has a reputation for adding bloatware/adware into their phones. Some things that helped me... \\- Uninstall prein…",
       "url": "https://www.reddit.com/r/motorola/comments/1xims6w/_/19ru8ubsgjszl/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "negative",
+      "score": 0.0,
+      "topic": "停止・削除",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:c:19ru76br296ys",
@@ -353,7 +494,12 @@
       "excerpt": "Same but 25 Ultra, no glance app, annoy news, ads or bloat aside from Moto Apps which is fine. 512 GB strorge, they don't really get in the way or interfere with the use of the phone.",
       "url": "https://www.reddit.com/r/motorola/comments/1xims6w/_/19ru76br296ys/",
       "community": "r/motorola",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "news:2d7250abf21d54fbe4880b0f",
@@ -364,7 +510,9 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Glance forays into PC segment in collaboration of Lenovo Motorola - The Week",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN1VyN1FESVF2eHYxQUpMRUp5U2lfdkROQW5FY25hb0ZRRGFSRFd6czROQjM1Y2JYdFV4MEs4dy1lTGZGQjRkbHRKcWZnUm5HbXgweHJWcl9IX1l3MXhTd2N6blpQWEwzVTNOdWlwWDFlcEFSeG9PS1EyYkNERWhXUjlkZnZKcURMVVIzNXg1RzVYSUVBSV9XOGlJQ0ZfeGR3NTFyZ2t0U1k4WEJINXdmdnZZenpiTkRsbHg4a3k4UGIta0th0gHKAUFVX3lxTE1fSGlyZXJRdkljZFgwXzJXMGlzWEw5Uk9pbnZnY0czSEhZRVludG5kQ0pwUDgtMHU0dkE5d0lobkVuZVh6dVd4c2k2ZG9ZbVpQaWpJRHB3R28wY1V0MzN6enNiY3B0WGxZMTEwN0hZNUdaZlFOSzBhUnFPMng0eGlsZFBiNVIwbG81aE92ZHNJbnlOYmhGcFpxYXkwRlpVQ3lSeGhxRWk3dnRxaHdVcTFwSXRnSXRERUd6aUJBbXJHWWtYYUhlcHFxaEE?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN1VyN1FESVF2eHYxQUpMRUp5U2lfdkROQW5FY25hb0ZRRGFSRFd6czROQjM1Y2JYdFV4MEs4dy1lTGZGQjRkbHRKcWZnUm5HbXgweHJWcl9IX1l3MXhTd2N6blpQWEwzVTNOdWlwWDFlcEFSeG9PS1EyYkNERWhXUjlkZnZKcURMVVIzNXg1RzVYSUVBSV9XOGlJQ0ZfeGR3NTFyZ2t0U1k4WEJINXdmdnZZenpiTkRsbHg4a3k4UGIta0th0gHKAUFVX3lxTE1fSGlyZXJRdkljZFgwXzJXMGlzWEw5Uk9pbnZnY0czSEhZRVludG5kQ0pwUDgtMHU0dkE5d0lobkVuZVh6dVd4c2k2ZG9ZbVpQaWpJRHB3R28wY1V0MzN6enNiY3B0WGxZMTEwN0hZNUdaZlFOSzBhUnFPMng0eGlsZFBiNVIwbG81aE92ZHNJbnlOYmhGcFpxYXkwRlpVQ3lSeGhxRWk3dnRxaHdVcTFwSXRnSXRERUd6aUJBbXJHWWtYYUhlcHFxaEE?oc=5",
+      "sentiment": "not_applicable",
+      "topic": "ニュース"
     },
     {
       "id": "news:c788cd866a8d72d5bf7bcc39",
@@ -375,7 +523,9 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Glance Brings Intelligent Shopping to the Lenovo & Motorola Qira Ecosystem - Yahoo Finance",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQb245T1VueHVicTJvMG5FZWlpNU5NU1l2S1MxRE5KaWVYTTlCRE9NQS1YdmxiR1A1NmdsakRHRlhtWTk4ZzNXRjBrU3ROZ3ZpamV3emJ1dHduUDZkbnNhR2FnQk9xaHg4QTZjQnFILW82LU9nYW9NOHFnWUJHWk9HU2JmaDYwSlJyeXBBY2YzMXNxZlVNMzU1Z1lDc1RYaE9CeU1zcHpWVms?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQb245T1VueHVicTJvMG5FZWlpNU5NU1l2S1MxRE5KaWVYTTlCRE9NQS1YdmxiR1A1NmdsakRHRlhtWTk4ZzNXRjBrU3ROZ3ZpamV3emJ1dHduUDZkbnNhR2FnQk9xaHg4QTZjQnFILW82LU9nYW9NOHFnWUJHWk9HU2JmaDYwSlJyeXBBY2YzMXNxZlVNMzU1Z1lDc1RYaE9CeU1zcHpWVms?oc=5",
+      "sentiment": "not_applicable",
+      "topic": "ニュース"
     },
     {
       "id": "news:7fd2a7b57e96f22e23bcd55f",
@@ -386,7 +536,9 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Glance forays into PC segment in collaboration of Lenovo, Motorola - People Matters - HR News",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTlNYZDQ2NFVFc1hQRXl4bVBxRTlLbkZ3NmJHYjlpaURUUHRPdHJxNURsWUVtSFdVX2ZaVGFEYURvTmpMSVhxalRsOVZuSTNwVlNVaWdOT2ZEQnFQbllmalhQaVhYcDYwNnI4UFducDJqQkRNYzBmNHAwRmtrcm5TdWVPMmVMeXdiT3R4NkZSQzZ0Y2VPU08xYlNJS3MzYWZVUmRmNzNZTjFDNm51TExoSmV5YXg?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTlNYZDQ2NFVFc1hQRXl4bVBxRTlLbkZ3NmJHYjlpaURUUHRPdHJxNURsWUVtSFdVX2ZaVGFEYURvTmpMSVhxalRsOVZuSTNwVlNVaWdOT2ZEQnFQbllmalhQaVhYcDYwNnI4UFducDJqQkRNYzBmNHAwRmtrcm5TdWVPMmVMeXdiT3R4NkZSQzZ0Y2VPU08xYlNJS3MzYWZVUmRmNzNZTjFDNm51TExoSmV5YXg?oc=5",
+      "sentiment": "not_applicable",
+      "topic": "ニュース"
     },
     {
       "id": "news:e0400f42013a93040dc063ee",
@@ -397,7 +549,9 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Glance AI Shopping Is Coming to Lenovo and Motorola Qira - Gogi Tech",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wX3ZySnNsVUIyekRxVUNGenpjNTViWHc5RDExX2JJYWJuMjF5ZWo4a2tjVk1HbkdjNmlJZktEMUJEWHNUME0yNWtFOXBnZUZNLUVHNG9MZkZMWnJZZVBoUVc2S05KMFdTUFNDd1pB0gFzQVVfeXFMUGhpemhqeW5Ic3UzUGx4VDNoa25pbV9MYXRxVjJIdkZ0SnpUMUtxeDduNjljbWxscmozNUk0dzFYbVBrSUdoQVZib2hFU2ZNZXBTakJZM3Y2NnBsLVQ1X2k3RHBDVWxMdWdxaVpPYmNDMElvWQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wX3ZySnNsVUIyekRxVUNGenpjNTViWHc5RDExX2JJYWJuMjF5ZWo4a2tjVk1HbkdjNmlJZktEMUJEWHNUME0yNWtFOXBnZUZNLUVHNG9MZkZMWnJZZVBoUVc2S05KMFdTUFNDd1pB0gFzQVVfeXFMUGhpemhqeW5Ic3UzUGx4VDNoa25pbV9MYXRxVjJIdkZ0SnpUMUtxeDduNjljbWxscmozNUk0dzFYbVBrSUdoQVZib2hFU2ZNZXBTakJZM3Y2NnBsLVQ1X2k3RHBDVWxMdWdxaVpPYmNDMElvWQ?oc=5",
+      "sentiment": "not_applicable",
+      "topic": "ニュース"
     },
     {
       "id": "bsky:at://did:plc:smgpby6r5j7uojdtwklanitz/app.bsky.feed.post/3myyge5yadj2i",
@@ -408,7 +562,12 @@
       "first_seen": "2026-11-12T01:11:05Z",
       "title": "Is Lady still photobombing your lock screen every time you glance down, or is that just her way of keeping the Tamagotchi fed?",
       "excerpt": "Is Lady still photobombing your lock screen every time you glance down, or is that just her way of keeping the Tamagotchi fed?",
-      "url": "https://bsky.app/profile/did:plc:smgpby6r5j7uojdtwklanitz/post/3myyge5yadj2i"
+      "url": "https://bsky.app/profile/did:plc:smgpby6r5j7uojdtwklanitz/post/3myyge5yadj2i",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     },
     {
       "id": "reddit:p:1xek022",
@@ -421,7 +580,12 @@
       "excerpt": "Is it malware or a feature I could have accidentally enabled? I only see it on my lock screen",
       "url": "https://www.reddit.com/r/AndroidQuestions/comments/1xek022/",
       "community": "r/AndroidQuestions",
-      "via": "Arctic Shift"
+      "via": "Arctic Shift",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v2-vader-rules"
     }
   ],
   "daily": [
@@ -474,6 +638,18 @@
         "comments r/xiaomi: keyword timeout; recent-only fallback",
         "comments r/AndroidQuestions: keyword timeout; recent-only fallback",
         "comments r/androidapps: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-12T01:42:55Z",
+      "sources_ok": 17,
+      "sources_total": 21,
+      "new": 0,
+      "errors": [
+        "Reddit posts r/motorola: HTTP 422",
+        "Reddit posts r/xiaomi: HTTP 422",
+        "Reddit posts r/realme: HTTP 422",
+        "Reddit comments r/xiaomi: HTTP 422"
       ]
     }
   ]
