@@ -14,7 +14,7 @@ import pathlib
 import re
 import time
 import xml.etree.ElementTree as ET
-from sentiment import classify
+from sentiment import classify, VERSION as SENTIMENT_VERSION
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DATA = ROOT / "data" / "monitor.json"
@@ -253,7 +253,7 @@ def main():
     for p in store.get("items", []):
         if not p.get("id"):
             continue
-        if p.get("kind") == "reaction" and p.get("classifier") != "v2-vader-rules":
+        if p.get("kind") == "reaction" and p.get("classifier") != SENTIMENT_VERSION:
             p.update(classify((p.get("title") or "") + " " + (p.get("excerpt") or "")))
         elif p.get("kind") != "reaction":
             p.update({"sentiment": "not_applicable", "topic": "ニュース"})
