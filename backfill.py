@@ -74,6 +74,7 @@ def get_reddit(task, observed):
             page_entries=request(params)
             entries.extend(page_entries)
             if len(page_entries)<100:
+                saturated=False
                 break
             saturated=True
             last=page_entries[-1].get("created_utc")
