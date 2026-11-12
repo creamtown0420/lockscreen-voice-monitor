@@ -6,7 +6,7 @@ The labels are *estimates*, not ground-truth. News is not sentiment scored.
 import re
 from functools import lru_cache
 
-VERSION = "v3-vader-rules"
+VERSION = "v4-vader-rules"
 TOPICS = [
     ("勝手に有効化", [r"\bre[- ]?enable[ds]?\b", r"\bturned on (again|automatically)\b",
                     r"\bwithout (my )?(permission|consent)\b", r"\bforce[ds]?\b",
@@ -50,7 +50,7 @@ def vader():
     except ImportError:
         return None
 
-def classify(text):
+def classify(text, brand=None):
     """Return a transparent, conservative local estimate and issue category."""
     s = re.sub(r"\s+", " ", str(text or "")).strip()[:3000]
     if not s or s.lower() in ("[deleted]", "[removed]"):
@@ -81,5 +81,15 @@ def classify(text):
         label, reason = "unclear", "感情を判断する言葉が不足しています"
     else:
         label, reason = "neutral", "明確な肯定・否定が見られません"
+    if label == "positive" and brand in ("Glance", "Unity Aura"):
+        # Generic praise for the phone/other app must not become praise
+        # for the lock-screen product merely because it is mentioned.
+        target = r"\b(?:glance|unity aura)\b"
+        praise = r"\b(?:love|like|useful|helpful|convenient|good|great|nice|awesome|amazing|beautiful|enjoy|better|fantastic|recommend|prefer)\b"
+        target_praise = bool(re.search(target+r".{0,70}"+praise+"|"+praise+r".{0,70}"+target, s, re.I))
+        removed_then_improved = bool(re.search(
+            r"\b(?:remove|removed|uninstall|deleted|disable|debloat)\w*\b.{0,80}\b(?:better|good|great|fine|improved)\b", s, re.I))
+        if not target_praise or removed_then_improved:
+            label, reason = "neutral", "肯定的な表現が対象サービスへの評価とは確認できません"
     return {"sentiment": label, "score": round(compound, 3), "topic": topic,
             "reason": reason, "classifier": VERSION}
