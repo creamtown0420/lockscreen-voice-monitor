@@ -14,6 +14,7 @@ import pathlib
 import re
 import time
 import xml.etree.ElementTree as ET
+from sentiment import classify
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DATA = ROOT / "data" / "monitor.json"
@@ -87,16 +88,19 @@ def get(url, attempts=2):
     raise RuntimeError("HTTP request failed")
 
 
-def record(id, source, text, title, url, date, observed, kind="reaction", **extra):
+def record(id, source, text, title, url, date, observed, kind="reaction", historical=False, **extra):
     brand = brand_for((title or "") + " " + (text or ""))
     if not brand or not date or date > observed + timedelta(days=1):
         return None
-    if date < observed - timedelta(days=28 if source == "Reddit" else 14):
+    if not historical and date < observed - timedelta(days=28 if source == "Reddit" else 14):
         return None
+    analysis = classify((title or "") + " " + (text or "")) if kind == "reaction" else {
+        "sentiment": "not_applicable", "score": 0.0, "topic": "ニュース",
+        "reason": "ニュースは感情分析の集計対象外", "classifier": "not_applicable"}
     return {"id": id, "source": source, "brand": brand, "kind": kind,
             "published_at": iso(date), "first_seen": iso(observed),
             "title": brief(title or text, 170), "excerpt": brief(text, 250),
-            "url": url, **extra}
+            "url": url, **analysis, **extra}
 
 
 def collect_reddit(observed):
@@ -244,12 +248,16 @@ def main():
         print(f"{name}: {len(items)} candidates, {count} successful searches, {len(failures)} warnings", flush=True)
     if good == 0:
         raise RuntimeError("Every source failed; preserving prior data")
-    cutoff = observed - timedelta(days=30)
+    # Keep historical observations instead of deleting posts after 30 days.
     saved = {}
     for p in store.get("items", []):
-        first = parse_date(p.get("first_seen"))
-        if first and first >= cutoff:
-            saved[p["id"]] = p
+        if not p.get("id"):
+            continue
+        if p.get("kind") == "reaction" and p.get("classifier") != "v2-vader-rules":
+            p.update(classify((p.get("title") or "") + " " + (p.get("excerpt") or "")))
+        elif p.get("kind") != "reaction":
+            p.update({"sentiment": "not_applicable", "topic": "ニュース"})
+        saved[p["id"]] = p
     fresh = []
     for p in total:
         if p["id"] not in saved:
@@ -262,7 +270,8 @@ def main():
     counters["new_news"] += sum(x["kind"] == "news" for x in fresh)
     store = {
         "schema": 1, "updated_at": iso(observed),
-        "items": sorted(saved.values(), key=lambda x: x["published_at"], reverse=True)[:3000],
+        "backfill": store.get("backfill", {}),
+        "items": sorted(saved.values(), key=lambda x: x["published_at"], reverse=True)[:30000],
         "daily": sorted(history.values(), key=lambda x: x["date"])[-730:],
         "runs": (store.get("runs", []) + [{
             "at": iso(observed), "sources_ok": good,
