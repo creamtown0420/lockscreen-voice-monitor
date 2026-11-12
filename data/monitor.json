@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T01:44:08Z",
+  "updated_at": "2026-11-12T01:45:27Z",
   "backfill": {},
   "items": [
     {
@@ -662,6 +662,17 @@
         "posts r/realme: keyword timeout; recent-only fallback",
         "Reddit comments r/realme: HTTP 422",
         "comments r/AndroidQuestions: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-12T01:45:27Z",
+      "sources_ok": 20,
+      "sources_total": 21,
+      "new": 0,
+      "errors": [
+        "posts r/motorola: keyword timeout; recent-only fallback",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "Reddit posts r/realme: HTTP 422"
       ]
     }
   ]
