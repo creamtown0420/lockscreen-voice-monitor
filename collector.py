@@ -103,7 +103,7 @@ def record(id, source, text, title, url, date, observed, kind="reaction", histor
         return None
     if not historical and date < observed - timedelta(days=28 if source == "Reddit" else 14):
         return None
-    analysis = classify((title or "") + " " + (text or "")) if kind == "reaction" else {
+    analysis = classify((title or "") + " " + (text or ""), brand=brand) if kind == "reaction" else {
         "sentiment": "not_applicable", "score": 0.0, "topic": "ニュース",
         "reason": "ニュースは感情分析の集計対象外", "classifier": "not_applicable"}
     return {"id": id, "source": source, "brand": brand, "kind": kind,
@@ -262,8 +262,12 @@ def main():
     for p in store.get("items", []):
         if not p.get("id"):
             continue
+        text = (p.get("title") or "") + " " + (p.get("excerpt") or "")
+        if brand_for(text) != p.get("brand"):
+            # Historical false positives (e.g. "at a glance") must not count.
+            continue
         if p.get("kind") == "reaction" and p.get("classifier") != SENTIMENT_VERSION:
-            p.update(classify((p.get("title") or "") + " " + (p.get("excerpt") or "")))
+            p.update(classify(text, brand=p.get("brand")))
         elif p.get("kind") != "reaction":
             p.update({"sentiment": "not_applicable", "topic": "ニュース"})
         saved[p["id"]] = p
