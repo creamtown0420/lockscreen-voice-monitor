@@ -1,7 +1,234 @@
 {
   "schema": 1,
-  "updated_at": null,
-  "items": [],
-  "daily": [],
-  "runs": []
+  "updated_at": "2026-11-12T01:11:05Z",
+  "items": [
+    {
+      "id": "bsky:at://did:plc:elm4uz3xagykz66qcze2772d/app.bsky.feed.post/3mzvfqsfq3c24",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-09T17:02:32Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "there was a thing awhile back where fb would turn people’s ads into AI ads even if the original image wasn’t. so now I know to go to the ad library or whatever to check t…",
+      "excerpt": "there was a thing awhile back where fb would turn people’s ads into AI ads even if the original image wasn’t. so now I know to go to the ad library or whatever to check the original and it is a CHOICE for authors to run AI ads and their profile looks…",
+      "url": "https://bsky.app/profile/did:plc:elm4uz3xagykz66qcze2772d/post/3mzvfqsfq3c24"
+    },
+    {
+      "id": "bsky:at://did:plc:a6mauud6fursrlmnf2acvt5g/app.bsky.feed.post/3mzvc43kpmc2a",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-09T15:57:16Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "i will not be buying another motorola phone after this glance bullshit",
+      "excerpt": "i will not be buying another motorola phone after this glance bullshit",
+      "url": "https://bsky.app/profile/did:plc:a6mauud6fursrlmnf2acvt5g/post/3mzvc43kpmc2a"
+    },
+    {
+      "id": "bsky:at://did:plc:d7yyz6r7wlzlhom57wgc6lzn/app.bsky.feed.post/3mzsthqwwlb24",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-08T16:30:02Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Keep words on screen short. People read ads in a glance, not in a sitting.",
+      "excerpt": "Keep words on screen short. People read ads in a glance, not in a sitting.",
+      "url": "https://bsky.app/profile/did:plc:d7yyz6r7wlzlhom57wgc6lzn/post/3mzsthqwwlb24"
+    },
+    {
+      "id": "bsky:at://did:plc:tvxmmkqq55yhvi4yna2vzydc/app.bsky.feed.post/3mzscmvmpmh25",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-08T11:28:41Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "→ Estos Estos is a Tabata and HIIT timer for iPhone. The classic Tabata is ready on first launch and the digits read at a glance. Cues keep playing with the phone locked.…",
+      "excerpt": "→ Estos Estos is a Tabata and HIIT timer for iPhone. The classic Tabata is ready on first launch and the digits read at a glance. Cues keep playing with the phone locked. It is free, with no ads and no account. iCloud sync and Apple Health are planne…",
+      "url": "https://bsky.app/profile/did:plc:tvxmmkqq55yhvi4yna2vzydc/post/3mzscmvmpmh25"
+    },
+    {
+      "id": "bsky:at://did:plc:cqlxi6t75ol2stxkjeovcmeo/app.bsky.feed.post/3mzqknypcc22m",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-07T18:47:08Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "I keep thinking that Hakeem Jefferies is \"Temu Obama\" - Tries to look statesman-like at first glance on your feed - Ads assure you \"this is what you need\" - manufactured …",
+      "excerpt": "I keep thinking that Hakeem Jefferies is \"Temu Obama\" - Tries to look statesman-like at first glance on your feed - Ads assure you \"this is what you need\" - manufactured with compromised standards overseas (AIPAC money) - falls apart in its usefulnes…",
+      "url": "https://bsky.app/profile/did:plc:cqlxi6t75ol2stxkjeovcmeo/post/3mzqknypcc22m"
+    },
+    {
+      "id": "bsky:at://did:plc:e4ycofcetmux7qfn5bbxrrbs/app.bsky.feed.post/3mzov5batac22",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-07T02:49:18Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Commercial-free games plus the full arena experience is a strong pitch. When fans cannot watch, Hoopster keeps live scores and Lock Screen Live Activities a glance away o…",
+      "excerpt": "Commercial-free games plus the full arena experience is a strong pitch. When fans cannot watch, Hoopster keeps live scores and Lock Screen Live Activities a glance away on iPhone.",
+      "url": "https://bsky.app/profile/did:plc:e4ycofcetmux7qfn5bbxrrbs/post/3mzov5batac22"
+    },
+    {
+      "id": "bsky:at://did:plc:vt3zrruq5umzflhdm7neso7v/app.bsky.feed.post/3mzjrgsz5ys2p",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-05T01:59:45Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Thank you! I was only looking at the links in the list above it. The row below that definitely just looked like pop up ads to me at first glance and I never gave it a sec…",
+      "excerpt": "Thank you! I was only looking at the links in the list above it. The row below that definitely just looked like pop up ads to me at first glance and I never gave it a second look",
+      "url": "https://bsky.app/profile/did:plc:vt3zrruq5umzflhdm7neso7v/post/3mzjrgsz5ys2p"
+    },
+    {
+      "id": "bsky:at://did:plc:2cgvoarixmr367a7a4rqpr5k/app.bsky.feed.post/3mzjabcrzuc2c",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-04T20:52:27Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "At a glance I was like “why am I getting Facebook ads for fleshlights?” It’s so much worse.",
+      "excerpt": "At a glance I was like “why am I getting Facebook ads for fleshlights?” It’s so much worse.",
+      "url": "https://bsky.app/profile/did:plc:2cgvoarixmr367a7a4rqpr5k/post/3mzjabcrzuc2c"
+    },
+    {
+      "id": "bsky:at://did:plc:diwavkkkn65d7ptmfk7ugqld/app.bsky.feed.post/3mziqlxr64yon",
+      "source": "Bluesky",
+      "brand": "Industry",
+      "kind": "reaction",
+      "published_at": "2026-11-04T16:12:04Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "The 2024 Fire HD 8 keeps the 8-inch, 1,280 × 800 display from the 2022 model. It starts at $99.99, but a review found occasional app freezes—and removing lock-screen ads …",
+      "excerpt": "The 2024 Fire HD 8 keeps the 8-inch, 1,280 × 800 display from the 2022 model. It starts at $99.99, but a review found occasional app freezes—and removing lock-screen ads costs… https://en.hacks.gr/amazon-fire-hd-8-ola-osa-prepei-na-gnorizete-gia-to-n…",
+      "url": "https://bsky.app/profile/did:plc:diwavkkkn65d7ptmfk7ugqld/post/3mziqlxr64yon"
+    },
+    {
+      "id": "bsky:at://did:plc:acihu3jkgtmx4ihiad4jdp5u/app.bsky.feed.post/3mzfyqbafea2q",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-03T13:59:36Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Charty 2.1 is out! Your charts are now on the Lock Screen, just one glance away. This release also lets Apple Intelligence explain any chart. Check the blog post for ever…",
+      "excerpt": "Charty 2.1 is out! Your charts are now on the Lock Screen, just one glance away. This release also lets Apple Intelligence explain any chart. Check the blog post for everything that's new! chartyios.app/blog/charty21se...",
+      "url": "https://bsky.app/profile/did:plc:acihu3jkgtmx4ihiad4jdp5u/post/3mzfyqbafea2q"
+    },
+    {
+      "id": "bsky:at://did:plc:dzufdyy7kc44ps55xqbtyvia/app.bsky.feed.post/3mz6cx4cehz2f",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-31T12:41:08Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "At a glance: Category: AI Video Generation - Turn scripts into UGC-style ads instantly - Scale performance creatives without production crews - Generate and test multiple…",
+      "excerpt": "At a glance: Category: AI Video Generation - Turn scripts into UGC-style ads instantly - Scale performance creatives without production crews - Generate and test multiple ad variations fast",
+      "url": "https://bsky.app/profile/did:plc:dzufdyy7kc44ps55xqbtyvia/post/3mz6cx4cehz2f"
+    },
+    {
+      "id": "bsky:at://did:plc:bnmespvrpp5xgxkkhxzwjhbt/app.bsky.feed.post/3mz4s6qqp322l",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-30T22:08:32Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "**disables glance on Android to avoid ads and stupid crap causing lock screen to be super slow** **Android - reenables a day later** 😵‍💫",
+      "excerpt": "**disables glance on Android to avoid ads and stupid crap causing lock screen to be super slow** **Android - reenables a day later** 😵‍💫",
+      "url": "https://bsky.app/profile/did:plc:bnmespvrpp5xgxkkhxzwjhbt/post/3mz4s6qqp322l"
+    },
+    {
+      "id": "news:2d7250abf21d54fbe4880b0f",
+      "source": "Google News RSS",
+      "brand": "Glance",
+      "kind": "news",
+      "published_at": "2026-10-29T14:34:39Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Glance forays into PC segment in collaboration of Lenovo Motorola - The Week",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN1VyN1FESVF2eHYxQUpMRUp5U2lfdkROQW5FY25hb0ZRRGFSRFd6czROQjM1Y2JYdFV4MEs4dy1lTGZGQjRkbHRKcWZnUm5HbXgweHJWcl9IX1l3MXhTd2N6blpQWEwzVTNOdWlwWDFlcEFSeG9PS1EyYkNERWhXUjlkZnZKcURMVVIzNXg1RzVYSUVBSV9XOGlJQ0ZfeGR3NTFyZ2t0U1k4WEJINXdmdnZZenpiTkRsbHg4a3k4UGIta0th0gHKAUFVX3lxTE1fSGlyZXJRdkljZFgwXzJXMGlzWEw5Uk9pbnZnY0czSEhZRVludG5kQ0pwUDgtMHU0dkE5d0lobkVuZVh6dVd4c2k2ZG9ZbVpQaWpJRHB3R28wY1V0MzN6enNiY3B0WGxZMTEwN0hZNUdaZlFOSzBhUnFPMng0eGlsZFBiNVIwbG81aE92ZHNJbnlOYmhGcFpxYXkwRlpVQ3lSeGhxRWk3dnRxaHdVcTFwSXRnSXRERUd6aUJBbXJHWWtYYUhlcHFxaEE?oc=5"
+    },
+    {
+      "id": "news:c788cd866a8d72d5bf7bcc39",
+      "source": "Google News RSS",
+      "brand": "Glance",
+      "kind": "news",
+      "published_at": "2026-10-29T07:00:00Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Glance Brings Intelligent Shopping to the Lenovo & Motorola Qira Ecosystem - Yahoo Finance",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQb245T1VueHVicTJvMG5FZWlpNU5NU1l2S1MxRE5KaWVYTTlCRE9NQS1YdmxiR1A1NmdsakRHRlhtWTk4ZzNXRjBrU3ROZ3ZpamV3emJ1dHduUDZkbnNhR2FnQk9xaHg4QTZjQnFILW82LU9nYW9NOHFnWUJHWk9HU2JmaDYwSlJyeXBBY2YzMXNxZlVNMzU1Z1lDc1RYaE9CeU1zcHpWVms?oc=5"
+    },
+    {
+      "id": "news:7fd2a7b57e96f22e23bcd55f",
+      "source": "Google News RSS",
+      "brand": "Glance",
+      "kind": "news",
+      "published_at": "2026-10-29T07:00:00Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Glance forays into PC segment in collaboration of Lenovo, Motorola - People Matters - HR News",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTlNYZDQ2NFVFc1hQRXl4bVBxRTlLbkZ3NmJHYjlpaURUUHRPdHJxNURsWUVtSFdVX2ZaVGFEYURvTmpMSVhxalRsOVZuSTNwVlNVaWdOT2ZEQnFQbllmalhQaVhYcDYwNnI4UFducDJqQkRNYzBmNHAwRmtrcm5TdWVPMmVMeXdiT3R4NkZSQzZ0Y2VPU08xYlNJS3MzYWZVUmRmNzNZTjFDNm51TExoSmV5YXg?oc=5"
+    },
+    {
+      "id": "news:e0400f42013a93040dc063ee",
+      "source": "Google News RSS",
+      "brand": "Glance",
+      "kind": "news",
+      "published_at": "2026-10-29T07:00:00Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Glance AI Shopping Is Coming to Lenovo and Motorola Qira - Gogi Tech",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wX3ZySnNsVUIyekRxVUNGenpjNTViWHc5RDExX2JJYWJuMjF5ZWo4a2tjVk1HbkdjNmlJZktEMUJEWHNUME0yNWtFOXBnZUZNLUVHNG9MZkZMWnJZZVBoUVc2S05KMFdTUFNDd1pB0gFzQVVfeXFMUGhpemhqeW5Ic3UzUGx4VDNoa25pbV9MYXRxVjJIdkZ0SnpUMUtxeDduNjljbWxscmozNUk0dzFYbVBrSUdoQVZib2hFU2ZNZXBTakJZM3Y2NnBsLVQ1X2k3RHBDVWxMdWdxaVpPYmNDMElvWQ?oc=5"
+    },
+    {
+      "id": "bsky:at://did:plc:smgpby6r5j7uojdtwklanitz/app.bsky.feed.post/3myyge5yadj2i",
+      "source": "Bluesky",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-29T04:26:09Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "Is Lady still photobombing your lock screen every time you glance down, or is that just her way of keeping the Tamagotchi fed?",
+      "excerpt": "Is Lady still photobombing your lock screen every time you glance down, or is that just her way of keeping the Tamagotchi fed?",
+      "url": "https://bsky.app/profile/did:plc:smgpby6r5j7uojdtwklanitz/post/3myyge5yadj2i"
+    },
+    {
+      "id": "reddit:p:1xek022",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-24T21:11:10Z",
+      "first_seen": "2026-11-12T01:11:05Z",
+      "title": "What is the app called glance showing me ads on my phone?",
+      "excerpt": "Is it malware or a feature I could have accidentally enabled? I only see it on my lock screen",
+      "url": "https://www.reddit.com/r/AndroidQuestions/comments/1xek022/",
+      "community": "r/AndroidQuestions",
+      "via": "Arctic Shift"
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-11-12",
+      "new_reactions": 14,
+      "new_news": 4
+    }
+  ],
+  "runs": [
+    {
+      "at": "2026-11-12T01:11:05Z",
+      "sources_ok": 20,
+      "sources_total": 26,
+      "new": 18,
+      "errors": [
+        "posts r/motorola: keyword timeout; recent-only fallback",
+        "Reddit posts r/xiaomi: HTTP Error 422: Unprocessable Entity",
+        "posts r/samsung: keyword timeout; recent-only fallback",
+        "posts r/androidapps: keyword timeout; recent-only fallback",
+        "Reddit comments r/motorola: HTTP Error 422: Unprocessable Entity",
+        "comments r/xiaomi: keyword timeout; recent-only fallback",
+        "comments r/realme: keyword timeout; recent-only fallback",
+        "Reddit comments r/samsung: HTTP Error 429: Too Many Requests",
+        "Reddit comments r/AndroidQuestions: HTTP Error 429: Too Many Requests",
+        "Reddit comments r/androidapps: HTTP Error 429: Too Many Requests",
+        "Reddit comments r/androidapps: HTTP Error 429: Too Many Requests"
+      ]
+    }
+  ]
 }
