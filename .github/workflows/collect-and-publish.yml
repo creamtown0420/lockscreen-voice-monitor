@@ -41,6 +41,7 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Collect latest reactions
         run: python collector.py
+      # Use a bounded unfiltered fallback when archive keyword search times out.
       - name: Expand Reddit historical coverage incrementally
         env:
           HISTORY_TASKS_PER_RUN: '20'
