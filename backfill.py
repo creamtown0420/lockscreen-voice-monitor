@@ -50,12 +50,40 @@ def tasks_for(now):
 def get_reddit(task, observed):
     task_id,year,month,typ,sub,key,query=task
     params={"subreddit":sub,key:query,"after":month_start(year,month),
-            "before":next_month(year,month),"sort":"asc","limit":LIMIT}
-    payload=json.loads(collector.get(collector.ARCHIVE+f"/api/{typ}/search?"+urlencode(params),attempts=1))
-    if not isinstance(payload,dict) or not isinstance(payload.get("data"),list):
-        raise ValueError("no data list from archive")
+            "before":next_month(year,month),"sort":"asc","limit":LIMIT,
+            "fields":("id,title,selftext,created_utc,subreddit" if typ=="posts" else
+                      "id,body,link_id,created_utc,subreddit")}
+    def request(p):
+        response=json.loads(collector.get(collector.ARCHIVE+f"/api/{typ}/search?"+urlencode(p),attempts=1))
+        if not isinstance(response,dict) or not isinstance(response.get("data"),list):
+            raise ValueError("no data list from archive")
+        return response["data"]
+    try:
+        entries=request(params)
+        saturated=len(entries)>=LIMIT
+    except HTTPError as e:
+        if e.code!=422 or typ!="posts":
+            raise
+        # Keyword indexes often time out. Read a bounded month slice by date
+        # without keywords and filter locally. Up to 3 pages, not exhaustive.
+        params.pop(key)
+        params["limit"]=100
+        entries=[]
+        saturated=False
+        for page in range(3):
+            page_entries=request(params)
+            entries.extend(page_entries)
+            if len(page_entries)<100:
+                break
+            saturated=True
+            last=page_entries[-1].get("created_utc")
+            if not isinstance(last,(float,int)):
+                break
+            params["after"]=int(last)+1
+            if page!=2:
+                time.sleep(1.5)
     out=[]
-    for obj in payload["data"]:
+    for obj in entries:
         rid=str(obj.get("id") or "").removeprefix("t3_").removeprefix("t1_")
         community=str(obj.get("subreddit") or sub)
         if not re.fullmatch(r"[A-Za-z0-9]{4,16}",rid) or not re.fullmatch(r"[A-Za-z0-9_]{1,28}",community):
@@ -76,7 +104,7 @@ def get_reddit(task, observed):
              observed,historical=True,community="r/"+community,via="Arctic Shift")
         if item:
             out.append(item)
-    return out, len(payload["data"]) >= LIMIT
+    return out, saturated
 
 def main():
     if not collector.DATA.exists():
