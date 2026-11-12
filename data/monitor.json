@@ -1,14 +1,27 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T01:52:17Z",
+  "updated_at": "2026-11-12T02:06:33Z",
   "backfill": {
     "start": "2022-01",
-    "last_attempt": "2026-11-12T01:53:22Z",
+    "last_attempt": "2026-11-12T02:07:36Z",
     "total_windows": 295,
-    "completed_windows": 2,
+    "completed_windows": 15,
     "completed": [
       "2022-01/comments/motorola/body/Glance",
-      "2022-01/comments/xiaomi/body/Glance"
+      "2022-01/comments/xiaomi/body/Glance",
+      "2022-02/comments/motorola/body/Glance",
+      "2023-01/comments/xiaomi/body/Glance",
+      "2023-01/posts/androidapps/title/Unity Aura",
+      "2024-01/comments/motorola/body/Glance",
+      "2024-01/comments/xiaomi/body/Glance",
+      "2024-01/posts/androidapps/title/Unity Aura",
+      "2024-01/posts/xiaomi/title/Glance",
+      "2025-01/comments/xiaomi/body/Glance",
+      "2025-01/posts/xiaomi/title/Glance",
+      "2026-01/comments/motorola/body/Glance",
+      "2026-01/comments/xiaomi/body/Glance",
+      "2026-01/posts/androidapps/title/Unity Aura",
+      "2026-01/posts/motorola/title/Glance"
     ],
     "attempts": {
       "2022-01/posts/motorola/title/Glance": 1,
@@ -16,17 +29,27 @@
       "2022-01/posts/androidapps/title/Unity Aura": 1,
       "2023-01/posts/motorola/title/Glance": 1,
       "2023-01/comments/motorola/body/Glance": 1,
-      "2023-01/posts/xiaomi/title/Glance": 1
+      "2023-01/posts/xiaomi/title/Glance": 1,
+      "2024-01/posts/motorola/title/Glance": 1,
+      "2025-01/posts/motorola/title/Glance": 1,
+      "2025-01/comments/motorola/body/Glance": 1,
+      "2025-01/posts/androidapps/title/Unity Aura": 1,
+      "2026-01/posts/xiaomi/title/Glance": 1,
+      "2022-02/posts/motorola/title/Glance": 1,
+      "2022-02/posts/xiaomi/title/Glance": 1
     },
-    "saturated": [],
+    "saturated": [
+      "2024-01/posts/androidapps/title/Unity Aura",
+      "2026-01/posts/motorola/title/Glance"
+    ],
     "errors": [
-      "2022-01/posts/motorola/title/Glance: HTTP 422",
-      "2022-01/posts/xiaomi/title/Glance: HTTP 422",
-      "2022-01/posts/androidapps/title/Unity Aura: HTTP 422",
-      "2023-01/posts/motorola/title/Glance: HTTP 422",
-      "2023-01/comments/motorola/body/Glance: HTTP 422",
-      "2023-01/posts/xiaomi/title/Glance: HTTP 429",
-      "Rate limit: stopped archive requests"
+      "2024-01/posts/motorola/title/Glance: HTTP 422",
+      "2025-01/posts/motorola/title/Glance: HTTP 422",
+      "2025-01/comments/motorola/body/Glance: HTTP 422",
+      "2025-01/posts/androidapps/title/Unity Aura: HTTP 422",
+      "2026-01/posts/xiaomi/title/Glance: HTTP 422",
+      "2022-02/posts/motorola/title/Glance: HTTP 422",
+      "2022-02/posts/xiaomi/title/Glance: HTTP 422"
     ],
     "note": "Historical Reddit archive, sampled queries; coverage is incomplete and may be delayed."
   },
@@ -47,7 +70,7 @@
       "score": 0.0,
       "topic": "停止・削除",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:elm4uz3xagykz66qcze2772d/app.bsky.feed.post/3mzvfqsfq3c24",
@@ -59,11 +82,11 @@
       "title": "there was a thing awhile back where fb would turn people’s ads into AI ads even if the original image wasn’t. so now I know to go to the ad library or whatever to check t…",
       "excerpt": "there was a thing awhile back where fb would turn people’s ads into AI ads even if the original image wasn’t. so now I know to go to the ad library or whatever to check the original and it is a CHOICE for authors to run AI ads and their profile looks…",
       "url": "https://bsky.app/profile/did:plc:elm4uz3xagykz66qcze2772d/post/3mzvfqsfq3c24",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.71,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:a6mauud6fursrlmnf2acvt5g/app.bsky.feed.post/3mzvc43kpmc2a",
@@ -75,11 +98,11 @@
       "title": "i will not be buying another motorola phone after this glance bullshit",
       "excerpt": "i will not be buying another motorola phone after this glance bullshit",
       "url": "https://bsky.app/profile/did:plc:a6mauud6fursrlmnf2acvt5g/post/3mzvc43kpmc2a",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "negative",
+      "score": -0.823,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:d7yyz6r7wlzlhom57wgc6lzn/app.bsky.feed.post/3mzsthqwwlb24",
@@ -95,7 +118,7 @@
       "score": 0.0,
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:tvxmmkqq55yhvi4yna2vzydc/app.bsky.feed.post/3mzscmvmpmh25",
@@ -107,11 +130,11 @@
       "title": "→ Estos Estos is a Tabata and HIIT timer for iPhone. The classic Tabata is ready on first launch and the digits read at a glance. Cues keep playing with the phone locked.…",
       "excerpt": "→ Estos Estos is a Tabata and HIIT timer for iPhone. The classic Tabata is ready on first launch and the digits read at a glance. Cues keep playing with the phone locked. It is free, with no ads and no account. iCloud sync and Apple Health are planne…",
       "url": "https://bsky.app/profile/did:plc:tvxmmkqq55yhvi4yna2vzydc/post/3mzscmvmpmh25",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.758,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:cqlxi6t75ol2stxkjeovcmeo/app.bsky.feed.post/3mzqknypcc22m",
@@ -123,11 +146,11 @@
       "title": "I keep thinking that Hakeem Jefferies is \"Temu Obama\" - Tries to look statesman-like at first glance on your feed - Ads assure you \"this is what you need\" - manufactured …",
       "excerpt": "I keep thinking that Hakeem Jefferies is \"Temu Obama\" - Tries to look statesman-like at first glance on your feed - Ads assure you \"this is what you need\" - manufactured with compromised standards overseas (AIPAC money) - falls apart in its usefulnes…",
       "url": "https://bsky.app/profile/did:plc:cqlxi6t75ol2stxkjeovcmeo/post/3mzqknypcc22m",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.586,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:e4ycofcetmux7qfn5bbxrrbs/app.bsky.feed.post/3mzov5batac22",
@@ -139,11 +162,11 @@
       "title": "Commercial-free games plus the full arena experience is a strong pitch. When fans cannot watch, Hoopster keeps live scores and Lock Screen Live Activities a glance away o…",
       "excerpt": "Commercial-free games plus the full arena experience is a strong pitch. When fans cannot watch, Hoopster keeps live scores and Lock Screen Live Activities a glance away on iPhone.",
       "url": "https://bsky.app/profile/did:plc:e4ycofcetmux7qfn5bbxrrbs/post/3mzov5batac22",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.765,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:vt3zrruq5umzflhdm7neso7v/app.bsky.feed.post/3mzjrgsz5ys2p",
@@ -155,11 +178,11 @@
       "title": "Thank you! I was only looking at the links in the list above it. The row below that definitely just looked like pop up ads to me at first glance and I never gave it a sec…",
       "excerpt": "Thank you! I was only looking at the links in the list above it. The row below that definitely just looked like pop up ads to me at first glance and I never gave it a second look",
       "url": "https://bsky.app/profile/did:plc:vt3zrruq5umzflhdm7neso7v/post/3mzjrgsz5ys2p",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.932,
       "topic": "広告への不満",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:2cgvoarixmr367a7a4rqpr5k/app.bsky.feed.post/3mzjabcrzuc2c",
@@ -171,11 +194,11 @@
       "title": "At a glance I was like “why am I getting Facebook ads for fleshlights?” It’s so much worse.",
       "excerpt": "At a glance I was like “why am I getting Facebook ads for fleshlights?” It’s so much worse.",
       "url": "https://bsky.app/profile/did:plc:2cgvoarixmr367a7a4rqpr5k/post/3mzjabcrzuc2c",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "negative",
+      "score": -0.48,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19s57prdupk01",
@@ -193,7 +216,7 @@
       "score": 0.0,
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:diwavkkkn65d7ptmfk7ugqld/app.bsky.feed.post/3mziqlxr64yon",
@@ -205,11 +228,11 @@
       "title": "The 2024 Fire HD 8 keeps the 8-inch, 1,280 × 800 display from the 2022 model. It starts at $99.99, but a review found occasional app freezes—and removing lock-screen ads …",
       "excerpt": "The 2024 Fire HD 8 keeps the 8-inch, 1,280 × 800 display from the 2022 model. It starts at $99.99, but a review found occasional app freezes—and removing lock-screen ads costs… https://en.hacks.gr/amazon-fire-hd-8-ola-osa-prepei-na-gnorizete-gia-to-n…",
       "url": "https://bsky.app/profile/did:plc:diwavkkkn65d7ptmfk7ugqld/post/3mziqlxr64yon",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "negative",
+      "score": -0.586,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:acihu3jkgtmx4ihiad4jdp5u/app.bsky.feed.post/3mzfyqbafea2q",
@@ -221,11 +244,11 @@
       "title": "Charty 2.1 is out! Your charts are now on the Lock Screen, just one glance away. This release also lets Apple Intelligence explain any chart. Check the blog post for ever…",
       "excerpt": "Charty 2.1 is out! Your charts are now on the Lock Screen, just one glance away. This release also lets Apple Intelligence explain any chart. Check the blog post for everything that's new! chartyios.app/blog/charty21se...",
       "url": "https://bsky.app/profile/did:plc:acihu3jkgtmx4ihiad4jdp5u/post/3mzfyqbafea2q",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.795,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19s1wmdvm5tdv",
@@ -239,11 +262,11 @@
       "url": "https://www.reddit.com/r/motorola/comments/1xjla2a/_/19s1wmdvm5tdv/",
       "community": "r/motorola",
       "via": "Arctic Shift",
-      "sentiment": "negative",
-      "score": 0.0,
+      "sentiment": "neutral",
+      "score": 0.31,
       "topic": "広告への不満",
-      "reason": "不満・問題を表す表現が見られます",
-      "classifier": "v2-vader-rules"
+      "reason": "操作案内やサポート返信であり、明確な本人の評価ではありません",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19s1wfpgghw69",
@@ -258,10 +281,10 @@
       "community": "r/motorola",
       "via": "Arctic Shift",
       "sentiment": "neutral",
-      "score": 0.0,
+      "score": 0.491,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "操作案内やサポート返信であり、明確な本人の評価ではありません",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19s1v2i84z5ds",
@@ -276,10 +299,10 @@
       "community": "r/motorola",
       "via": "Arctic Shift",
       "sentiment": "neutral",
-      "score": 0.0,
+      "score": 0.695,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "操作案内やサポート返信であり、明確な本人の評価ではありません",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19s1iais3yxcy",
@@ -297,7 +320,7 @@
       "score": 0.0,
       "topic": "コンテンツ",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19s09zvmkdp1g",
@@ -311,11 +334,11 @@
       "url": "https://www.reddit.com/r/motorola/comments/1xlkrxk/_/19s09zvmkdp1g/",
       "community": "r/motorola",
       "via": "Arctic Shift",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "negative",
+      "score": -0.527,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19rynqzdo1nj9",
@@ -329,11 +352,11 @@
       "url": "https://www.reddit.com/r/motorola/comments/1xf6rgj/_/19rynqzdo1nj9/",
       "community": "r/motorola",
       "via": "Arctic Shift",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.557,
       "topic": "停止・削除",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:dzufdyy7kc44ps55xqbtyvia/app.bsky.feed.post/3mz6cx4cehz2f",
@@ -349,7 +372,7 @@
       "score": 0.0,
       "topic": "性能・電池",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "bsky:at://did:plc:bnmespvrpp5xgxkkhxzwjhbt/app.bsky.feed.post/3mz4s6qqp322l",
@@ -362,10 +385,10 @@
       "excerpt": "**disables glance on Android to avoid ads and stupid crap causing lock screen to be super slow** **Android - reenables a day later** 😵‍💫",
       "url": "https://bsky.app/profile/did:plc:bnmespvrpp5xgxkkhxzwjhbt/post/3mz4s6qqp322l",
       "sentiment": "negative",
-      "score": 0.0,
+      "score": -0.904,
       "topic": "勝手に有効化",
       "reason": "不満・問題を表す表現が見られます",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19rwej6cvpg91",
@@ -379,11 +402,11 @@
       "url": "https://www.reddit.com/r/motorola/comments/1xiuqsf/_/19rwej6cvpg91/",
       "community": "r/motorola",
       "via": "Arctic Shift",
-      "sentiment": "negative",
-      "score": 0.0,
+      "sentiment": "neutral",
+      "score": -0.363,
       "topic": "コンテンツ",
-      "reason": "不満・問題を表す表現が見られます",
-      "classifier": "v2-vader-rules"
+      "reason": "操作案内やサポート返信であり、明確な本人の評価ではありません",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19rw6qibf8sh1",
@@ -398,10 +421,10 @@
       "community": "r/motorola",
       "via": "Arctic Shift",
       "sentiment": "negative",
-      "score": 0.0,
+      "score": 0.455,
       "topic": "勝手に有効化",
       "reason": "不満・問題を表す表現が見られます",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19rw5njucu4g3",
@@ -416,10 +439,10 @@
       "community": "r/motorola",
       "via": "Arctic Shift",
       "sentiment": "neutral",
-      "score": 0.0,
+      "score": 0.153,
       "topic": "停止・削除",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19rw0lfh3ssf9",
@@ -434,10 +457,10 @@
       "community": "r/motorola",
       "via": "Arctic Shift",
       "sentiment": "neutral",
-      "score": 0.0,
+      "score": 0.731,
       "topic": "広告への不満",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "操作案内やサポート返信であり、明確な本人の評価ではありません",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19ruro0gchp8g",
@@ -451,11 +474,11 @@
       "url": "https://www.reddit.com/r/motorola/comments/1xij12p/_/19ruro0gchp8g/",
       "community": "r/motorola",
       "via": "Arctic Shift",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.77,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19ruq9orfxlhf",
@@ -469,11 +492,11 @@
       "url": "https://www.reddit.com/r/motorola/comments/1xij12p/_/19ruq9orfxlhf/",
       "community": "r/motorola",
       "via": "Arctic Shift",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "negative",
+      "score": -0.586,
       "topic": "停止・削除",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19ruityg86i69",
@@ -487,11 +510,11 @@
       "url": "https://www.reddit.com/r/motorola/comments/1xims6w/_/19ruityg86i69/",
       "community": "r/motorola",
       "via": "Arctic Shift",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "positive",
+      "score": 0.735,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19ru8ubsgjszl",
@@ -506,10 +529,10 @@
       "community": "r/motorola",
       "via": "Arctic Shift",
       "sentiment": "negative",
-      "score": 0.0,
+      "score": 0.832,
       "topic": "停止・削除",
       "reason": "不満・問題を表す表現が見られます",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:c:19ru76br296ys",
@@ -523,11 +546,11 @@
       "url": "https://www.reddit.com/r/motorola/comments/1xims6w/_/19ru76br296ys/",
       "community": "r/motorola",
       "via": "Arctic Shift",
-      "sentiment": "neutral",
-      "score": 0.0,
+      "sentiment": "negative",
+      "score": -0.872,
       "topic": "その他",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "news:2d7250abf21d54fbe4880b0f",
@@ -595,7 +618,7 @@
       "score": 0.0,
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules"
     },
     {
       "id": "reddit:p:1xek022",
@@ -610,10 +633,280 @@
       "community": "r/AndroidQuestions",
       "via": "Arctic Shift",
       "sentiment": "neutral",
+      "score": -0.414,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v3-vader-rules"
+    },
+    {
+      "id": "reddit:c:o279ku2",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-28T12:16:48Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "It doesn't matter whether Motorola uses a Mediatek processor or a Snapdragon model. The larger priority is optimization and also efficiency. Because whichever processor t…",
+      "excerpt": "It doesn't matter whether Motorola uses a Mediatek processor or a Snapdragon model. The larger priority is optimization and also efficiency. Because whichever processor they do use will probably benchmark around the same numbers. If Motorola uses a M…",
+      "url": "https://www.reddit.com/r/motorola/comments/1pho11v/_/o279ku2/",
+      "sentiment": "positive",
+      "score": 0.894,
+      "topic": "性能・電池",
+      "reason": "好意的な表現が見られます",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:o0xb00a",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-21T20:51:03Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "Hi u/imagoneryfriend, It is great to hear you are enjoying the new Notes app on your Edge 70! The voice transcription and AI-powered \"collections\" are definitely some of …",
+      "excerpt": "Hi u/imagoneryfriend, It is great to hear you are enjoying the new Notes app on your Edge 70! The voice transcription and AI-powered \"collections\" are definitely some of the standout features of this updated experience. To answer your question direct…",
+      "url": "https://www.reddit.com/r/motorola/comments/1qigdoz/_/o0xb00a/",
+      "sentiment": "neutral",
+      "score": 0.896,
+      "topic": "その他",
+      "reason": "操作案内やサポート返信であり、明確な本人の評価ではありません",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:o02t992",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-17T09:10:09Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "I have a moto g 2024, moto g 2025 and I will buy a moto g 2026. Specs are basically the same for all 3 phones, but somehow Motorola manages to improve and smoothen the ex…",
+      "excerpt": "I have a moto g 2024, moto g 2025 and I will buy a moto g 2026. Specs are basically the same for all 3 phones, but somehow Motorola manages to improve and smoothen the experience each year. I use them for work without any cases or screen protectors a…",
+      "url": "https://www.reddit.com/r/motorola/comments/1qd862v/_/o02t992/",
+      "sentiment": "positive",
+      "score": 0.949,
+      "topic": "その他",
+      "reason": "好意的な表現が見られます",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:nzoljiq",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-15T05:59:00Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "You mean to tell me having unremovable apps like Glance that deliver full lockscreen ads is not an enriching experience?",
+      "excerpt": "You mean to tell me having unremovable apps like Glance that deliver full lockscreen ads is not an enriching experience?",
+      "url": "https://www.reddit.com/r/motorola/comments/1qdb46h/_/nzoljiq/",
+      "sentiment": "neutral",
+      "score": 0.361,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:nzo0wup",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-15T03:34:29Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "The shitty \"Glance\" app that messes with your lockscreen and reinstalls itself on every update and restart.",
+      "excerpt": "The shitty \"Glance\" app that messes with your lockscreen and reinstalls itself on every update and restart.",
+      "url": "https://www.reddit.com/r/motorola/comments/1qcz2nv/_/nzo0wup/",
+      "sentiment": "negative",
+      "score": -0.557,
+      "topic": "その他",
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:nz2cnlg",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-11T23:36:14Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "And it’ll probably have 🐂💩 junkware on it from the likes of Glance that will harass you day in a day out about them harvesting your data without allowing you the right to…",
+      "excerpt": "And it’ll probably have 🐂💩 junkware on it from the likes of Glance that will harass you day in a day out about them harvesting your data without allowing you the right to completely opt-out & remove it. The Motorola I own now will be the last Motorol…",
+      "url": "https://www.reddit.com/r/motorola/comments/1q8y7ds/_/nz2cnlg/",
+      "sentiment": "neutral",
+      "score": 0.542,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:nyxnxbh",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-11T07:15:21Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "I've debloated my motorola and removed so much stuff including glance and it works perfectly fine. Actually it works better, in fact",
+      "excerpt": "I've debloated my motorola and removed so much stuff including glance and it works perfectly fine. Actually it works better, in fact",
+      "url": "https://www.reddit.com/r/motorola/comments/1q9sqc4/_/nyxnxbh/",
+      "sentiment": "positive",
+      "score": 0.836,
+      "topic": "その他",
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:nyeqw4x",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-08T15:08:02Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "I have no Android dev experience, but it appears that there is a compact mode for the lock screen. The compact mode is used when notifications (in Glance or otherwise) ar…",
+      "excerpt": "I have no Android dev experience, but it appears that there is a compact mode for the lock screen. The compact mode is used when notifications (in Glance or otherwise) are too large to fit in the lock screen with a full clock + (whatever other displa…",
+      "url": "https://www.reddit.com/r/motorola/comments/1q7c766/_/nyeqw4x/",
+      "sentiment": "positive",
+      "score": 0.775,
+      "topic": "停止・削除",
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:nyekaf4",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-08T14:35:54Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "That's not the issue. Apparently Moto Android builds revert to and lock in to \"compact\" mode with notification sharing and/or Glance. I tested Link to Windows on an Andro…",
+      "excerpt": "That's not the issue. Apparently Moto Android builds revert to and lock in to \"compact\" mode with notification sharing and/or Glance. I tested Link to Windows on an Android 15 Samsung and it does not have this issue. I reinstalled Link to Windows on …",
+      "url": "https://www.reddit.com/r/motorola/comments/1q7c766/_/nyekaf4/",
+      "sentiment": "neutral",
+      "score": 0.459,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:ny9fdqo",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-07T20:02:49Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "Hi [deikrodri](https://www.reddit.com/user/deikrodri/), Thanks so much for reaching out, and sorry for any confusion around this. Totally fair question, since the Edge 60…",
+      "excerpt": "Hi [deikrodri](https://www.reddit.com/user/deikrodri/), Thanks so much for reaching out, and sorry for any confusion around this. Totally fair question, since the Edge 60 and Edge 60 Pro are very close in size. While they look similar at a glance, th…",
+      "url": "https://www.reddit.com/r/motorola/comments/1q4phae/_/ny9fdqo/",
+      "sentiment": "positive",
+      "score": 0.95,
+      "topic": "その他",
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:p:1q4kxif",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-05T12:54:08Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "Lockscreen clock stuck in top left corner? Glance?",
+      "excerpt": "I just got my G Stylus 25' yesterday and after running it through all the updates I'm having a similar issue to what others have reported, on the lockscreen the clock is very obnoxiously locked to the top left of the screen as if I have a notificatio…",
+      "url": "https://www.reddit.com/r/motorola/comments/1q4kxif/",
+      "sentiment": "negative",
+      "score": -0.919,
+      "topic": "その他",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:nxn801i",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-04T16:10:24Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "as someone who has used multiple xiaomi phones - it is not the best out there and there are multiple issues. there is no support for 3rd party launchers with gesture navi…",
+      "excerpt": "as someone who has used multiple xiaomi phones - it is not the best out there and there are multiple issues. there is no support for 3rd party launchers with gesture navigation despite the issue being there for many years. there is an ongoing wifi is…",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/1q3reh3/_/nxn801i/",
+      "sentiment": "negative",
+      "score": -0.265,
+      "topic": "広告への不満",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v3-vader-rules",
+      "community": "r/Xiaomi",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:nxhzajd",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-01-03T20:15:39Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "Please allow us to disable and remove this nagware, it's horrible and anti-user. Even if you disable Glance in application settings, it re-enables itself and displays FUL…",
+      "excerpt": "Please allow us to disable and remove this nagware, it's horrible and anti-user. Even if you disable Glance in application settings, it re-enables itself and displays FULL SCREEN ADS when you try to unlock your phone.",
+      "url": "https://www.reddit.com/r/motorola/comments/1o8hv38/_/nxhzajd/",
+      "sentiment": "negative",
+      "score": -0.077,
+      "topic": "勝手に有効化",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:kft0pu9",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2024-01-01T06:50:58Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "Glance is a useless thing which steals data, hogs battery power, shows unnecessary information and Ads in the lockscreens etc. I'm fed up seeing it in each and every phon…",
+      "excerpt": "Glance is a useless thing which steals data, hogs battery power, shows unnecessary information and Ads in the lockscreens etc. I'm fed up seeing it in each and every phone model out there. Like realme, redmi, samsung etc. And the worst thing is, in s…",
+      "url": "https://www.reddit.com/r/motorola/comments/18vdry6/_/kft0pu9/",
+      "sentiment": "negative",
+      "score": -0.819,
+      "topic": "その他",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:hxa4ikw",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2022-02-17T07:16:59Z",
+      "first_seen": "2026-11-12T02:07:36Z",
+      "title": "Glance screen, not lockscreen.",
+      "excerpt": "Glance screen, not lockscreen.",
+      "url": "https://www.reddit.com/r/motorola/comments/str04r/_/hxa4ikw/",
+      "sentiment": "neutral",
       "score": 0.0,
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules"
+      "classifier": "v3-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
     },
     {
       "id": "reddit:c:hsxeo1j",
@@ -629,7 +922,7 @@
       "score": 0.0,
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules",
+      "classifier": "v3-vader-rules",
       "community": "r/Xiaomi",
       "via": "Arctic Shift"
     },
@@ -643,11 +936,11 @@
       "title": "which phone do you have? is it on lockscreen? if yes, then in Settings app go to Lockscreen then in 'Glance for Mi' and turn it off or might be some option of wallpaper c…",
       "excerpt": "which phone do you have? is it on lockscreen? if yes, then in Settings app go to Lockscreen then in 'Glance for Mi' and turn it off or might be some option of wallpaper carousel, turn it off",
       "url": "https://www.reddit.com/r/Xiaomi/comments/rz75kw/_/hrtr35r/",
-      "sentiment": "positive",
-      "score": 0.47,
+      "sentiment": "neutral",
+      "score": 0.748,
       "topic": "コンテンツ",
-      "reason": "好意的な表現が見られます（VADER推定）",
-      "classifier": "v2-vader-rules",
+      "reason": "操作案内やサポート返信であり、明確な本人の評価ではありません",
+      "classifier": "v3-vader-rules",
       "community": "r/Xiaomi",
       "via": "Arctic Shift"
     },
@@ -664,8 +957,8 @@
       "sentiment": "neutral",
       "score": 0.0,
       "topic": "停止・削除",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules",
+      "reason": "操作案内やサポート返信であり、明確な本人の評価ではありません",
+      "classifier": "v3-vader-rules",
       "community": "r/Xiaomi",
       "via": "Arctic Shift"
     },
@@ -683,7 +976,7 @@
       "score": -0.296,
       "topic": "勝手に有効化",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v2-vader-rules",
+      "classifier": "v3-vader-rules",
       "community": "r/Xiaomi",
       "via": "Arctic Shift"
     }
@@ -786,6 +1079,21 @@
         "posts r/realme: keyword timeout; recent-only fallback",
         "comments r/realme: keyword timeout; recent-only fallback",
         "comments r/AndroidQuestions: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-12T02:06:33Z",
+      "sources_ok": 20,
+      "sources_total": 21,
+      "new": 0,
+      "errors": [
+        "posts r/motorola: keyword timeout; recent-only fallback",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "Reddit posts r/realme: HTTP 422",
+        "comments r/motorola: keyword timeout; recent-only fallback",
+        "comments r/xiaomi: keyword timeout; recent-only fallback",
+        "comments r/realme: keyword timeout; recent-only fallback",
+        "comments r/androidapps: keyword timeout; recent-only fallback"
       ]
     }
   ]
