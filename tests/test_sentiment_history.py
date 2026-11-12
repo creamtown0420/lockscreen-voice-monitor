@@ -14,6 +14,12 @@ class SentimentAndHistoryTests(unittest.TestCase):
         r=sentiment.classify("I hate these annoying Glance ads. I can't disable the lock screen.")
         self.assertEqual(r["sentiment"],"negative")
         self.assertEqual(r["topic"],"停止・削除")
+    def test_specific_reinstallation_topic(self):
+        self.assertEqual(sentiment.classify("The Glance app reinstalls itself after each update.")["topic"],"勝手に有効化")
+    def test_spamware_topic(self):
+        self.assertEqual(sentiment.classify("Glance is spamware and fills my lock screen with junk.")["topic"],"広告への不満")
+    def test_unremovable_topic(self):
+        self.assertEqual(sentiment.classify("The Glance ads are unremovable.")["topic"],"停止・削除")
     def test_positive(self):
         r=sentiment.classify("I love the useful Glance lock screen news.")
         self.assertEqual(r["sentiment"],"positive")
