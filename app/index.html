@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Lock Screen Signals | Global Listening</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar"><div class="logo"><span class="mark">◈</span><span>LOCK SCREEN <b>SIGNALS</b></span></div><span class="top-status"><span class="dot"></span><span id="state">準備中</span></span></header>
+    <main>
+      <div class="intro"><div><div class="eyebrow">GLOBAL CONVERSATION INTELLIGENCE</div><h1>ロック画面の、世界の声を。</h1><p>Glance・Unity Aura・ロック画面広告に関する公開投稿とニュースを自動収集。投稿数は発見件数であり、世論調査ではありません。</p></div><div class="last-update">最終更新<br/><strong id="updated">—</strong></div></div>
+      <section class="metrics" aria-label="収集の概要">
+        <div class="metric"><small>保持中の公開投稿</small><div class="metric-number" id="reactions">—</div><span>Reddit / Bluesky / Hacker News · 過去30日間</span></div>
+        <div class="metric"><small>Reddit 投稿・コメント</small><div class="metric-number" id="reddit">—</div><span>Arctic Shift · 過去30日間</span></div>
+        <div class="metric"><small>保持中のニュース</small><div class="metric-number" id="news">—</div><span>RSS / 過去30日間</span></div>
+        <div class="metric"><small>過去7日の新規発見</small><div class="metric-number" id="seven">—</div><span>投稿と記事の合計</span></div>
+        <div class="metric"><small>最終実行の取得元</small><div class="metric-number" id="sources">—</div><span>成功した検索リクエスト数</span></div>
+      </section>
+      <section class="panel trend-panel">
+        <div class="panel-head"><div><span class="eyebrow">DISCOVERY TREND</span><h2>新しく見つかった声</h2></div><div class="legend"><span><i class="swatch cyan"></i>ユーザー投稿</span><span><i class="swatch purple"></i>ニュース</span></div></div>
+        <div class="chart-wrap"><svg id="trend" viewBox="0 0 900 190" role="img" aria-label="直近14日の新規発見件数"></svg></div>
+        <div id="chart-empty" class="empty-chart" hidden>まだ集計データはありません。初回収集後に表示されます。</div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><div><span class="eyebrow">LATEST MENTIONS</span><h2>新着情報</h2></div><div class="count" id="result-count">0 件</div></div>
+        <div class="filters">
+          <input id="search" type="search" placeholder="キーワードで検索（例：disable, ads, Motorola）" aria-label="キーワード検索">
+          <select id="source" aria-label="情報源"><option value="">すべての情報源</option><option>Reddit</option><option>Bluesky</option><option>Hacker News</option><option>Google News RSS</option></select>
+          <select id="brand" aria-label="対象企業"><option value="">すべての対象</option><option>Glance</option><option>Unity Aura</option><option>Industry</option></select>
+          <select id="kind" aria-label="データの種類"><option value="">投稿・ニュース両方</option><option value="reaction">ユーザー投稿</option><option value="news">ニュース</option></select>
+        </div>
+        <div id="items" class="item-list"><div class="empty">まだ取得データはありません。</div></div>
+        <div class="pager"><button id="more" hidden>さらに表示</button></div>
+      </section>
+      <footer>Data sources: Reddit (via Arctic Shift) / Bluesky / Hacker News / Google News RSS · X disabled · AI sentiment analysis: not enabled<br/><span>非公式アーカイブの遅延・欠落があり得ます。個人の非商用実験向けの試作版です。各サービスの利用条件を確認してください。</span></footer>
+    </main>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
