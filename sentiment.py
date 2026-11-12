@@ -6,18 +6,20 @@ The labels are *estimates*, not ground-truth. News is not sentiment scored.
 import re
 from functools import lru_cache
 
-VERSION = "v4-vader-rules"
+VERSION = "v5-vader-rules"
 TOPICS = [
     ("勝手に有効化", [r"\bre[- ]?enable[ds]?\b", r"\bturned on (again|automatically)\b",
                     r"\bwithout (my )?(permission|consent)\b", r"\bforce[ds]?\b",
-                    r"\bpre[- ]?install", r"\bkeeps (coming|turning) back\b",
+                    r"\bpre[- ]?install", r"\bkeeps (coming|turning) back\b", r"\breinstall\w* itself\b",
+                    r"\bkeeps? (showing up|reappearing|appearing)\b",
                     r"\b勝手に\b", r"\b強制\b"]),
     ("停止・削除", [r"\b(can'?t|cannot|unable to|won'?t|doesn'?t let me)\s+(disable|uninstall|remove|turn off)\b",
                  r"\bhow (can i|do i|to) (disable|uninstall|remove|turn off|get rid)\b",
                  r"\bnot (possible|able) to (disable|remove)\b", r"\bdisable\b",
-                 r"\buninstall\b", r"\b削除できない\b", r"\b消せない\b"]),
+                 r"\buninstall\b", r"\bunremovable\b",
+                 r"\b(couldn\x27t|can\x27t|cannot)\s+be\s+(swiped|removed|disabled)\b", r"\b削除できない\b", r"\b消せない\b"]),
     ("広告への不満", [r"\b(adware|spam|intrusive|annoying ads?|pop[- ]?ups?|unwanted ads?|ads everywhere)\b",
-                  r"\btoo many ads?\b", r"\b広告が?うざ", r"\b邪魔な広告\b"]),
+                  r"\btoo many ads?\b", r"\b(bloatware|nagware|spamware|junkware|advertising disguised|unwanted adverts?)\b", r"\b広告が?うざ", r"\b邪魔な広告\b"]),
     ("性能・電池", [r"\bbattery (drain|life)\b", r"\bdrain(s|ing)? battery\b",
                   r"\b(lag|laggy|slowdown|sluggish|overheat|performance)\b",
                   r"\b電池\b", r"\b重くなる\b"]),
