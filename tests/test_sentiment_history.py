@@ -20,6 +20,12 @@ class SentimentAndHistoryTests(unittest.TestCase):
     def test_unscored_description(self):
         r=sentiment.classify("Is this Glance on my Motorola lock screen?")
         self.assertIn(r["sentiment"],["neutral","unclear"])
+    def test_helpful_settings_instruction_is_neutral(self):
+        r=sentiment.classify("Which phone do you have? Go to Settings and turn it off. Glance for Mi.")
+        self.assertEqual(r["sentiment"],"neutral")
+    def test_support_boilerplate_is_not_a_user_review(self):
+        r=sentiment.classify("Hello u/Person! We truly empathize with your frustration with Glance lock screen ads.")
+        self.assertEqual(r["sentiment"],"neutral")
     def test_explicitly_unscored(self):
         self.assertEqual(sentiment.classify("")["sentiment"],"unclear")
     def test_historical_records_kept(self):
