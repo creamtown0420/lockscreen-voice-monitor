@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T04:23:21Z",
+  "updated_at": "2026-11-13T03:27:42Z",
   "backfill": {
     "start": "2022-01",
-    "last_attempt": "2026-11-12T04:24:06Z",
+    "last_attempt": "2026-11-13T03:28:30Z",
     "total_windows": 295,
-    "completed_windows": 39,
+    "completed_windows": 43,
     "completed": [
       "2022-01/comments/motorola/body/Glance",
       "2022-01/comments/xiaomi/body/Glance",
@@ -13,6 +13,7 @@
       "2022-02/comments/xiaomi/body/Glance",
       "2022-02/posts/androidapps/title/Unity Aura",
       "2022-03/comments/motorola/body/Glance",
+      "2022-03/posts/androidapps/title/Unity Aura",
       "2022-03/posts/motorola/title/Glance",
       "2022-04/posts/motorola/title/Glance",
       "2022-05/comments/motorola/body/Glance",
@@ -22,6 +23,9 @@
       "2023-02/comments/xiaomi/body/Glance",
       "2023-02/posts/androidapps/title/Unity Aura",
       "2023-03/posts/androidapps/title/Unity Aura",
+      "2023-05/comments/motorola/body/Glance",
+      "2023-05/comments/xiaomi/body/Glance",
+      "2023-05/posts/xiaomi/title/Glance",
       "2024-01/comments/motorola/body/Glance",
       "2024-01/comments/xiaomi/body/Glance",
       "2024-01/posts/xiaomi/title/Glance",
@@ -53,7 +57,7 @@
         "mode": "unfiltered"
       },
       "2023-02/posts/motorola/title/Glance": {
-        "after": 1675851139,
+        "after": 1677186019,
         "mode": "unfiltered"
       },
       "2024-02/posts/motorola/title/Glance": {
@@ -86,6 +90,26 @@
       },
       "2022-05/posts/motorola/title/Glance": {
         "after": 1652372336,
+        "mode": "unfiltered"
+      },
+      "2026-02/posts/motorola/title/Glance": {
+        "after": 1770122742,
+        "mode": "unfiltered"
+      },
+      "2023-03/posts/xiaomi/title/Glance": {
+        "after": 1677791742,
+        "mode": "unfiltered"
+      },
+      "2022-05/posts/xiaomi/title/Glance": {
+        "after": 1651488695,
+        "mode": "unfiltered"
+      },
+      "2022-05/posts/androidapps/title/Unity Aura": {
+        "after": 1651573404,
+        "mode": "unfiltered"
+      },
+      "2023-05/posts/androidapps/title/Unity Aura": {
+        "after": 1683070529,
         "mode": "unfiltered"
       }
     },
@@ -134,15 +158,22 @@
       "2025-04/comments/motorola/body/Glance": 1,
       "2025-04/posts/xiaomi/title/Glance": 1,
       "2025-04/comments/xiaomi/body/Glance": 1,
-      "2026-04/comments/xiaomi/body/Glance": 1
+      "2026-04/comments/xiaomi/body/Glance": 1,
+      "2024-01/posts/androidapps/title/Unity Aura": 1,
+      "2024-02/posts/motorola/title/Glance": 1,
+      "2022-05/comments/xiaomi/body/Glance": 1,
+      "2023-05/posts/motorola/title/Glance": 1,
+      "2024-05/posts/motorola/title/Glance": 1
     },
     "saturated": [
-      "2022-03/posts/androidapps/title/Unity Aura",
       "2022-04/posts/androidapps/title/Unity Aura",
       "2022-04/posts/xiaomi/title/Glance",
+      "2022-05/posts/androidapps/title/Unity Aura",
       "2022-05/posts/motorola/title/Glance",
+      "2022-05/posts/xiaomi/title/Glance",
       "2023-02/posts/motorola/title/Glance",
       "2023-03/posts/xiaomi/title/Glance",
+      "2023-05/posts/androidapps/title/Unity Aura",
       "2024-01/posts/androidapps/title/Unity Aura",
       "2024-02/posts/motorola/title/Glance",
       "2024-03/posts/motorola/title/Glance",
@@ -159,13 +190,12 @@
       "2026-04/posts/xiaomi/title/Glance"
     ],
     "errors": [
-      "2025-02/posts/motorola/title/Glance: HTTP 422",
-      "2025-02/posts/xiaomi/title/Glance: HTTP 422",
-      "2024-04/comments/xiaomi/body/Glance: HTTP 422",
-      "2025-04/comments/motorola/body/Glance: HTTP 422",
-      "2025-04/posts/xiaomi/title/Glance: HTTP 422",
-      "2025-04/comments/xiaomi/body/Glance: HTTP 422",
-      "2026-04/comments/xiaomi/body/Glance: HTTP 422"
+      "2024-01/posts/androidapps/title/Unity Aura: HTTP 422",
+      "2024-02/posts/motorola/title/Glance: HTTP 422",
+      "2022-05/comments/xiaomi/body/Glance: HTTP 422",
+      "2023-05/posts/motorola/title/Glance: HTTP 422",
+      "2024-05/posts/motorola/title/Glance: HTTP 429",
+      "Arctic Shift rate limited, stopped this run"
     ],
     "note": "Completed windows exhausted their available query pages. The archive may be incomplete; date pagination may miss same-second posts."
   },
@@ -631,6 +661,22 @@
       "via": "Arctic Shift"
     },
     {
+      "id": "news:474caa95321d25758cdecc1f",
+      "source": "Google News RSS",
+      "brand": "Glance",
+      "kind": "news",
+      "published_at": "2026-10-30T11:52:37Z",
+      "first_seen": "2026-11-13T03:27:42Z",
+      "title": "Glance Brings Smart Shopping to Lenovo PCs and Motorola Phones - SMEStreet",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZEJWMzJ1Q0tpa1ltZEV0M2dsZVJwdVNCQ21HYnRIa19qUlVJenRkcTdGRzlCVk1sRG1zb3dUQlpSdXdnNlZweG9QZFVsR2xhUklVMFQ2Mm81S25TSHpsOFhPeTVtUEFyem9mWXp1MUE5NEtwcUJDaUV1cXZFYWEwV1JMSldCRGVqZ2dZaDVKbHhpV3liQ0NDWnJSdEkwbWhaRENkLURR0gGmAUFVX3lxTE9kQlYzMnVDS2lrWW1kRXQzZ2xlUnB1U0JDbUdidEhrX2pSVUl6dGRxN0ZHOUJWTWxEbXNvd1RCWlJ1d2c2VnB4b1BkVWxHbGFSSVUwVDYybzVLblNIemw4WE95NW1QQXJ6b2ZZenUxQTk0S3BxQkNpRXVxdkVhYTBXUkxKV0JEZWpnZ1loNUpseGlXeWJDQ0NaclJ0STBtaFpEQ2QtRFE?oc=5",
+      "sentiment": "not_applicable",
+      "score": 0.0,
+      "topic": "ニュース",
+      "reason": "ニュースは感情分析の集計対象外",
+      "classifier": "not_applicable"
+    },
+    {
       "id": "reddit:c:19rv5khh8r42o",
       "source": "Reddit",
       "brand": "Glance",
@@ -838,24 +884,6 @@
       "score": 0.0,
       "topic": "停止・削除",
       "reason": "明確な肯定・否定が見られません",
-      "classifier": "v5-vader-rules",
-      "community": "r/motorola",
-      "via": "Arctic Shift"
-    },
-    {
-      "id": "reddit:c:oikywvt",
-      "source": "Reddit",
-      "brand": "Glance",
-      "kind": "reaction",
-      "published_at": "2026-04-27T16:17:38Z",
-      "first_seen": "2026-11-12T04:24:06Z",
-      "title": "What happened to me begining last week (Moto G Play), the \"Glance\" feature became enabled without any input or permission from me. It's taken about 4-5 times reading this…",
-      "excerpt": "What happened to me begining last week (Moto G Play), the \"Glance\" feature became enabled without any input or permission from me. It's taken about 4-5 times reading this thread to notice that when Glance became enabled, it disabled \"List Mode\" mentioned previously here. Glance & List Mode are apparently not compatible…",
-      "url": "https://www.reddit.com/r/motorola/comments/1rtihq1/_/oikywvt/",
-      "sentiment": "negative",
-      "score": -0.535,
-      "topic": "その他",
-      "reason": "否定的な表現が見られます（VADER推定）",
       "classifier": "v5-vader-rules",
       "community": "r/motorola",
       "via": "Arctic Shift"
@@ -2499,21 +2527,21 @@
       "via": "Arctic Shift"
     },
     {
-      "id": "reddit:p:18vxdhg",
+      "id": "reddit:c:jjbx6vy",
       "source": "Reddit",
       "brand": "Glance",
       "kind": "reaction",
-      "published_at": "2024-01-01T14:03:54Z",
-      "first_seen": "2026-11-12T04:24:06Z",
-      "title": "Is there an app that pulls from Wikipedia and lists the name of something in multiple languages?",
-      "excerpt": "…ikipedia app doesn't seem to put an emphasis on jumping between languages either. If I mostly only need the at-one-glance list like needing a dictionary, and not really care about jumping over to read the actual entries, are there some existing tools for doing this? Thanks in advance for any information or insight! :-)",
-      "url": "https://www.reddit.com/r/androidapps/comments/18vxdhg/",
-      "sentiment": "positive",
-      "score": 0.935,
+      "published_at": "2023-05-08T12:59:40Z",
+      "first_seen": "2026-11-13T03:28:30Z",
+      "title": "Well there are quite a few that can ruin it for you personally but MIUI does have it sweet spots too • Glance Lockscreen - will change your lockscreen constantly and woul…",
+      "excerpt": "…te a few that can ruin it for you personally but MIUI does have it sweet spots too • Glance Lockscreen - will change your lockscreen constantly and would often put up actresses as your lockscreen • Random Bloat – tons of applications that you def do not need but will still hog your system memory • And the terror of upd…",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/13aoaku/_/jjbx6vy/",
+      "sentiment": "neutral",
+      "score": 0.686,
       "topic": "その他",
-      "reason": "好意的な表現が見られます",
+      "reason": "肯定的な表現が対象サービスへの評価とは確認できません",
       "classifier": "v5-vader-rules",
-      "community": "r/androidapps",
+      "community": "r/Xiaomi",
       "via": "Arctic Shift"
     },
     {
@@ -2594,6 +2622,11 @@
       "date": "2026-11-12",
       "new_reactions": 53,
       "new_news": 5
+    },
+    {
+      "date": "2026-11-13",
+      "new_reactions": 0,
+      "new_news": 1
     }
   ],
   "runs": [
@@ -2744,6 +2777,19 @@
         "posts r/xiaomi: keyword timeout; recent-only fallback",
         "Reddit posts r/realme: HTTP 422",
         "comments r/realme: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-13T03:27:42Z",
+      "sources_ok": 20,
+      "sources_total": 21,
+      "new": 1,
+      "errors": [
+        "posts r/motorola: keyword timeout; recent-only fallback",
+        "posts r/realme: keyword timeout; recent-only fallback",
+        "Reddit comments r/motorola: HTTP 422",
+        "comments r/AndroidQuestions: keyword timeout; recent-only fallback",
+        "comments r/androidapps: keyword timeout; recent-only fallback"
       ]
     }
   ]
