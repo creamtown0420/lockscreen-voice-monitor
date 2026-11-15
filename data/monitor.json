@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-14T03:22:48Z",
+  "updated_at": "2026-11-15T02:46:14Z",
   "backfill": {
     "start": "2022-01",
-    "last_attempt": "2026-11-14T03:24:10Z",
+    "last_attempt": "2026-11-15T02:46:53Z",
     "total_windows": 295,
-    "completed_windows": 47,
+    "completed_windows": 57,
     "completed": [
       "2022-01/comments/motorola/body/Glance",
       "2022-01/comments/xiaomi/body/Glance",
@@ -16,7 +16,11 @@
       "2022-03/posts/androidapps/title/Unity Aura",
       "2022-03/posts/motorola/title/Glance",
       "2022-04/posts/motorola/title/Glance",
+      "2022-04/posts/xiaomi/title/Glance",
       "2022-05/comments/motorola/body/Glance",
+      "2022-06/comments/motorola/body/Glance",
+      "2022-06/comments/xiaomi/body/Glance",
+      "2022-06/posts/androidapps/title/Unity Aura",
       "2023-01/comments/xiaomi/body/Glance",
       "2023-01/posts/androidapps/title/Unity Aura",
       "2023-02/comments/motorola/body/Glance",
@@ -27,6 +31,9 @@
       "2023-05/comments/motorola/body/Glance",
       "2023-05/comments/xiaomi/body/Glance",
       "2023-05/posts/xiaomi/title/Glance",
+      "2023-06/comments/motorola/body/Glance",
+      "2023-06/comments/xiaomi/body/Glance",
+      "2023-06/posts/androidapps/title/Unity Aura",
       "2024-01/comments/motorola/body/Glance",
       "2024-01/comments/xiaomi/body/Glance",
       "2024-01/posts/xiaomi/title/Glance",
@@ -37,6 +44,8 @@
       "2024-04/posts/androidapps/title/Unity Aura",
       "2024-04/posts/motorola/title/Glance",
       "2024-05/posts/androidapps/title/Unity Aura",
+      "2024-06/comments/motorola/body/Glance",
+      "2024-06/posts/xiaomi/title/Glance",
       "2025-01/comments/xiaomi/body/Glance",
       "2025-01/posts/xiaomi/title/Glance",
       "2025-02/comments/motorola/body/Glance",
@@ -53,7 +62,8 @@
       "2026-02/posts/androidapps/title/Unity Aura",
       "2026-02/posts/xiaomi/title/Glance",
       "2026-03/comments/xiaomi/body/Glance",
-      "2026-03/posts/androidapps/title/Unity Aura"
+      "2026-03/posts/androidapps/title/Unity Aura",
+      "2026-05/posts/androidapps/title/Unity Aura"
     ],
     "checkpoints": {
       "2024-01/posts/androidapps/title/Unity Aura": {
@@ -65,7 +75,7 @@
         "mode": "unfiltered"
       },
       "2025-04/posts/motorola/title/Glance": {
-        "after": 1743739813,
+        "after": 1744301540,
         "mode": "unfiltered"
       },
       "2025-04/posts/androidapps/title/Unity Aura": {
@@ -93,11 +103,11 @@
         "mode": "unfiltered"
       },
       "2026-02/posts/motorola/title/Glance": {
-        "after": 1770526453,
+        "after": 1771124497,
         "mode": "unfiltered"
       },
       "2023-03/posts/xiaomi/title/Glance": {
-        "after": 1678134986,
+        "after": 1678455733,
         "mode": "unfiltered"
       },
       "2022-05/posts/xiaomi/title/Glance": {
@@ -113,7 +123,7 @@
         "mode": "unfiltered"
       },
       "2024-03/posts/motorola/title/Glance": {
-        "after": 1709688494,
+        "after": 1710569731,
         "mode": "unfiltered"
       },
       "2024-05/posts/xiaomi/title/Glance": {
@@ -134,6 +144,30 @@
       },
       "2026-05/posts/xiaomi/title/Glance": {
         "after": 1777992634,
+        "mode": "unfiltered"
+      },
+      "2022-04/posts/androidapps/title/Unity Aura": {
+        "after": 1649000462,
+        "mode": "unfiltered"
+      },
+      "2022-06/posts/motorola/title/Glance": {
+        "after": 1655157413,
+        "mode": "unfiltered"
+      },
+      "2022-06/posts/xiaomi/title/Glance": {
+        "after": 1654196456,
+        "mode": "unfiltered"
+      },
+      "2023-06/posts/motorola/title/Glance": {
+        "after": 1685998486,
+        "mode": "unfiltered"
+      },
+      "2023-06/posts/xiaomi/title/Glance": {
+        "after": 1685741665,
+        "mode": "unfiltered"
+      },
+      "2024-06/posts/motorola/title/Glance": {
+        "after": 1717543376,
         "mode": "unfiltered"
       }
     },
@@ -198,16 +232,20 @@
     },
     "saturated": [
       "2022-04/posts/androidapps/title/Unity Aura",
-      "2022-04/posts/xiaomi/title/Glance",
       "2022-05/posts/androidapps/title/Unity Aura",
       "2022-05/posts/motorola/title/Glance",
       "2022-05/posts/xiaomi/title/Glance",
+      "2022-06/posts/motorola/title/Glance",
+      "2022-06/posts/xiaomi/title/Glance",
       "2023-03/posts/xiaomi/title/Glance",
       "2023-05/posts/androidapps/title/Unity Aura",
+      "2023-06/posts/motorola/title/Glance",
+      "2023-06/posts/xiaomi/title/Glance",
       "2024-01/posts/androidapps/title/Unity Aura",
       "2024-02/posts/motorola/title/Glance",
       "2024-03/posts/motorola/title/Glance",
       "2024-05/posts/xiaomi/title/Glance",
+      "2024-06/posts/motorola/title/Glance",
       "2025-02/posts/motorola/title/Glance",
       "2025-02/posts/xiaomi/title/Glance",
       "2025-04/posts/androidapps/title/Unity Aura",
@@ -223,19 +261,28 @@
       "2026-05/posts/motorola/title/Glance",
       "2026-05/posts/xiaomi/title/Glance"
     ],
-    "errors": [
-      "2026-03/comments/motorola/body/Glance: HTTP 422",
-      "2024-05/comments/motorola/body/Glance: HTTP 422",
-      "2024-05/comments/xiaomi/body/Glance: HTTP 422",
-      "2025-05/comments/motorola/body/Glance: HTTP 422",
-      "2025-05/posts/androidapps/title/Unity Aura: HTTP 422",
-      "2026-05/comments/motorola/body/Glance: HTTP 422",
-      "2026-05/comments/xiaomi/body/Glance: HTTP 429",
-      "Arctic Shift rate limited, stopped this run"
-    ],
+    "errors": [],
     "note": "Completed windows exhausted their available query pages. The archive may be incomplete; date pagination may miss same-second posts."
   },
   "items": [
+    {
+      "id": "reddit:c:19slokujotzgg",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-14T02:05:33Z",
+      "first_seen": "2026-11-15T02:46:14Z",
+      "title": "No but they are good backup phones. I use mine for my side gig so I'm not constantly draining my primary phone. Main thing I hate about my phone is glance, it always find…",
+      "excerpt": "No but they are good backup phones. I use mine for my side gig so I'm not constantly draining my primary phone. Main thing I hate about my phone is glance, it always find a way to creep back to the surface no matter how many times I disable it.",
+      "url": "https://www.reddit.com/r/motorola/comments/1xu9oz9/_/19slokujotzgg/",
+      "sentiment": "negative",
+      "score": -0.443,
+      "topic": "停止・削除",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
     {
       "id": "reddit:c:19sl0jwk5zjfm",
       "source": "Reddit",
@@ -2401,6 +2448,42 @@
       "via": "Arctic Shift"
     },
     {
+      "id": "reddit:p:1r0zmj3",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-02-10T12:38:55Z",
+      "first_seen": "2026-11-15T02:46:53Z",
+      "title": "Why I like and hate my Moto phone.",
+      "excerpt": "…on LED, visible when the phone is dead, but it's unused. Waste of potential. \\*\\*The Glance lockscreen bloatware is ridiculous,\\*\\* one of the worst features imo because bloatwqre is creepy to your privacy. Even worse than bugs. You have a message that occasionally pops up on the lock screen asking for Glance lockscree…",
+      "url": "https://www.reddit.com/r/motorola/comments/1r0zmj3/",
+      "sentiment": "unclear",
+      "score": -0.689,
+      "topic": "性能・電池",
+      "reason": "肯定・否定の両方の表現を含みます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:p:1r0paw1",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-02-10T03:04:27Z",
+      "first_seen": "2026-11-15T02:46:53Z",
+      "title": "Glance app",
+      "excerpt": "I have tried disabling the glance app, but even after disabling I don't know how it gets automatically enabled. So I was wondering is there any way I can get rid of completely!",
+      "url": "https://www.reddit.com/r/motorola/comments/1r0paw1/",
+      "sentiment": "negative",
+      "score": -0.757,
+      "topic": "その他",
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "reddit:c:o3ixxo8",
       "source": "Reddit",
       "brand": "Glance",
@@ -2617,6 +2700,42 @@
       "via": "Arctic Shift"
     },
     {
+      "id": "reddit:c:la3g8ep",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2024-06-24T19:31:52Z",
+      "first_seen": "2026-11-15T02:46:53Z",
+      "title": "And also disable Glance.",
+      "excerpt": "And also disable Glance.",
+      "url": "https://www.reddit.com/r/motorola/comments/1dn4h9c/_/la3g8ep/",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:l9mo8g9",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2024-06-21T15:40:26Z",
+      "first_seen": "2026-11-15T02:46:53Z",
+      "title": "I picked up the Straight Talk version a couple weeks ago and couldn't agree more. Great phone especially for the cost. A few suggestions: If you don't want Moto installin…",
+      "excerpt": "…Three Dot Menu - Show System Apps and disable Moto Services. 1Weather is a poor weather app and mostly spyware as is Glance so I'd suggest also disabling them and loading the app of your choice. Setting the display to 120 Hz instead of Auto makes the phone feel much smoother and doesn't affect battery life much at all.",
+      "url": "https://www.reddit.com/r/motorola/comments/1dksksh/_/l9mo8g9/",
+      "sentiment": "neutral",
+      "score": -0.879,
+      "topic": "停止・削除",
+      "reason": "肯定的な表現が対象サービスへの評価とは確認できません",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "reddit:p:1c8ywl2",
       "source": "Reddit",
       "brand": "Glance",
@@ -2671,6 +2790,24 @@
       "via": "Arctic Shift"
     },
     {
+      "id": "reddit:c:jmwesye",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2023-06-04T19:40:56Z",
+      "first_seen": "2026-11-15T02:46:53Z",
+      "title": "No search bar or at glance as default. You can add them in if you want which is nice. I didn't mind them on the pixel so not a huge deal for me. FAR LESS bloat than Samsu…",
+      "excerpt": "No search bar or at glance as default. You can add them in if you want which is nice. I didn't mind them on the pixel so not a huge deal for me. FAR LESS bloat than Samsung and it's all easily removed if you want. No Microsoft apps at all, just Facebook and a couple of others that, again, can be removed. So far updates…",
+      "url": "https://www.reddit.com/r/motorola/comments/140d66d/_/jmwesye/",
+      "sentiment": "neutral",
+      "score": 0.538,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "reddit:c:jjbx6vy",
       "source": "Reddit",
       "brand": "Glance",
@@ -2686,6 +2823,24 @@
       "reason": "肯定的な表現が対象サービスへの評価とは確認できません",
       "classifier": "v5-vader-rules",
       "community": "r/Xiaomi",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:ie9eblx",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2022-06-30T01:00:54Z",
+      "first_seen": "2026-11-15T02:46:53Z",
+      "title": "What phone are you upgrading from? I always use Phonescoop to compare the specs, very useful to see at-a-glance comparisons since they bold the superior ones. https://www…",
+      "excerpt": "What phone are you upgrading from? I always use Phonescoop to compare the specs, very useful to see at-a-glance comparisons since they bold the superior ones. https://www.phonescoop.com/phones/compare.php",
+      "url": "https://www.reddit.com/r/motorola/comments/vakg6t/_/ie9eblx/",
+      "sentiment": "positive",
+      "score": 0.852,
+      "topic": "その他",
+      "reason": "好意的な表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
       "via": "Arctic Shift"
     },
     {
@@ -2775,6 +2930,11 @@
     {
       "date": "2026-11-14",
       "new_reactions": 6,
+      "new_news": 0
+    },
+    {
+      "date": "2026-11-15",
+      "new_reactions": 1,
       "new_news": 0
     }
   ],
@@ -2954,6 +3114,17 @@
         "Bluesky \"Glance\" \"ads\": <urlopen error timed out>",
         "Bluesky \"Unity Aura\": HTTP Error 500: Internal Server Error",
         "Bluesky \"lock screen ads\": HTTP Error 500: Internal Server Error"
+      ]
+    },
+    {
+      "at": "2026-11-15T02:46:14Z",
+      "sources_ok": 21,
+      "sources_total": 21,
+      "new": 1,
+      "errors": [
+        "posts r/motorola: keyword timeout; recent-only fallback",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "posts r/realme: keyword timeout; recent-only fallback"
       ]
     }
   ]
