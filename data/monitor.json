@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-15T02:46:14Z",
+  "updated_at": "2026-11-16T02:49:19Z",
   "backfill": {
     "start": "2022-01",
-    "last_attempt": "2026-11-15T02:46:53Z",
+    "last_attempt": "2026-11-16T02:49:59Z",
     "total_windows": 295,
-    "completed_windows": 57,
+    "completed_windows": 62,
     "completed": [
       "2022-01/comments/motorola/body/Glance",
       "2022-01/comments/xiaomi/body/Glance",
@@ -21,6 +21,7 @@
       "2022-06/comments/motorola/body/Glance",
       "2022-06/comments/xiaomi/body/Glance",
       "2022-06/posts/androidapps/title/Unity Aura",
+      "2022-07/comments/motorola/body/Glance",
       "2023-01/comments/xiaomi/body/Glance",
       "2023-01/posts/androidapps/title/Unity Aura",
       "2023-02/comments/motorola/body/Glance",
@@ -45,6 +46,7 @@
       "2024-04/posts/motorola/title/Glance",
       "2024-05/posts/androidapps/title/Unity Aura",
       "2024-06/comments/motorola/body/Glance",
+      "2024-06/comments/xiaomi/body/Glance",
       "2024-06/posts/xiaomi/title/Glance",
       "2025-01/comments/xiaomi/body/Glance",
       "2025-01/posts/xiaomi/title/Glance",
@@ -63,7 +65,10 @@
       "2026-02/posts/xiaomi/title/Glance",
       "2026-03/comments/xiaomi/body/Glance",
       "2026-03/posts/androidapps/title/Unity Aura",
-      "2026-05/posts/androidapps/title/Unity Aura"
+      "2026-05/posts/androidapps/title/Unity Aura",
+      "2026-06/comments/xiaomi/body/Glance",
+      "2026-06/posts/motorola/title/Glance",
+      "2026-06/posts/xiaomi/title/Glance"
     ],
     "checkpoints": {
       "2024-01/posts/androidapps/title/Unity Aura": {
@@ -79,7 +84,7 @@
         "mode": "unfiltered"
       },
       "2025-04/posts/androidapps/title/Unity Aura": {
-        "after": 1743641142,
+        "after": 1744045963,
         "mode": "unfiltered"
       },
       "2026-04/posts/motorola/title/Glance": {
@@ -103,7 +108,7 @@
         "mode": "unfiltered"
       },
       "2026-02/posts/motorola/title/Glance": {
-        "after": 1771124497,
+        "after": 1771664653,
         "mode": "unfiltered"
       },
       "2023-03/posts/xiaomi/title/Glance": {
@@ -123,7 +128,7 @@
         "mode": "unfiltered"
       },
       "2024-03/posts/motorola/title/Glance": {
-        "after": 1710569731,
+        "after": 1711459698,
         "mode": "unfiltered"
       },
       "2024-05/posts/xiaomi/title/Glance": {
@@ -147,7 +152,7 @@
         "mode": "unfiltered"
       },
       "2022-04/posts/androidapps/title/Unity Aura": {
-        "after": 1649000462,
+        "after": 1649349937,
         "mode": "unfiltered"
       },
       "2022-06/posts/motorola/title/Glance": {
@@ -168,6 +173,26 @@
       },
       "2024-06/posts/motorola/title/Glance": {
         "after": 1717543376,
+        "mode": "unfiltered"
+      },
+      "2024-06/posts/androidapps/title/Unity Aura": {
+        "after": 1717371001,
+        "mode": "unfiltered"
+      },
+      "2025-06/posts/motorola/title/Glance": {
+        "after": 1748911645,
+        "mode": "unfiltered"
+      },
+      "2025-06/posts/androidapps/title/Unity Aura": {
+        "after": 1748884048,
+        "mode": "unfiltered"
+      },
+      "2026-06/posts/androidapps/title/Unity Aura": {
+        "after": 1780485044,
+        "mode": "unfiltered"
+      },
+      "2022-07/posts/motorola/title/Glance": {
+        "after": 1657569094,
         "mode": "unfiltered"
       }
     },
@@ -228,7 +253,13 @@
       "2025-05/comments/motorola/body/Glance": 1,
       "2025-05/posts/androidapps/title/Unity Aura": 1,
       "2026-05/comments/motorola/body/Glance": 1,
-      "2026-05/comments/xiaomi/body/Glance": 1
+      "2026-05/comments/xiaomi/body/Glance": 1,
+      "2023-03/posts/xiaomi/title/Glance": 1,
+      "2025-04/posts/motorola/title/Glance": 1,
+      "2025-06/comments/motorola/body/Glance": 1,
+      "2025-06/posts/xiaomi/title/Glance": 1,
+      "2025-06/comments/xiaomi/body/Glance": 1,
+      "2026-06/comments/motorola/body/Glance": 1
     },
     "saturated": [
       "2022-04/posts/androidapps/title/Unity Aura",
@@ -237,6 +268,7 @@
       "2022-05/posts/xiaomi/title/Glance",
       "2022-06/posts/motorola/title/Glance",
       "2022-06/posts/xiaomi/title/Glance",
+      "2022-07/posts/motorola/title/Glance",
       "2023-03/posts/xiaomi/title/Glance",
       "2023-05/posts/androidapps/title/Unity Aura",
       "2023-06/posts/motorola/title/Glance",
@@ -245,6 +277,7 @@
       "2024-02/posts/motorola/title/Glance",
       "2024-03/posts/motorola/title/Glance",
       "2024-05/posts/xiaomi/title/Glance",
+      "2024-06/posts/androidapps/title/Unity Aura",
       "2024-06/posts/motorola/title/Glance",
       "2025-02/posts/motorola/title/Glance",
       "2025-02/posts/xiaomi/title/Glance",
@@ -252,6 +285,8 @@
       "2025-04/posts/motorola/title/Glance",
       "2025-05/posts/motorola/title/Glance",
       "2025-05/posts/xiaomi/title/Glance",
+      "2025-06/posts/androidapps/title/Unity Aura",
+      "2025-06/posts/motorola/title/Glance",
       "2026-02/posts/motorola/title/Glance",
       "2026-03/comments/motorola/body/Glance",
       "2026-04/comments/motorola/body/Glance",
@@ -259,12 +294,74 @@
       "2026-04/posts/motorola/title/Glance",
       "2026-04/posts/xiaomi/title/Glance",
       "2026-05/posts/motorola/title/Glance",
-      "2026-05/posts/xiaomi/title/Glance"
+      "2026-05/posts/xiaomi/title/Glance",
+      "2026-06/posts/androidapps/title/Unity Aura"
     ],
-    "errors": [],
+    "errors": [
+      "2023-03/posts/xiaomi/title/Glance: HTTP 422",
+      "2025-04/posts/motorola/title/Glance: HTTP 422",
+      "2025-06/comments/motorola/body/Glance: HTTP 422",
+      "2025-06/posts/xiaomi/title/Glance: HTTP 422",
+      "2025-06/comments/xiaomi/body/Glance: HTTP 422",
+      "2026-06/comments/motorola/body/Glance: HTTP 422"
+    ],
     "note": "Completed windows exhausted their available query pages. The archive may be incomplete; date pagination may miss same-second posts."
   },
   "items": [
+    {
+      "id": "reddit:c:19sob0iopcx9c",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-15T13:22:49Z",
+      "first_seen": "2026-11-16T02:49:19Z",
+      "title": "I think i deleted glance when it was installed, I just looked and I definitely dont have it now",
+      "excerpt": "I think i deleted glance when it was installed, I just looked and I definitely dont have it now",
+      "url": "https://www.reddit.com/r/AndroidQuestions/comments/1xwtzuw/_/19sob0iopcx9c/",
+      "sentiment": "neutral",
+      "score": 0.402,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v5-vader-rules",
+      "community": "r/AndroidQuestions",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19so8ydey9hsw",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-15T12:36:38Z",
+      "first_seen": "2026-11-16T02:49:19Z",
+      "title": "This isn't an Android feature. Unless you have a Chinese OEM phone, you likely have Glance installed. It's a carrier installed app. You can look around and disable any ot…",
+      "excerpt": "This isn't an Android feature. Unless you have a Chinese OEM phone, you likely have Glance installed. It's a carrier installed app. You can look around and disable any other carrier related services, too, so you don't get any more surprise apps.",
+      "url": "https://www.reddit.com/r/AndroidQuestions/comments/1xwtzuw/_/19so8ydey9hsw/",
+      "sentiment": "neutral",
+      "score": 0.338,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v5-vader-rules",
+      "community": "r/AndroidQuestions",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19sngzwoehnet",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-15T02:09:49Z",
+      "first_seen": "2026-11-16T02:49:19Z",
+      "title": "Try going into settings, Apps and disabling Glance",
+      "excerpt": "Try going into settings, Apps and disabling Glance",
+      "url": "https://www.reddit.com/r/motorola/comments/1xwg1q2/_/19sngzwoehnet/",
+      "sentiment": "negative",
+      "score": -0.477,
+      "topic": "その他",
+      "reason": "否定的な表現が見られます（VADER推定）",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
     {
       "id": "reddit:c:19slokujotzgg",
       "source": "Reddit",
@@ -1060,6 +1157,60 @@
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
       "classifier": "v5-vader-rules"
+    },
+    {
+      "id": "reddit:p:1ujvsq6",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-06-30T17:33:18Z",
+      "first_seen": "2026-11-16T02:49:59Z",
+      "title": "Moto Glance keeps turning itself back on even after I disable it. Is anyone else seeing this?",
+      "excerpt": "",
+      "url": "https://www.reddit.com/r/motorola/comments/1ujvsq6/",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:p:1uj8cbf",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-06-29T23:21:08Z",
+      "first_seen": "2026-11-16T02:49:59Z",
+      "title": "Please someone help me disable glance",
+      "excerpt": "I got a new Moto G Play 2024 and when I was setting it up it asked if I wanted Glance on my phone. I said no. But it put it there anyway. Now it keeps opening up every time I try to use my phone. It's so annoying.",
+      "url": "https://www.reddit.com/r/motorola/comments/1uj8cbf/",
+      "sentiment": "negative",
+      "score": -0.369,
+      "topic": "停止・削除",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:p:1uh8hy0",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-06-27T17:23:53Z",
+      "first_seen": "2026-11-16T02:49:59Z",
+      "title": "Who the made the damn glance app",
+      "excerpt": "Bc I can't fucking disable it for some stupid ass reason it annoying asf",
+      "url": "https://www.reddit.com/r/motorola/comments/1uh8hy0/",
+      "sentiment": "negative",
+      "score": -0.906,
+      "topic": "停止・削除",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
     },
     {
       "id": "reddit:c:oj1cwix",
@@ -2250,6 +2401,24 @@
       "via": "Arctic Shift"
     },
     {
+      "id": "reddit:p:1r8s1ts",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-02-19T06:40:21Z",
+      "first_seen": "2026-11-16T02:49:59Z",
+      "title": "Guide to remove glance and other bloatware",
+      "excerpt": "Since glance app keeps reenabling itself I tried to remove it from my device. Today I uninstalled glance from my device (g67). 1. Enable Developer (tap on build number a number of times) 2. Enable debugging * I choose to enable wireless debug by following this guide: [https://www.androidpolice.com/use-wireless-adb-andr…",
+      "url": "https://www.reddit.com/r/motorola/comments/1r8s1ts/",
+      "sentiment": "neutral",
+      "score": 0.153,
+      "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "reddit:c:o61rs13",
       "source": "Reddit",
       "brand": "Glance",
@@ -2298,6 +2467,24 @@
       "sentiment": "neutral",
       "score": 0.0,
       "topic": "停止・削除",
+      "reason": "明確な肯定・否定が見られません",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:p:1r7r86h",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-02-18T02:52:06Z",
+      "first_seen": "2026-11-16T02:49:59Z",
+      "title": "Unknown notification - Glance",
+      "excerpt": "Anyone familiar with this notification? I don't have anything called Glance on my phone. Thank you!",
+      "url": "https://www.reddit.com/r/motorola/comments/1r7r86h/",
+      "sentiment": "neutral",
+      "score": 0.42,
+      "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
       "classifier": "v5-vader-rules",
       "community": "r/motorola",
@@ -2353,6 +2540,24 @@
       "score": 0.0,
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:p:1r5g4aa",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-02-15T14:35:21Z",
+      "first_seen": "2026-11-16T02:49:59Z",
+      "title": "How do I get a battery status % on my lock screen?",
+      "excerpt": "… the status bar battery % which does NOT show in the lock screen. I also DO NOT want glance on my screen. I have enabled it to see if it would show the battery. And it didn't. Glance feels like bloated spyware that I care not to have. I don't give a rip about news and sports on my phone. I'm enjoying this phone much mu…",
+      "url": "https://www.reddit.com/r/motorola/comments/1r5g4aa/",
+      "sentiment": "negative",
+      "score": 0.938,
+      "topic": "プライバシー",
+      "reason": "不満・問題を表す表現が見られます",
       "classifier": "v5-vader-rules",
       "community": "r/motorola",
       "via": "Arctic Shift"
@@ -2700,6 +2905,24 @@
       "via": "Arctic Shift"
     },
     {
+      "id": "reddit:c:laxwwys",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2024-06-30T05:53:13Z",
+      "first_seen": "2026-11-16T02:49:59Z",
+      "title": "I'm using Mi brand from 2017-18 when I got the Poco F1. It's the best phone I ever had. Held up great even after 5 years. Got 11T Pro last year. I miss some features from…",
+      "excerpt": "… brands. These are the first things I do when I bought the Mi phone - you switch off Glance for lock screen - uninstall pre-installed 3rd party apps, Mi apps - long press apps that can't be uninstalled(Mi pay for example, and disable it) won't get any ads, notifications. - go to settings and disable all ad preferences,…",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/1drthmd/_/laxwwys/",
+      "sentiment": "unclear",
+      "score": 0.955,
+      "topic": "勝手に有効化",
+      "reason": "肯定・否定の両方の表現を含みます",
+      "classifier": "v5-vader-rules",
+      "community": "r/Xiaomi",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "reddit:c:la3g8ep",
       "source": "Reddit",
       "brand": "Glance",
@@ -2936,6 +3159,11 @@
       "date": "2026-11-15",
       "new_reactions": 1,
       "new_news": 0
+    },
+    {
+      "date": "2026-11-16",
+      "new_reactions": 3,
+      "new_news": 0
     }
   ],
   "runs": [
@@ -3123,6 +3351,17 @@
       "new": 1,
       "errors": [
         "posts r/motorola: keyword timeout; recent-only fallback",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "posts r/realme: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-16T02:49:19Z",
+      "sources_ok": 20,
+      "sources_total": 21,
+      "new": 3,
+      "errors": [
+        "Reddit posts r/motorola: HTTP 422",
         "posts r/xiaomi: keyword timeout; recent-only fallback",
         "posts r/realme: keyword timeout; recent-only fallback"
       ]
