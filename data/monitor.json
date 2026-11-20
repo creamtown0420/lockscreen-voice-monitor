@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-19T04:14:54Z",
+  "updated_at": "2026-11-20T04:01:40Z",
   "backfill": {
     "start": "2022-01",
-    "last_attempt": "2026-11-19T04:15:41Z",
+    "last_attempt": "2026-11-20T04:02:23Z",
     "total_windows": 295,
-    "completed_windows": 90,
+    "completed_windows": 91,
     "completed": [
       "2022-01/comments/motorola/body/Glance",
       "2022-01/comments/xiaomi/body/Glance",
@@ -96,7 +96,8 @@
       "2026-06/comments/xiaomi/body/Glance",
       "2026-06/posts/motorola/title/Glance",
       "2026-06/posts/xiaomi/title/Glance",
-      "2026-07/comments/xiaomi/body/Glance"
+      "2026-07/comments/xiaomi/body/Glance",
+      "2026-08/posts/androidapps/title/Unity Aura"
     ],
     "checkpoints": {
       "2024-01/posts/androidapps/title/Unity Aura": {
@@ -112,7 +113,7 @@
         "mode": "unfiltered"
       },
       "2025-04/posts/androidapps/title/Unity Aura": {
-        "after": 1745007154,
+        "after": 1745313448,
         "mode": "unfiltered"
       },
       "2026-04/posts/motorola/title/Glance": {
@@ -124,7 +125,7 @@
         "mode": "unfiltered"
       },
       "2026-04/posts/androidapps/title/Unity Aura": {
-        "after": 1775739547,
+        "after": 1776074768,
         "mode": "unfiltered"
       },
       "2023-03/posts/xiaomi/title/Glance": {
@@ -132,15 +133,15 @@
         "mode": "unfiltered"
       },
       "2022-05/posts/xiaomi/title/Glance": {
-        "after": 1652032605,
+        "after": 1652310623,
         "mode": "unfiltered"
       },
       "2022-05/posts/androidapps/title/Unity Aura": {
-        "after": 1651968441,
+        "after": 1652429619,
         "mode": "unfiltered"
       },
       "2023-05/posts/androidapps/title/Unity Aura": {
-        "after": 1683413365,
+        "after": 1683816433,
         "mode": "unfiltered"
       },
       "2024-05/posts/xiaomi/title/Glance": {
@@ -258,6 +259,22 @@
       "2025-08/comments/motorola/body/Glance": {
         "after": 1756405715,
         "mode": "keyword"
+      },
+      "2025-08/posts/androidapps/title/Unity Aura": {
+        "after": 1754183362,
+        "mode": "unfiltered"
+      },
+      "2026-08/posts/motorola/title/Glance": {
+        "after": 1785769685,
+        "mode": "unfiltered"
+      },
+      "2022-09/posts/motorola/title/Glance": {
+        "after": 1662787202,
+        "mode": "unfiltered"
+      },
+      "2022-09/posts/xiaomi/title/Glance": {
+        "after": 1662138072,
+        "mode": "unfiltered"
       }
     },
     "attempts": {
@@ -330,7 +347,14 @@
       "2022-08/comments/motorola/body/Glance": 1,
       "2023-08/posts/motorola/title/Glance": 1,
       "2024-08/comments/motorola/body/Glance": 1,
-      "2024-08/comments/xiaomi/body/Glance": 1
+      "2024-08/comments/xiaomi/body/Glance": 1,
+      "2022-04/posts/androidapps/title/Unity Aura": 1,
+      "2026-08/comments/motorola/body/Glance": 1,
+      "2026-08/posts/xiaomi/title/Glance": 1,
+      "2026-08/comments/xiaomi/body/Glance": 1,
+      "2022-09/comments/motorola/body/Glance": 1,
+      "2022-09/comments/xiaomi/body/Glance": 1,
+      "2022-09/posts/androidapps/title/Unity Aura": 1
     },
     "saturated": [
       "2022-04/posts/androidapps/title/Unity Aura",
@@ -340,6 +364,8 @@
       "2022-06/posts/xiaomi/title/Glance",
       "2022-07/posts/motorola/title/Glance",
       "2022-07/posts/xiaomi/title/Glance",
+      "2022-09/posts/motorola/title/Glance",
+      "2022-09/posts/xiaomi/title/Glance",
       "2023-03/posts/xiaomi/title/Glance",
       "2023-05/posts/androidapps/title/Unity Aura",
       "2023-06/posts/motorola/title/Glance",
@@ -365,6 +391,7 @@
       "2025-07/posts/androidapps/title/Unity Aura",
       "2025-07/posts/motorola/title/Glance",
       "2025-08/comments/motorola/body/Glance",
+      "2025-08/posts/androidapps/title/Unity Aura",
       "2026-03/comments/motorola/body/Glance",
       "2026-04/posts/androidapps/title/Unity Aura",
       "2026-04/posts/motorola/title/Glance",
@@ -375,16 +402,40 @@
       "2026-07/comments/motorola/body/Glance",
       "2026-07/posts/androidapps/title/Unity Aura",
       "2026-07/posts/motorola/title/Glance",
-      "2026-07/posts/xiaomi/title/Glance"
+      "2026-07/posts/xiaomi/title/Glance",
+      "2026-08/posts/motorola/title/Glance"
     ],
     "errors": [
-      "2023-08/posts/motorola/title/Glance: HTTP 422",
-      "2024-08/comments/motorola/body/Glance: HTTP 422",
-      "2024-08/comments/xiaomi/body/Glance: HTTP 422"
+      "2022-04/posts/androidapps/title/Unity Aura: HTTP 422",
+      "2026-08/comments/motorola/body/Glance: HTTP 422",
+      "2026-08/posts/xiaomi/title/Glance: HTTP 422",
+      "2026-08/comments/xiaomi/body/Glance: HTTP 422",
+      "2022-09/comments/motorola/body/Glance: HTTP 422",
+      "2022-09/comments/xiaomi/body/Glance: HTTP 422",
+      "2022-09/posts/androidapps/title/Unity Aura: HTTP 429",
+      "Arctic Shift rate limited, stopped this run"
     ],
     "note": "Completed windows exhausted their available query pages. The archive may be incomplete; date pagination may miss same-second posts."
   },
   "items": [
+    {
+      "id": "reddit:c:19svzxg56jyf4",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-19T20:51:17Z",
+      "first_seen": "2026-11-20T04:01:40Z",
+      "title": "Whoops! I should have gone to bed sooner. Lol. Glance is the app.... Can't remove it, and I've disabled it numerous times. I have seen others mention a way to get rid of …",
+      "excerpt": "Whoops! I should have gone to bed sooner. Lol. Glance is the app.... Can't remove it, and I've disabled it numerous times. I have seen others mention a way to get rid of it. I shouldn't have to spend my time doing that, when there's better things in life to do. I've always had whatever flagship model of phone, that Mot…",
+      "url": "https://www.reddit.com/r/motorola/comments/1y083qo/_/19svzxg56jyf4/",
+      "sentiment": "negative",
+      "score": 0.75,
+      "topic": "停止・削除",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
     {
       "id": "bsky:at://did:plc:hfeujokms34oomrspjefirtn/app.bsky.feed.post/3n2mghyxz6k2c",
       "source": "Bluesky",
@@ -1320,6 +1371,24 @@
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
       "classifier": "v5-vader-rules"
+    },
+    {
+      "id": "reddit:p:1vdtyfg",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-08-02T21:20:52Z",
+      "first_seen": "2026-11-20T04:02:23Z",
+      "title": "Glance AI",
+      "excerpt": "Is there ANYTHING to be done about glance? I have disabled the app 5 times, I have uninstalled updates and still I keep getting the stupid pop up at the top of my screen. This is seriously the worst thing Motorola has implemented. I've used Moto phones for years. They always work so smoothly, the phones are strong agai…",
+      "url": "https://www.reddit.com/r/motorola/comments/1vdtyfg/",
+      "sentiment": "negative",
+      "score": -0.845,
+      "topic": "勝手に有効化",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
     },
     {
       "id": "reddit:c:ozc2m9u",
@@ -4202,24 +4271,6 @@
       "via": "Arctic Shift"
     },
     {
-      "id": "reddit:c:n6o8q6m",
-      "source": "Reddit",
-      "brand": "Glance",
-      "kind": "reaction",
-      "published_at": "2025-08-03T10:32:57Z",
-      "first_seen": "2026-11-19T04:15:41Z",
-      "title": "I've had the same issue and figured it out: it's not Live lock, it's something called Glance. Even if it's not activated, the \"Swipe left (...)\" message _will_ show up. I…",
-      "excerpt": "…'ve had the same issue and figured it out: it's not Live lock, it's something called Glance. Even if it's not activated, the \"Swipe left (...)\" message _will_ show up. I've turned it on and then off and (at least for now) the message disappeared. Actually, while trying to redo my steps to share with you, I've found out…",
-      "url": "https://www.reddit.com/r/motorola/comments/1mfj0fj/_/n6o8q6m/",
-      "sentiment": "neutral",
-      "score": 0.077,
-      "topic": "広告への不満",
-      "reason": "明確な肯定・否定が見られません",
-      "classifier": "v5-vader-rules",
-      "community": "r/motorola",
-      "via": "Arctic Shift"
-    },
-    {
       "id": "reddit:c:n6ipxst",
       "source": "Reddit",
       "brand": "Glance",
@@ -4652,6 +4703,24 @@
       "via": "Arctic Shift"
     },
     {
+      "id": "reddit:p:x3do16",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2022-09-01T17:38:34Z",
+      "first_seen": "2026-11-20T04:02:23Z",
+      "title": "Same phones, different apps/UI?",
+      "excerpt": "Me and my friend have the same exact phone, which is the Redmi note 10 5G. They are the same version which is 13.02 but his phone has apps like glance for mi and wallpaper carousel, which my phone doesn't have, and his UI also looks very different to mine. Is there a reason for this?",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/x3do16/",
+      "sentiment": "positive",
+      "score": 0.692,
+      "topic": "コンテンツ",
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v5-vader-rules",
+      "community": "r/Xiaomi",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "reddit:c:ie9eblx",
       "source": "Reddit",
       "brand": "Glance",
@@ -4800,6 +4869,11 @@
       "date": "2026-11-19",
       "new_reactions": 1,
       "new_news": 1
+    },
+    {
+      "date": "2026-11-20",
+      "new_reactions": 1,
+      "new_news": 0
     }
   ],
   "runs": [
@@ -5034,6 +5108,20 @@
       "errors": [
         "posts r/motorola: keyword timeout; recent-only fallback",
         "comments r/realme: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-20T04:01:40Z",
+      "sources_ok": 20,
+      "sources_total": 21,
+      "new": 1,
+      "errors": [
+        "posts r/motorola: keyword timeout; recent-only fallback",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "posts r/realme: keyword timeout; recent-only fallback",
+        "comments r/realme: keyword timeout; recent-only fallback",
+        "comments r/AndroidQuestions: keyword timeout; recent-only fallback",
+        "News \"Glance\" \"ads\": HTTP Error 429: Too Many Requests"
       ]
     }
   ]
