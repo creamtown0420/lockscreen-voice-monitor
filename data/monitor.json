@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-23T03:44:58Z",
+  "updated_at": "2026-11-24T06:58:57Z",
   "backfill": {
     "start": "2022-01",
-    "last_attempt": "2026-11-23T03:45:46Z",
+    "last_attempt": "2026-11-24T06:59:43Z",
     "total_windows": 295,
-    "completed_windows": 112,
+    "completed_windows": 115,
     "completed": [
       "2022-01/comments/motorola/body/Glance",
       "2022-01/comments/xiaomi/body/Glance",
@@ -18,6 +18,7 @@
       "2022-04/posts/motorola/title/Glance",
       "2022-04/posts/xiaomi/title/Glance",
       "2022-05/comments/motorola/body/Glance",
+      "2022-05/posts/androidapps/title/Unity Aura",
       "2022-05/posts/motorola/title/Glance",
       "2022-06/comments/motorola/body/Glance",
       "2022-06/comments/xiaomi/body/Glance",
@@ -118,7 +119,9 @@
       "2026-08/posts/androidapps/title/Unity Aura",
       "2026-09/comments/xiaomi/body/Glance",
       "2026-09/posts/androidapps/title/Unity Aura",
-      "2026-09/posts/motorola/title/Glance"
+      "2026-09/posts/motorola/title/Glance",
+      "2026-10/comments/xiaomi/body/Glance",
+      "2026-10/posts/xiaomi/title/Glance"
     ],
     "checkpoints": {
       "2024-01/posts/androidapps/title/Unity Aura": {
@@ -142,7 +145,7 @@
         "mode": "unfiltered"
       },
       "2026-04/posts/androidapps/title/Unity Aura": {
-        "after": 1776983556,
+        "after": 1777308533,
         "mode": "unfiltered"
       },
       "2023-03/posts/xiaomi/title/Glance": {
@@ -153,12 +156,8 @@
         "after": 1652801304,
         "mode": "unfiltered"
       },
-      "2022-05/posts/androidapps/title/Unity Aura": {
-        "after": 1653580151,
-        "mode": "unfiltered"
-      },
       "2023-05/posts/androidapps/title/Unity Aura": {
-        "after": 1685028988,
+        "after": 1685455702,
         "mode": "unfiltered"
       },
       "2024-05/posts/xiaomi/title/Glance": {
@@ -166,7 +165,7 @@
         "mode": "unfiltered"
       },
       "2025-05/posts/motorola/title/Glance": {
-        "after": 1746258744,
+        "after": 1746686404,
         "mode": "unfiltered"
       },
       "2025-05/posts/xiaomi/title/Glance": {
@@ -340,6 +339,26 @@
       "2025-10/posts/xiaomi/title/Glance": {
         "after": 1759591269,
         "mode": "unfiltered"
+      },
+      "2025-10/posts/androidapps/title/Unity Aura": {
+        "after": 1759423900,
+        "mode": "unfiltered"
+      },
+      "2026-10/posts/motorola/title/Glance": {
+        "after": 1790949746,
+        "mode": "unfiltered"
+      },
+      "2026-10/posts/androidapps/title/Unity Aura": {
+        "after": 1791126027,
+        "mode": "unfiltered"
+      },
+      "2022-11/posts/androidapps/title/Unity Aura": {
+        "after": 1667424922,
+        "mode": "unfiltered"
+      },
+      "2023-11/posts/motorola/title/Glance": {
+        "after": 1699498176,
+        "mode": "unfiltered"
       }
     },
     "attempts": {
@@ -426,11 +445,19 @@
       "2022-05/posts/xiaomi/title/Glance": 1,
       "2024-10/comments/motorola/body/Glance": 1,
       "2024-10/comments/xiaomi/body/Glance": 1,
-      "2025-10/comments/motorola/body/Glance": 1
+      "2025-10/comments/motorola/body/Glance": 1,
+      "2024-05/posts/xiaomi/title/Glance": 1,
+      "2025-05/posts/xiaomi/title/Glance": 1,
+      "2025-10/comments/xiaomi/body/Glance": 1,
+      "2026-10/comments/motorola/body/Glance": 1,
+      "2022-11/posts/motorola/title/Glance": 1,
+      "2022-11/comments/motorola/body/Glance": 1,
+      "2022-11/posts/xiaomi/title/Glance": 1,
+      "2022-11/comments/xiaomi/body/Glance": 1,
+      "2023-11/comments/motorola/body/Glance": 1
     },
     "saturated": [
       "2022-04/posts/androidapps/title/Unity Aura",
-      "2022-05/posts/androidapps/title/Unity Aura",
       "2022-05/posts/xiaomi/title/Glance",
       "2022-06/posts/motorola/title/Glance",
       "2022-06/posts/xiaomi/title/Glance",
@@ -440,12 +467,14 @@
       "2022-09/posts/xiaomi/title/Glance",
       "2022-10/posts/androidapps/title/Unity Aura",
       "2022-10/posts/motorola/title/Glance",
+      "2022-11/posts/androidapps/title/Unity Aura",
       "2023-03/posts/xiaomi/title/Glance",
       "2023-05/posts/androidapps/title/Unity Aura",
       "2023-06/posts/motorola/title/Glance",
       "2023-06/posts/xiaomi/title/Glance",
       "2023-07/posts/androidapps/title/Unity Aura",
       "2023-10/posts/motorola/title/Glance",
+      "2023-11/posts/motorola/title/Glance",
       "2024-01/posts/androidapps/title/Unity Aura",
       "2024-02/posts/motorola/title/Glance",
       "2024-05/posts/xiaomi/title/Glance",
@@ -472,6 +501,7 @@
       "2025-08/posts/androidapps/title/Unity Aura",
       "2025-09/posts/androidapps/title/Unity Aura",
       "2025-09/posts/motorola/title/Glance",
+      "2025-10/posts/androidapps/title/Unity Aura",
       "2025-10/posts/xiaomi/title/Glance",
       "2026-03/comments/motorola/body/Glance",
       "2026-04/posts/androidapps/title/Unity Aura",
@@ -486,17 +516,40 @@
       "2026-07/posts/xiaomi/title/Glance",
       "2026-08/posts/motorola/title/Glance",
       "2026-09/comments/motorola/body/Glance",
-      "2026-09/posts/xiaomi/title/Glance"
+      "2026-09/posts/xiaomi/title/Glance",
+      "2026-10/posts/androidapps/title/Unity Aura",
+      "2026-10/posts/motorola/title/Glance"
     ],
     "errors": [
-      "2022-05/posts/xiaomi/title/Glance: HTTP 422",
-      "2024-10/comments/motorola/body/Glance: HTTP 422",
-      "2024-10/comments/xiaomi/body/Glance: HTTP 422",
-      "2025-10/comments/motorola/body/Glance: HTTP 422"
+      "2024-05/posts/xiaomi/title/Glance: HTTP 422",
+      "2025-05/posts/xiaomi/title/Glance: HTTP 422",
+      "2025-10/comments/xiaomi/body/Glance: HTTP 422",
+      "2026-10/comments/motorola/body/Glance: HTTP 422",
+      "2022-11/posts/motorola/title/Glance: HTTP 422",
+      "2022-11/comments/motorola/body/Glance: HTTP 422",
+      "2022-11/posts/xiaomi/title/Glance: HTTP 422",
+      "2022-11/comments/xiaomi/body/Glance: HTTP 422",
+      "2023-11/comments/motorola/body/Glance: HTTP 422"
     ],
     "note": "Completed windows exhausted their available query pages. The archive may be incomplete; date pagination may miss same-second posts."
   },
   "items": [
+    {
+      "id": "news:365af2806a6f62d9d7848b7a",
+      "source": "Google News RSS",
+      "brand": "Glance",
+      "kind": "news",
+      "published_at": "2026-11-23T13:15:20Z",
+      "first_seen": "2026-11-24T06:58:57Z",
+      "title": "Apple Tests iPhone Duo Lock Screen Layout With New Widget Column For More At-a-Glance Info - Tech Times",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZVpvTEs2UTd3cVpKU19sVFNNZ1NveUdkV0NLV1ppZkhULTZQMHJJR1JjcmNKd1VfSWxUMGtWbjRrYnQ1SmNWRlJRUTYzeFQxb3VEaWt6Y3dkTGtnMnBSUEd1MVZOeENGYzJrZ24yOWdaaEVtRzhFN1NJS0lLYjlzUnpxYVVyLUdnZ3JtSHVDLVY1WTRBbk9nWnRlTnZkb2ZqemRiZUF4dl9oSHVyLW8xX2p4OVljZ1NuelJHZWVBSFB6TEVpZ2x1bmJFVQ?oc=5",
+      "sentiment": "not_applicable",
+      "score": 0.0,
+      "topic": "ニュース",
+      "reason": "ニュースは感情分析の集計対象外",
+      "classifier": "not_applicable"
+    },
     {
       "id": "reddit:c:19t1n7lqgdkkj",
       "source": "Reddit",
@@ -516,21 +569,39 @@
       "via": "Arctic Shift"
     },
     {
-      "id": "reddit:p:1y2lhcp",
+      "id": "reddit:c:19t0kfq65p0g0",
       "source": "Reddit",
       "brand": "Glance",
       "kind": "reaction",
-      "published_at": "2026-11-22T09:37:22Z",
-      "first_seen": "2026-11-23T03:44:58Z",
-      "title": "Any solution to the adware on the Edge 2024 yet?",
-      "excerpt": "…y dad has one and I'm curious if a permanent fix has been found. The adware apps are Glance and some other app (or two?) I can't recall the name of. There's no setting in the apps to turn off the ads, no way to uninstall them, disabling them does nothing. I followed the directions to use Shizuku and Canta to be allowed…",
-      "url": "https://www.reddit.com/r/motorola/comments/1y2lhcp/",
-      "sentiment": "negative",
-      "score": -0.759,
-      "topic": "勝手に有効化",
-      "reason": "不満・問題を表す表現が見られます",
+      "published_at": "2026-11-22T10:19:34Z",
+      "first_seen": "2026-11-24T06:58:57Z",
+      "title": "Hey, my device was unable to unlock flux theme and live wallpaper because the APK for the ColorOS17 update did not include those features. Im not sure about your device b…",
+      "excerpt": "…efresh\\`, \\`dolby\\`, \\`charge\\`, \\`bypass\\`, \\`recommend\\`, \\`ad\\`, \\`pictorial\\`, \\`glance\\`). \\- \\*\\*Avoid false positives:\\*\\* Explicitly separate: 1. Actual toggles currently off (\\`0\\`/\\`false\\`) that control real UI/UX features. 2. Inverted flags where \\`0\\` = enabled (e.g., \\`disable\\_\\*\\`, \\`not\\_support\\`). 3.…",
+      "url": "https://www.reddit.com/r/Realme/comments/1y2ivl4/_/19t0kfq65p0g0/",
+      "sentiment": "positive",
+      "score": 0.915,
+      "topic": "停止・削除",
+      "reason": "好意的な表現が見られます（VADER推定）",
       "classifier": "v5-vader-rules",
-      "community": "r/motorola",
+      "community": "r/Realme",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:c:19t0kcjvagmf7",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-22T10:17:36Z",
+      "first_seen": "2026-11-24T06:58:57Z",
+      "title": "oh, okay. I'll give you a prompt. just give it to your AI agent and it'll give you a list of options that are safe to run on your device and things that must not be chang…",
+      "excerpt": "…efresh\\`, \\`dolby\\`, \\`charge\\`, \\`bypass\\`, \\`recommend\\`, \\`ad\\`, \\`pictorial\\`, \\`glance\\`). \\- \\*\\*Avoid false positives:\\*\\* Explicitly separate: 1. Actual toggles currently off (\\`0\\`/\\`false\\`) that control real UI/UX features. 2. Inverted flags where \\`0\\` = enabled (e.g., \\`disable\\_\\*\\`, \\`not\\_support\\`). 3.…",
+      "url": "https://www.reddit.com/r/Realme/comments/1y2ivl4/_/19t0kcjvagmf7/",
+      "sentiment": "positive",
+      "score": 0.851,
+      "topic": "停止・削除",
+      "reason": "好意的な表現が見られます（VADER推定）",
+      "classifier": "v5-vader-rules",
+      "community": "r/Realme",
       "via": "Arctic Shift"
     },
     {
@@ -1558,6 +1629,24 @@
       "topic": "その他",
       "reason": "明確な肯定・否定が見られません",
       "classifier": "v5-vader-rules"
+    },
+    {
+      "id": "reddit:p:1wuysfd",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-10-01T12:59:46Z",
+      "first_seen": "2026-11-24T06:59:43Z",
+      "title": "Motorola Signature - Lockscreen notification preview fully broke with Android 17",
+      "excerpt": "…/WhatsApp/etc notifications showing, now not even the first one shows, this is very annoying, as you can no longer see what message came through at a glance, you have to full wake the lockscreen up. Anyone else getting this? I've been through all the settings and every is toggled on, and to show seen notifications too!",
+      "url": "https://www.reddit.com/r/motorola/comments/1wuysfd/",
+      "sentiment": "negative",
+      "score": -0.668,
+      "topic": "その他",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
     },
     {
       "id": "reddit:p:1wrbqq9",
@@ -6426,6 +6515,11 @@
       "date": "2026-11-23",
       "new_reactions": 2,
       "new_news": 0
+    },
+    {
+      "date": "2026-11-24",
+      "new_reactions": 2,
+      "new_news": 1
     }
   ],
   "runs": [
@@ -6709,6 +6803,20 @@
         "posts r/xiaomi: keyword timeout; recent-only fallback",
         "comments r/motorola: keyword timeout; recent-only fallback",
         "comments r/realme: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-24T06:58:57Z",
+      "sources_ok": 20,
+      "sources_total": 21,
+      "new": 3,
+      "errors": [
+        "posts r/motorola: keyword timeout; recent-only fallback",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "Reddit posts r/realme: HTTP 422",
+        "comments r/motorola: keyword timeout; recent-only fallback",
+        "comments r/xiaomi: keyword timeout; recent-only fallback",
+        "comments r/AndroidQuestions: keyword timeout; recent-only fallback"
       ]
     }
   ]
