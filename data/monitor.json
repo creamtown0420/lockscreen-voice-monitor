@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-26T05:09:35Z",
+  "updated_at": "2026-11-27T05:06:37Z",
   "backfill": {
     "start": "2022-01",
-    "last_attempt": "2026-11-26T05:10:23Z",
+    "last_attempt": "2026-11-27T05:07:26Z",
     "total_windows": 295,
-    "completed_windows": 125,
+    "completed_windows": 128,
     "completed": [
       "2022-01/comments/motorola/body/Glance",
       "2022-01/comments/xiaomi/body/Glance",
@@ -67,6 +67,7 @@
       "2023-10/posts/xiaomi/title/Glance",
       "2023-11/comments/xiaomi/body/Glance",
       "2023-11/posts/androidapps/title/Unity Aura",
+      "2023-12/comments/xiaomi/body/Glance",
       "2024-01/comments/motorola/body/Glance",
       "2024-01/comments/xiaomi/body/Glance",
       "2024-01/posts/xiaomi/title/Glance",
@@ -107,6 +108,7 @@
       "2025-09/comments/xiaomi/body/Glance",
       "2025-09/posts/xiaomi/title/Glance",
       "2025-10/posts/motorola/title/Glance",
+      "2025-12/posts/motorola/title/Glance",
       "2026-01/comments/motorola/body/Glance",
       "2026-01/comments/xiaomi/body/Glance",
       "2026-01/posts/androidapps/title/Unity Aura",
@@ -121,6 +123,7 @@
       "2026-04/comments/motorola/body/Glance",
       "2026-04/posts/androidapps/title/Unity Aura",
       "2026-05/posts/androidapps/title/Unity Aura",
+      "2026-05/posts/xiaomi/title/Glance",
       "2026-06/comments/xiaomi/body/Glance",
       "2026-06/posts/motorola/title/Glance",
       "2026-06/posts/xiaomi/title/Glance",
@@ -167,7 +170,7 @@
         "mode": "unfiltered"
       },
       "2025-05/posts/motorola/title/Glance": {
-        "after": 1747647550,
+        "after": 1748052311,
         "mode": "unfiltered"
       },
       "2025-05/posts/xiaomi/title/Glance": {
@@ -175,11 +178,7 @@
         "mode": "unfiltered"
       },
       "2026-05/posts/motorola/title/Glance": {
-        "after": 1778682743,
-        "mode": "unfiltered"
-      },
-      "2026-05/posts/xiaomi/title/Glance": {
-        "after": 1779652880,
+        "after": 1779114903,
         "mode": "unfiltered"
       },
       "2022-04/posts/androidapps/title/Unity Aura": {
@@ -191,11 +190,11 @@
         "mode": "unfiltered"
       },
       "2023-06/posts/xiaomi/title/Glance": {
-        "after": 1685741665,
+        "after": 1686207438,
         "mode": "unfiltered"
       },
       "2024-06/posts/motorola/title/Glance": {
-        "after": 1717543376,
+        "after": 1718125084,
         "mode": "unfiltered"
       },
       "2024-06/posts/androidapps/title/Unity Aura": {
@@ -401,6 +400,26 @@
       "2023-12/posts/motorola/title/Glance": {
         "after": 1701800463,
         "mode": "unfiltered"
+      },
+      "2023-12/posts/xiaomi/title/Glance": {
+        "after": 1701577104,
+        "mode": "unfiltered"
+      },
+      "2023-12/posts/androidapps/title/Unity Aura": {
+        "after": 1701556588,
+        "mode": "unfiltered"
+      },
+      "2024-12/posts/motorola/title/Glance": {
+        "after": 1733289880,
+        "mode": "unfiltered"
+      },
+      "2024-12/posts/xiaomi/title/Glance": {
+        "after": 1733130635,
+        "mode": "unfiltered"
+      },
+      "2024-12/posts/androidapps/title/Unity Aura": {
+        "after": 1733162259,
+        "mode": "unfiltered"
       }
     },
     "attempts": {
@@ -503,7 +522,11 @@
       "2026-11/comments/xiaomi/body/Glance": 1,
       "2022-12/posts/motorola/title/Glance": 1,
       "2022-12/comments/xiaomi/body/Glance": 1,
-      "2023-12/comments/motorola/body/Glance": 1
+      "2023-12/comments/motorola/body/Glance": 1,
+      "2022-06/posts/xiaomi/title/Glance": 1,
+      "2024-12/comments/motorola/body/Glance": 1,
+      "2024-12/comments/xiaomi/body/Glance": 1,
+      "2025-12/comments/motorola/body/Glance": 1
     },
     "saturated": [
       "2022-04/posts/androidapps/title/Unity Aura",
@@ -523,7 +546,9 @@
       "2023-10/posts/motorola/title/Glance",
       "2023-11/posts/motorola/title/Glance",
       "2023-11/posts/xiaomi/title/Glance",
+      "2023-12/posts/androidapps/title/Unity Aura",
       "2023-12/posts/motorola/title/Glance",
+      "2023-12/posts/xiaomi/title/Glance",
       "2024-01/posts/androidapps/title/Unity Aura",
       "2024-02/posts/motorola/title/Glance",
       "2024-05/posts/xiaomi/title/Glance",
@@ -540,6 +565,9 @@
       "2024-11/posts/androidapps/title/Unity Aura",
       "2024-11/posts/motorola/title/Glance",
       "2024-11/posts/xiaomi/title/Glance",
+      "2024-12/posts/androidapps/title/Unity Aura",
+      "2024-12/posts/motorola/title/Glance",
+      "2024-12/posts/xiaomi/title/Glance",
       "2025-02/posts/motorola/title/Glance",
       "2025-02/posts/xiaomi/title/Glance",
       "2025-04/posts/motorola/title/Glance",
@@ -562,7 +590,6 @@
       "2026-04/posts/motorola/title/Glance",
       "2026-04/posts/xiaomi/title/Glance",
       "2026-05/posts/motorola/title/Glance",
-      "2026-05/posts/xiaomi/title/Glance",
       "2026-06/posts/androidapps/title/Unity Aura",
       "2026-07/comments/motorola/body/Glance",
       "2026-07/posts/androidapps/title/Unity Aura",
@@ -578,15 +605,33 @@
       "2026-11/posts/xiaomi/title/Glance"
     ],
     "errors": [
-      "2026-11/comments/xiaomi/body/Glance: HTTP 422",
-      "2022-12/posts/motorola/title/Glance: HTTP 422",
-      "2022-12/comments/xiaomi/body/Glance: HTTP 422",
-      "2023-12/comments/motorola/body/Glance: HTTP 429",
+      "2022-06/posts/xiaomi/title/Glance: HTTP 422",
+      "2024-12/comments/motorola/body/Glance: HTTP 422",
+      "2024-12/comments/xiaomi/body/Glance: HTTP 422",
+      "2025-12/comments/motorola/body/Glance: HTTP 429",
       "Arctic Shift rate limited, stopped this run"
     ],
     "note": "Completed windows exhausted their available query pages. The archive may be incomplete; date pagination may miss same-second posts."
   },
   "items": [
+    {
+      "id": "reddit:c:19t73nronc9ts",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-11-26T02:13:19Z",
+      "first_seen": "2026-11-27T05:06:37Z",
+      "title": "I just bought a stylus 2025. Glance was messing up my lock screen clock. I followed all the instructions on line to disable. I disabled smart screen lock. I disabled glan…",
+      "excerpt": "I just bought a stylus 2025. Glance was messing up my lock screen clock. I followed all the instructions on line to disable. I disabled smart screen lock. I disabled glance in apps. I also turned off updates for glance. I set lock screen notifications to \"list\". If it keeps coming back, I will look into canta and shizu…",
+      "url": "https://www.reddit.com/r/motorola/comments/1y5baa8/_/19t73nronc9ts/",
+      "sentiment": "negative",
+      "score": 0.625,
+      "topic": "勝手に有効化",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
     {
       "id": "reddit:c:19t6m0gqjyabo",
       "source": "Reddit",
@@ -3304,6 +3349,24 @@
       "via": "Arctic Shift"
     },
     {
+      "id": "reddit:p:1trg22y",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2026-05-29T21:21:02Z",
+      "first_seen": "2026-11-27T05:07:26Z",
+      "title": "Curious about the Smart band 10 Pro",
+      "excerpt": "…o use a smartwatch is the independence of the phone and just do todos and notes on a glance is amazing. Tho, the smart band 10 does not have anything that look like notes app. I saw one video where it briefly mention it where 10 pro has and I got curious if 10 pro have notes app also? That would me whant to upgrade qui…",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/1trg22y/",
+      "sentiment": "positive",
+      "score": 0.993,
+      "topic": "その他",
+      "reason": "好意的な表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/Xiaomi",
+      "via": "Arctic Shift"
+    },
+    {
       "id": "reddit:p:1t9a92d",
       "source": "Reddit",
       "brand": "Glance",
@@ -5009,6 +5072,42 @@
       "score": -0.153,
       "topic": "勝手に有効化",
       "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:p:1pxf3hd",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2025-12-28T01:59:04Z",
+      "first_seen": "2026-11-27T05:07:26Z",
+      "title": "Glance Lock Screen News App Disable Success!",
+      "excerpt": "The Glance app kept putting news clips on my Moto G Stylus 2025 lock screen, even after disabling (using Settings or adb) a reboot re-enables Glance! I used Canta/Shizuku with wireless debugging and deleted Glance, rebooted, and now the lock screen news clips are gone and in Settings, Apps, Glance = \"Not installed for …",
+      "url": "https://www.reddit.com/r/motorola/comments/1pxf3hd/",
+      "sentiment": "negative",
+      "score": 0.678,
+      "topic": "勝手に有効化",
+      "reason": "不満・問題を表す表現が見られます",
+      "classifier": "v5-vader-rules",
+      "community": "r/motorola",
+      "via": "Arctic Shift"
+    },
+    {
+      "id": "reddit:p:1pi2khq",
+      "source": "Reddit",
+      "brand": "Glance",
+      "kind": "reaction",
+      "published_at": "2025-12-09T08:48:05Z",
+      "first_seen": "2026-11-27T05:07:26Z",
+      "title": "Can't unistall Glance on my g stylus 2024 android 15, any advice?",
+      "excerpt": "",
+      "url": "https://www.reddit.com/r/motorola/comments/1pi2khq/",
+      "sentiment": "neutral",
+      "score": 0.0,
+      "topic": "その他",
+      "reason": "明確な肯定・否定が見られません",
       "classifier": "v5-vader-rules",
       "community": "r/motorola",
       "via": "Arctic Shift"
@@ -6853,6 +6952,11 @@
       "date": "2026-11-26",
       "new_reactions": 9,
       "new_news": 0
+    },
+    {
+      "date": "2026-11-27",
+      "new_reactions": 1,
+      "new_news": 0
     }
   ],
   "runs": [
@@ -7171,6 +7275,19 @@
         "posts r/motorola: keyword timeout; recent-only fallback",
         "posts r/xiaomi: keyword timeout; recent-only fallback",
         "posts r/realme: keyword timeout; recent-only fallback"
+      ]
+    },
+    {
+      "at": "2026-11-27T05:06:37Z",
+      "sources_ok": 21,
+      "sources_total": 21,
+      "new": 1,
+      "errors": [
+        "posts r/motorola: keyword timeout; recent-only fallback",
+        "posts r/xiaomi: keyword timeout; recent-only fallback",
+        "posts r/realme: keyword timeout; recent-only fallback",
+        "comments r/xiaomi: keyword timeout; recent-only fallback",
+        "comments r/AndroidQuestions: keyword timeout; recent-only fallback"
       ]
     }
   ]
